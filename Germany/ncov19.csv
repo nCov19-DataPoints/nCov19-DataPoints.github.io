@@ -8,11 +8,7 @@ Gießen,[14, '16/03/2020 12:00', 'https://soziales.hessen.de/gesundheit/infektio
 Groß-Gerau,[10, '16/03/2020 12:00', 'https://soziales.hessen.de/gesundheit/infektionsschutz/coronavirus-sars-cov-2']
 Hersfeld-Rotenburg,[12, '16/03/2020 12:00', 'https://soziales.hessen.de/gesundheit/infektionsschutz/coronavirus-sars-cov-2']
 Hochtaunuskreis,[18, '16/03/2020 12:00', 'https://soziales.hessen.de/gesundheit/infektionsschutz/coronavirus-sars-cov-2']
-<<<<<<< HEAD
-Kassel Landkreis,[22, '16/03/2020 12:00', 'https://soziales.hessen.de/gesundheit/infektionsschutz/coronavirus-sars-cov-2']
-=======
 Region Kassel,[22, '16/03/2020 12:00', 'https://soziales.hessen.de/gesundheit/infektionsschutz/coronavirus-sars-cov-2']
->>>>>>> Fix "Region Kassel" - the stats say "Region Kassel", but the geojson used "Kassel Stadt" and "Kassel Landkreis" as two different areas.
 Lahn-Dill-Kreis,[18, '16/03/2020 12:00', 'https://soziales.hessen.de/gesundheit/infektionsschutz/coronavirus-sars-cov-2']
 Limburg-Weilburg,[3, '16/03/2020 12:00', 'https://soziales.hessen.de/gesundheit/infektionsschutz/coronavirus-sars-cov-2']
 Main-Kinzig-Kreis,[21, '16/03/2020 12:00', 'https://soziales.hessen.de/gesundheit/infektionsschutz/coronavirus-sars-cov-2']
@@ -225,11 +221,7 @@ Unterallgäu,[16, '16/03/2020 12:00', 'https://www.lgl.bayern.de/gesundheit/infe
 Weiden i.d. OPf.,[6, '16/03/2020 12:00', 'https://www.lgl.bayern.de/gesundheit/infektionsschutz/infektionskrankheiten_a_z/coronavirus/karte_coronavirus/index.htm']
 Weilheim-Schongau,[17, '16/03/2020 12:00', 'https://www.lgl.bayern.de/gesundheit/infektionsschutz/infektionskrankheiten_a_z/coronavirus/karte_coronavirus/index.htm']
 Weißenburg-Gunzenhausen,[2, '16/03/2020 12:00', 'https://www.lgl.bayern.de/gesundheit/infektionsschutz/infektionskrankheiten_a_z/coronavirus/karte_coronavirus/index.htm']
-<<<<<<< HEAD
-Wunsiedel i.Fichtelgebirge,[2, '16/03/2020 12:00', 'https://www.lgl.bayern.de/gesundheit/infektionsschutz/infektionskrankheiten_a_z/coronavirus/karte_coronavirus/index.htm']
-=======
 Wunsiedel i. Fichtelgebirge,[2, '16/03/2020 12:00', 'https://www.lgl.bayern.de/gesundheit/infektionsschutz/infektionskrankheiten_a_z/coronavirus/karte_coronavirus/index.htm']
->>>>>>> Fix "Region Kassel" - the stats say "Region Kassel", but the geojson used "Kassel Stadt" and "Kassel Landkreis" as two different areas.
 Würzburg,[36, '16/03/2020 12:00', 'https://www.lgl.bayern.de/gesundheit/infektionsschutz/infektionskrankheiten_a_z/coronavirus/karte_coronavirus/index.htm']
 Würzburg Stadt,[30, '16/03/2020 12:00', 'https://www.lgl.bayern.de/gesundheit/infektionsschutz/infektionskrankheiten_a_z/coronavirus/karte_coronavirus/index.htm']
 Merzig-Wadern,[5, '16/03/2020 16:00', 'https://www.sr.de/sr/home/nachrichten/politik_wirtschaft/weitere_coronafaelle_saarland_100.html']
@@ -384,10 +376,6 @@ Saalekreis,[3, '16/03/2020 15:10', 'https://verbraucherschutz.sachsen-anhalt.de/
 Salzlandkreis,[9, '16/03/2020 15:10', 'https://verbraucherschutz.sachsen-anhalt.de/hygiene/infektionsschutz/infektionskrankheiten/coronavirus/']
 Stendal,[1, '16/03/2020 15:10', 'https://verbraucherschutz.sachsen-anhalt.de/hygiene/infektionsschutz/infektionskrankheiten/coronavirus/']
 Wittenberg,[2, '16/03/2020 15:10', 'https://verbraucherschutz.sachsen-anhalt.de/hygiene/infektionsschutz/infektionskrankheiten/coronavirus/']
-<<<<<<< HEAD
-Dessau-​Roßlau,[2, '16/03/2020 15:10', 'https://verbraucherschutz.sachsen-anhalt.de/hygiene/infektionsschutz/infektionskrankheiten/coronavirus/']
-=======
 Dessau-Roßlau,[2, '16/03/2020 15:10', 'https://verbraucherschutz.sachsen-anhalt.de/hygiene/infektionsschutz/infektionskrankheiten/coronavirus/']
->>>>>>> Fix "Region Kassel" - the stats say "Region Kassel", but the geojson used "Kassel Stadt" and "Kassel Landkreis" as two different areas.
 Halle (Saale),[13, '16/03/2020 15:10', 'https://verbraucherschutz.sachsen-anhalt.de/hygiene/infektionsschutz/infektionskrankheiten/coronavirus/']
 Magdeburg,[16, '16/03/2020 15:10', 'https://verbraucherschutz.sachsen-anhalt.de/hygiene/infektionsschutz/infektionskrankheiten/coronavirus/']
