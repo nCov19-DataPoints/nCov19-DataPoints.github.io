@@ -4,7 +4,7 @@ Corona Virus Data Points - gather data and facts and make them visible.
 ## Purpose
 I found that most maps visualizing the Corona Virus data while very interesting did not help me judging the situation in local places - the resolution was too rough, and the numbers were in no relation to the population in the affected area. 
 
-So I set [this map](https://ncov19-datapoints.github.io/NCov19.html) up with this repository.
+So I set [this map](https://ncov19-datapoints.github.io/) up with this repository.
 
 ## Feedback and help
 If you think something is wrong or missing from the map, please add it to the [github issue tracker](https://github.com/nCov19-DataPoints/nCov19-DataPoints.github.io/issues). There is still plenty of stuff to do.
