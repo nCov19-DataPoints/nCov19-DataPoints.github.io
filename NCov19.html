@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>GeoJSON tutorial - Leaflet</title>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+
+
+	<style>
+		html, body {
+			height: 100%;
+			margin: 0;
+		}
+		#map {
+			width: 100%;
+			height: 100%;
+		}
+		.info { 
+			font: 14px/20px Arial, Helvetica, sans-serif; 
+			width: 18em;
+			height: auto;
+			min-height: 8em;
+			padding: 6px 8px; 
+			background: rgba(255,255,255,0.6); 
+			border-radius: 3px; 
+		}
+		.info h4 { margin: 0 0 5px; color: #777; }
+		.legend { 
+			text-align: left; 
+			line-height: 18px; 
+			color: #555; 
+		} 
+		.legend i { width: 18px; height: 18px; float: left; margin-right: 8px; opacity: 0.7; }
+	</style>
+
+	
+</head>
+<body>
+
+<div id='map'></div>
+
+<script>
+var GEOJSON_totalCases = 0;
+var GEOJSON_lastoverallupdate = new Date(2020, 0, 1);
+</script>
+<script type="text/javascript"  src="./Germany/ncov19map.js" ></script>
+<script type="text/javascript"  src="./Italy/ncov19map.js" ></script>
+<script type="text/javascript"  src="./UK/ncov19map.js" ></script>
+<script type="text/javascript"  src="./France/ncov19map.js" ></script>
+
+<script>
+	var layers = [
+		[ 'ncov19_germany', GEOJSON_GERMANY ], 
+		[ 'ncov19_italy', GEOJSON_ITALY ],
+		[ 'ncov19_uk', GEOJSON_UK ],
+		[ 'ncov19_france', GEOJSON_FRANCE ]
+	];
+	var map = L.map('map').setView([51, 10], 6);
+      // I'd prefer the look of 'https://maps.wikimedia.org/osm-intl/${z}/${x}/${y}.png'
+	  // but that does not seem to work right now.
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap contributors</a>'
+      }).addTo(map);
+
+	var timerid;
+
+	// control that shows state info on hover
+	var info = L.control();
+
+	info.onAdd = function (map) {
+		this._div = L.DomUtil.create('div', 'info');
+		this.update();
+		return this._div;
+	};
+
+	function parseDate(s) {
+		dt = s.split(" ");
+		if(dt.length!=2) return "";
+		dmy = dt[0].split("/")
+		if(dmy.length!=3) return "";
+		hm = dt[1].split(":")
+		if(hm.length!=2) return "";
+		d =  new Date(Date.UTC(dmy[2],dmy[1]-1,dmy[0], hm[0], hm[1]));
+		return Intl.DateTimeFormat(undefined, { dateStyle: "short", timeStyle: "medium" }).format(d);
+	}
+
+	info.update = function (props) {
+		if (props) {
+		  var d = parseDate(props.LASTUPDATE);
+		  this._div.innerHTML = '<h4>' + props.NAME + '</h4>' + props.CASES + (props.CASES == 1 ? ' case' : ' cases')  + '<br/>' + props.POPULATION + ' pop.' + '<br/>' +props.CASESPER10000.toFixed(1)*10 + ' cases per 100.000 pop.<br/>Last update: '+d+"<br/><a href='"+props.SOURCEURL+"'>Source link</a>";
+		} else {
+		  this._div.innerHTML = 'Cases total: ' + GEOJSON_totalCases + "<br/>Last update: " + Intl.DateTimeFormat(undefined, { dateStyle: "short", timeStyle: "medium" }).format(GEOJSON_lastoverallupdate) + "<br/><br/><a href=\"https://raymondkhessel.github.io/\">More information</a>";
+		}
+	};
+
+	info.addTo(map);
+
+
+	function highlightFeature(e) {
+		var layer = e.target;
+
+		layer.setStyle({
+			weight: 2,
+			color: '#808080',
+			fillColor: '#808080'
+		});
+
+		if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+			layer.bringToFront();
+		}
+
+		info.update(layer.feature.properties);
+	}
+	
+	var geojsonlayer;
+	
+	function zoomToFeature(e) {
+		map.fitBounds(e.target.getBounds());
+	}
+	
+	function resetHighlight(e) {
+		geojsonlayer.resetStyle(e.target);
+		info.update();
+	}
+	
+	
+	function onEachFeature(feature, layer) {
+		layer.on({
+			mouseover: highlightFeature,
+			mouseout: resetHighlight,
+			click: zoomToFeature
+		});
+	}
+
+	geojsonlayer = L.geoJSON([ GEOJSON_GERMANY, GEOJSON_ITALY, GEOJSON_UK, GEOJSON_FRANCE ], {
+
+		style: function (feature) {
+			return feature.properties;
+		},
+
+		onEachFeature: onEachFeature,
+
+		pointToLayer: function (feature, latlng) {
+			return L.circleMarker(latlng, {
+				radius: 8,
+				fillColor: "#ff7800",
+				color: "#000",
+				weight: 1,
+				opacity: 1,
+				fillOpacity: 0.8
+			});
+		}
+	}).addTo(map);
+
+	var legend = L.control({position: 'bottomright'});
+
+	legend.onAdd = function (map) {
+
+		var div = L.DomUtil.create('div', 'info legend');
+		var labels = [];
+
+		for (var i = 0; i < legendColors.length; i++) {
+			from = legendColors[i].v * 10;
+			to = i>0 && i<legendColors.length-1 ? legendColors[i + 1].v*10 : false;
+
+			labels.push('<i style="background:' + legendColors[i].c + '; opacity:'+legendColors[i].o+'"></i> ' +
+				from + (to ? '&ndash;' + to : (from>0 ? '+' : '')) + "  cases per 100.000 pop.");
+		}
+
+		div.innerHTML = labels.join('<br>');
+		return div;
+	};
+
+	legend.addTo(map);
+</script>
+
+
+
+</body>
+</html>
