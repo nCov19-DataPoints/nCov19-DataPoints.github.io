@@ -50,7 +50,7 @@ jobs:
         cd ..
     - name: Run build script for France
       run: |
-        cd UK
+        cd France
         python build.py
         cd ..
         
