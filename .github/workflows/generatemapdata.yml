@@ -16,7 +16,7 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
-    if: github.actor == github.event.repository.owner.login or github.event_name == "schedule"
+    if: github.actor == github.event.repository.owner.login || github.event_name == "schedule"
     
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
