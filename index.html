@@ -40,6 +40,14 @@
 		.feedback {
 			background: rgba(255,255,255,1.0); 
 		}
+		.popup { 
+			font: 14px/20px Arial, Helvetica, sans-serif; 
+			width: 18em;
+			height: auto;
+			min-height: 8em;
+			padding: 6px 8px; 
+		}
+		.popup h4 { margin: 0 0 5px; color: #777; }
 	</style>
 
 	
@@ -94,10 +102,16 @@ var GEOJSON_lastoverallupdate = new Date(2020, 0, 1);
 		return Intl.DateTimeFormat(undefined, { dateStyle: "short", timeStyle: "medium" }).format(d);
 	}
 
+	var geojsonlayer;
+
+	function featureDescription(props) {
+		var d = parseDate(props.LASTUPDATE);
+		return '<h4>' + props.NAME + '</h4>' + props.CASES + (props.CASES == 1 ? ' case' : ' cases')  + '<br/>' + props.POPULATION + ' pop.' + '<br/>' +props.CASESPER10000.toFixed(1)*10 + ' cases per 100.000 pop.<br/>Last update: '+d+"<br/><a href='"+props.SOURCEURL+"'>Source link</a>";
+	}
+	
 	info.update = function (props) {
 		if (props) {
-		  var d = parseDate(props.LASTUPDATE);
-		  this._div.innerHTML = '<h4>' + props.NAME + '</h4>' + props.CASES + (props.CASES == 1 ? ' case' : ' cases')  + '<br/>' + props.POPULATION + ' pop.' + '<br/>' +props.CASESPER10000.toFixed(1)*10 + ' cases per 100.000 pop.<br/>Last update: '+d+"<br/><a href='"+props.SOURCEURL+"'>Source link</a>";
+		  this._div.innerHTML = featureDescription(props);
 		} else {
 		  this._div.innerHTML = 'Cases total: ' + GEOJSON_totalCases + "<br/>Last update: " + Intl.DateTimeFormat(undefined, { dateStyle: "short", timeStyle: "medium" }).format(GEOJSON_lastoverallupdate) + "<br/><br/><a href=\"https://github.com/nCov19-DataPoints/nCov19-DataPoints.github.io\">More information</a>";
 		}
@@ -133,7 +147,13 @@ var GEOJSON_lastoverallupdate = new Date(2020, 0, 1);
 		info.update(layer.feature.properties);
 	}
 	
-	var geojsonlayer;
+	function selectFeature(e) {
+		L.popup({ className: "popup", closeButton: false })
+			.setLatLng(e.latlng)
+			.setContent(featureDescription(e.target.feature.properties))
+			.openOn(map);
+		//e.target.bindPopup(featureDescription(e.target.feature.properties)).openPopup();
+	}
 	
 	function zoomToFeature(e) {
 		map.fitBounds(e.target.getBounds());
@@ -149,7 +169,8 @@ var GEOJSON_lastoverallupdate = new Date(2020, 0, 1);
 		layer.on({
 			mouseover: highlightFeature,
 			mouseout: resetHighlight,
-			click: zoomToFeature
+			click: selectFeature,
+			doubleclick: zoomToFeature
 		});
 	}
 
