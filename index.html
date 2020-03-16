@@ -117,7 +117,9 @@ var GEOJSON_lastoverallupdate = new Date(2020, 0, 1);
 		}
 	};
 
-	info.addTo(map);
+	if (!L.Browser.mobile) {
+		info.addTo(map);
+	}
 
 	// control that allows giving feedback
 	var feedback = L.control({ position: 'bottomleft' });
