@@ -17,7 +17,7 @@ I will add more detailed help soon, until then, just ask.
 The structure of the repository is currently very simple:
 
 * [index.html](./index.hmtl): the starting page if you go to http://ncov19-datapoints.github.io/, displaying the map with all the geojson files generating by the Python scripts for each country.
-* For each country (separate data set with separate sources) a folder containing (links on the example of the UK):
+* For each country representing a separate data set with separate data sources there is a folder containing the following files (as an example the links go to the UK files):
   * [build.py](./UK/build.py): the script run each day at 20:00 UTC to update the ncov19map.js file.
     * There is a helper functions "generateOutput" in [buildhelpers.py](./buildhelpers.py). Use that to save your files to make sure the map can use them even if there are any style changes etc. I will add a few checks in there later to make sure the data can be used by the map.
   * [ncov19map.js](./UK/ncov19map.js): the file used by the map in "/Cov19.html"
