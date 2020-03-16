@@ -99,7 +99,7 @@ var GEOJSON_lastoverallupdate = new Date(2020, 0, 1);
 		  var d = parseDate(props.LASTUPDATE);
 		  this._div.innerHTML = '<h4>' + props.NAME + '</h4>' + props.CASES + (props.CASES == 1 ? ' case' : ' cases')  + '<br/>' + props.POPULATION + ' pop.' + '<br/>' +props.CASESPER10000.toFixed(1)*10 + ' cases per 100.000 pop.<br/>Last update: '+d+"<br/><a href='"+props.SOURCEURL+"'>Source link</a>";
 		} else {
-		  this._div.innerHTML = 'Cases total: ' + GEOJSON_totalCases + "<br/>Last update: " + Intl.DateTimeFormat(undefined, { dateStyle: "short", timeStyle: "medium" }).format(GEOJSON_lastoverallupdate) + "<br/><br/><a href=\"https://raymondkhessel.github.io/\">More information</a>";
+		  this._div.innerHTML = 'Cases total: ' + GEOJSON_totalCases + "<br/>Last update: " + Intl.DateTimeFormat(undefined, { dateStyle: "short", timeStyle: "medium" }).format(GEOJSON_lastoverallupdate) + "<br/><br/><a href=\"https://github.com/nCov19-DataPoints/nCov19-DataPoints.github.io\">More information</a>";
 		}
 	};
 
