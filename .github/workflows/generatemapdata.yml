@@ -38,12 +38,17 @@ jobs:
         python build.py
         cd ..
         
-    - name: Run build script for Germany
+    - name: Run build script for Italy
       run: |
         cd Italy
         python build.py
         cd ..
-    - name: Run build script for Germany
+    - name: Run build script for UK
+      run: |
+        cd UK
+        python build.py
+        cd ..
+    - name: Run build script for France
       run: |
         cd UK
         python build.py
