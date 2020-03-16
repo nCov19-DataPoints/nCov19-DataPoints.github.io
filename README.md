@@ -24,3 +24,21 @@ The structure of the repository is currently very simple:
   * [ncov19.geojson](./UK/ncov19.geojson) contains the same data as the ncov19map.js file, just without the minor JavaScript additions which make the data digestible to the Cov19.html file.
   * [ncov19.csv](./UK/ncov19.csv) contains the raw nCov19 data, this is useful for debugging. Or maybe somebody else wants to do something with that data.
 
+## Thanks
+Many thanks must go to the people gathering all the information which makes projects like this possible:
+
+* Of course the [JHU repository](https://github.com/CSSEGISandData/2019-nCoV) is awesome.
+* For France the [OpenCOVID19 France](https://github.com/opencovid19-fr) repository is a very good data source! They also have a very nice [dashboard](https://veille-coronavirus.fr/) for their data. I just wish the departements would not lag the regions, but that is complaining on a very high level.
+* For Italy and England there are official data sources in a digestible format - a hurray to the civil servants doing that:
+  * Italy: https://github.com/pcm-dpc/COVID-19
+  * England: https://www.arcgis.com/home/item.html?id=e5fd11150d274bebaaf8fe2a7a2bda11 - though it would be nice if England would do the data more fine-grained - areas with a population of more than 1 million tend to obscure hotspots in the map.
+* For Germany I still manually(!) crawl through the various Gesundheitsministerien der Länder - the links are displayed on the map and in the csv file, if you are curious. 
+  * Kudos to the people in those places gathering data.   
+  * The [RKI](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html) has the numbers in digital form and publishes them (and a map much like this one) in their [daily updates](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Situationsberichte/Gesamt.html) but unfortunately does not publish it on "Landkreis" granularity in a machine-readable form. If one of the dedicated civil servants doing overtime right now reads this: it would be awesome if you could just upload a csv with the data with the daily update. Please, please, pretty please with sugar on the top?
+  * If you need the data, feel free to use [the csv-file](./Germany/ncov19.csv). I aim to update it once a day, usually in the evening, to the best of my abilites. Once the RKI publishes the information, I will use that, but you will still be able to use the CSV file.
+* Many thanks to all the people who refined the geojson data and made it ready-to-use:
+  * Germany: http://opendatalab.de/projects/geojson-utilities/
+  * Italy: https://github.com/openpolis/geojson-italy
+  * France: https://github.com/gregoiredavid/france-geojson
+  * UK: https://github.com/martinjc/UK-GeoJSON
+  * And https://github.com/mbloch/mapshaper is a very cool tool, if the too detailed geojson brings the browser to a crawl.
