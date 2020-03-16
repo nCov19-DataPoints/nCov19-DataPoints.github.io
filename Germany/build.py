@@ -19,11 +19,11 @@ landkreissubst = {
     "Mülheim / Ruhr": "Mülheim an der Ruhr",
     "Nienburg": "Nienburg (Weser)",
     "Rotenburg": "Rotenburg (Wümme)",
+    "Wunsiedel i.Fichtelgebirge": "Wunsiedel i. Fichtelgebirge",
     
     "Frankfurt": "Frankfurt am Main",
     "Offenbach (Landkreis)": "Offenbach", 
     "Offenbach (Stadt)": "Offenbach am Main",
-    "Region Kassel": "Kassel Landkreis",
     "Landeshauptstadt Dresden": "Dresden",
     "Pfaffenhofen a.d.Ilm": "Pfaffenhofen a.d. Ilm",
     "Neumarkt i.d.Opf.": "Neumarkt i.d. OPf.",
@@ -61,7 +61,7 @@ def readNewCSV():
             landkreis = landkreis.replace(" (kreisfreie Stadt)"," Stadt")
             landkreis = landkreis.replace(" (Stadtkreis)"," Stadt")
             numcaseslookup[landkreis] = [int(ncovdatapoint[2]) if (ncovdatapoint[2] != "" and ncovdatapoint[2] != "-") else 0, ncovdatapoint[4], ncovdatapoint[3]]
-        with open("ncov19.csv","w") as f:
+        with open("ncov19.csv","w",encoding="utf-8") as f:
             f.write("Names,Cases\n")
             for n in numcaseslookup:
                 pn = n.replace(" (district)", "")
@@ -174,6 +174,6 @@ with open("landkreise_simplify200_simplified.geojson", "r", encoding="utf-8") as
             print("Not found: '"+key+"' ('"+str(key.encode('unicode-escape'))+"') Cases: ",numcaseslookup[key])
         print("GEOJSON contains the following unmatched names:")
         for n in unmatchedgeojsonnames:
-            print("'"+n+"' ('"+str(n.encode('unicode-escape'))+"')")
+            print("'"+n+"' ('"+str(n.encode('unicode-escape'))+"') "+p["BEZ"])
             
 buildhelpers.generateOutput("GERMANY", geojsondata, totalCases, updatetime)
