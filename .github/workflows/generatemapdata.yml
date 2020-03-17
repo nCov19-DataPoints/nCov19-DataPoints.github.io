@@ -31,13 +31,15 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
+    - name: Install BeautifulSoup
+      run: |
+        python -m pip install bs4
+        
     - name: Run build script for Germany
       run: |
         cd Germany
-        python -m pip install bs4
         python build.py
-        cd ..
-        
+        cd ..       
     - name: Run build script for Italy
       run: |
         cd Italy
@@ -51,6 +53,11 @@ jobs:
     - name: Run build script for France
       run: |
         cd France
+        python build.py
+        cd ..
+    - name: Run build script for Switzerland
+      run: |
+        cd Switzerland
         python build.py
         cd ..
         
