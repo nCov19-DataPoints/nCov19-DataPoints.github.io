@@ -158,11 +158,18 @@ var GEOJSON_lastoverallupdate = new Date(2020, 0, 1);
 		info.update(layer.feature.properties);
 	}
 	
+	var featurePopup = null;
 	function selectFeature(e) {
-		L.popup({ className: "popup", closeButton: false })
-			.setLatLng(e.latlng)
-			.setContent(featureDescription(e.target.feature.properties))
-			.openOn(map);
+		if(featurePopup != null) {
+			featurePopup.closePopup();
+			featurePopup = null;
+		}
+		else {
+			featurePopup = L.popup({ className: "popup", closeButton: false })
+				.setLatLng(e.latlng)
+				.setContent(featureDescription(e.target.feature.properties))
+				.openOn(map);
+		}
 	}
 	
 	function zoomToFeature(e) {
