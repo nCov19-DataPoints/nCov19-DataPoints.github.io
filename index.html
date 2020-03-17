@@ -32,11 +32,20 @@
 		}
 		.info h4 { margin: 0 0 5px; color: #777; }
 		.legend { 
+			font: 14px/14px Arial, Helvetica, sans-serif; 
+			padding: 6px 8px; 
 			text-align: left; 
 			line-height: 18px; 
 			color: #555; 
+			background: rgba(255,255,255,0.6); 
+			border-radius: 3px; 
+			transition: all 0.5s; 
+			height: 29ex;
+			width: 18em;
 		} 
+		.legend.collapsed { height: 2ex; width: 4em; }
 		.legend i { width: 18px; height: 18px; float: left; margin-right: 8px; opacity: 0.7; }
+		.legend h4 { margin: 0 0 5px; color: #777; }
 		.feedback {
 			background: rgba(255,255,255,1.0); 
 		}
@@ -154,7 +163,6 @@ var GEOJSON_lastoverallupdate = new Date(2020, 0, 1);
 			.setLatLng(e.latlng)
 			.setContent(featureDescription(e.target.feature.properties))
 			.openOn(map);
-		//e.target.bindPopup(featureDescription(e.target.feature.properties)).openPopup();
 	}
 	
 	function zoomToFeature(e) {
@@ -196,13 +204,9 @@ var GEOJSON_lastoverallupdate = new Date(2020, 0, 1);
 		}
 	}).addTo(map);
 
-	var legend = L.control({position: 'bottomright'});
-
-	legend.onAdd = function (map) {
-
-		var div = L.DomUtil.create('div', 'info legend');
+	function expandedLegendText() {
 		var labels = [];
-
+		
 		for (var i = 0; i < legendColors.length; i++) {
 			from = legendColors[i].v * 10;
 			to = i>0 && i<legendColors.length-1 ? legendColors[i + 1].v*10 : false;
@@ -211,8 +215,49 @@ var GEOJSON_lastoverallupdate = new Date(2020, 0, 1);
 				from + (to ? '&ndash;' + to : (from>0 ? '+' : '')) + "  cases per 100.000 pop.");
 		}
 
-		div.innerHTML = labels.join('<br>');
-		return div;
+		return "<h4>Legend</h4>"+labels.join('<br>');	
+	}
+	
+	var legend = L.control({
+		position: 'bottomright',
+		events: {
+			click: function (e) {
+				legend.update(!legend._legendExpanded);
+			},
+			transitionend: function(e) {
+				if(legend._legendExpanded) {
+					legend._div.innerHTML = expandedLegendText();	
+				}			
+			}
+		}
+	});
+
+	legend.update = function (expanded) {
+		this._legendExpanded = expanded;
+		if(!this._legendExpanded) {
+			legend._div.innerHTML = "<h4>Legend</h4>";
+			L.DomUtil.addClass(legend._div, "collapsed");
+		}
+		else {
+			L.DomUtil.removeClass(legend._div, "collapsed");
+		}
+	};
+
+
+	legend.onAdd = function (map) {
+		this._div = L.DomUtil.create('div', 'legend');
+		L.DomEvent.disableClickPropagation(this._div);
+			
+		for (var event in this.options.events) {
+			L.DomEvent.on(this._div, event, this.options.events[event], this._div);
+		}
+
+		this.update(!L.Browser.mobile);
+		if(this._legendExpanded) {
+			legend._div.innerHTML = expandedLegendText();	
+		}
+		
+		return this._div;
 	};
 
 	legend.addTo(map);
