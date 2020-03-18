@@ -37,6 +37,7 @@ landkreissubst = {
     "Karlsruhe": "Karlsruhe Landkreis",
     "Mühldorf a.Inn": "Mühldorf a. Inn",
     "Rosenheim": "Rosenheim Landkreis",
+    "Schweinfurt": "Schweinfurt Landkreis",
 
     "Frankfurt": "Frankfurt am Main",
     "Offenbach (Landkreis)": "Offenbach", 
@@ -49,6 +50,7 @@ landkreissubst = {
     "Brandenburg a. d. Havel": "Brandenburg an der Havel",
     "Bad Tölz": "Bad Tölz-Wolfratshausen",
     "Halle": "Halle (Saale)",
+    "Kassel": "Region Kassel"
     }
 
 def readNewCSV():
