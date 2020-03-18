@@ -21,7 +21,21 @@ colortable = [
      {"t":25.0, "c":{"r":255,"g":0,"b":0,"a":0.5} },
      {"t":100.0, "c":{"r":255,"g":0,"b":128,"a":0.5} }
     ]
-def calculateColor(v):
+colortableoutdated = [
+    {"t": 0, "c": {"r": 102, "g": 153, "b": 102, "a": 0.1}},
+    {"t": 0.1, "c": {"r": 128, "g": 153, "b": 102, "a": 0.1}},
+    {"t": 0.25, "c": {"r": 153, "g": 153, "b": 102, "a": 0.1}},
+    {"t": 0.5, "c": {"r": 153, "g": 145, "b": 102, "a": 0.2}},
+    {"t": 1.0, "c": {"r": 153, "g": 140, "b": 102, "a": 0.3}},
+    {"t": 2.5, "c": {"r": 153, "g": 128, "b": 102, "a": 0.3}},
+    {"t": 5.0, "c": {"r": 153, "g": 102, "b": 102, "a": 0.3}},
+    {"t": 10.0, "c": {"r": 153, "g": 102, "b": 102, "a": 0.4}},
+    {"t": 25.0, "c": {"r": 153, "g": 102, "b": 102, "a": 0.5}},
+    {"t": 100.0, "c": {"r": 153, "g": 102, "b": 128, "a": 0.5}}
+]
+
+
+def calculateColor(colortable,v):
     indexge = len(colortable)
     for i in range(0,len(colortable)):
         if v<=colortable[i]["t"]:
@@ -85,7 +99,8 @@ def processGEOJSON(country, geojsonfilename, geojsonprop_caseskey, geojsonprop_i
             p["POPULATION"] = populationlookup[name] if isinstance(populationlookup, dict) else populationlookup(f)
             p["CASESPER10000"] = p["CASES"] / p["POPULATION"] * 10000
             p["SOURCEURL"] = v.sourceurl
-            fillColor = calculateColor(p["CASESPER10000"])
+            colors = colortable if v.timestamp + datetime.timedelta(hours=48) > datetime.datetime.now(datetime.timezone.utc) else colortableoutdated
+            fillColor = calculateColor(colors,p["CASESPER10000"])
             p["fill"] = True
             p["fillColor"] = "#{0:02x}{1:02x}{2:02x}".format(fillColor.r,fillColor.g,fillColor.b)
             p["fillOpacity"] = fillColor.a
