@@ -3,16 +3,17 @@ import csv
 from io import StringIO
 import json
 import datetime
+import pytz
 from collections import namedtuple
 import sys
 sys.path.append('../')
-import buildhelpers
+from buildhelpers import datapoint, processGEOJSON
+
 import re
 import locale
 from bs4 import BeautifulSoup
 
-numcaseslookup = dict()
-lastupdate = ""
+CET = pytz.timezone('CET')
 
 landkreissubst = {
     "Aachen & Städteregion Aachen": "Städteregion Aachen",
@@ -20,7 +21,23 @@ landkreissubst = {
     "Nienburg": "Nienburg (Weser)",
     "Rotenburg": "Rotenburg (Wümme)",
     "Wunsiedel i.Fichtelgebirge": "Wunsiedel i. Fichtelgebirge",
-    
+    "Oldenburg": "Oldenburg Stadt",
+    "Aschaffenburg": "Aschaffenburg Landkreis",
+    "Augsburg": "Augsburg Landkreis",
+    "Bamberg": "Bamberg Landkreis",
+    "Fürth": "Fürth Landkreis",
+    "Hof": "Hof Landkreis",
+    "Landshut": "Landshut Landkreis",
+    "München": "München Landkreis",
+    "Passau": "Passau Landkreis",
+    "Regensburg": "Regensburg Landkreis",
+    "Würzburg": "Würzburg Landkreis",
+    "Kaiserslautern": "Kaiserslautern Landkreis",
+    "Heilbronn": "Heilbronn Landkreis",
+    "Karlsruhe": "Karlsruhe Landkreis",
+    "Mühldorf a.Inn": "Mühldorf a. Inn",
+    "Rosenheim": "Rosenheim Landkreis",
+
     "Frankfurt": "Frankfurt am Main",
     "Offenbach (Landkreis)": "Offenbach", 
     "Offenbach (Stadt)": "Offenbach am Main",
@@ -31,10 +48,12 @@ landkreissubst = {
     "Weiden Stadt": "Weiden i.d. OPf.",
     "Brandenburg a. d. Havel": "Brandenburg an der Havel",
     "Bad Tölz": "Bad Tölz-Wolfratshausen",
-    "Halle": "Halle (Saale)"
+    "Halle": "Halle (Saale)",
     }
 
 def readNewCSV():
+    numcaseslookup = dict()
+
     url="https://script.google.com/macros/s/AKfycbwGDICHD1yhtgqXelmnAvsobEqxYuTpZVBxow8x0HA9x34eoDnv/exec"
     response = urllib.request.urlopen(url)
     data = response.read()
@@ -50,7 +69,7 @@ def readNewCSV():
             try:
                 landkreis = landkreissubst[landkreis]
             except:
-                pass
+                pass            
             landkreis = landkreis.replace(" (Stadt)"," Stadt")
             landkreis = landkreis.replace(" (Land)"," Landkreis")
             landkreis = landkreis.replace(" (Kreis)"," Landkreis")
@@ -60,12 +79,14 @@ def readNewCSV():
                 landkreis = landkreis.replace("Stadt ","") + " Stadt"
             landkreis = landkreis.replace(" (kreisfreie Stadt)"," Stadt")
             landkreis = landkreis.replace(" (Stadtkreis)"," Stadt")
-            numcaseslookup[landkreis] = [int(ncovdatapoint[2]) if (ncovdatapoint[2] != "" and ncovdatapoint[2] != "-") else 0, ncovdatapoint[4], ncovdatapoint[3]]
-        with open("ncov19.csv","w",encoding="utf-8") as f:
-            f.write("Names,Cases\n")
-            for n in numcaseslookup:
-                pn = n.replace(" (district)", "")
-                f.write(pn+","+str(numcaseslookup[n])+"\n")
+            d = CET.localize(datetime.datetime.strptime(ncovdatapoint[4], "%d/%m/%Y %H:%M"))
+            numcaseslookup[landkreis] = datapoint(
+                numcases=int(ncovdatapoint[2]) if (ncovdatapoint[2] != "" and ncovdatapoint[2] != "-") else 0,
+                timestamp=d,
+                sourceurl=ncovdatapoint[3]
+                )
+               
+    return numcaseslookup
 
 def parseDateTimeWithLocale(datetext, dateformat, datelocale):
   lc = locale.setlocale(locale.LC_TIME)
@@ -76,6 +97,7 @@ def parseDateTimeWithLocale(datetext, dateformat, datelocale):
     locale.setlocale(locale.LC_TIME, lc)
     
 def scrapeOfficialNumbers():
+    numcaseslookup = dict()
     url="http://www.mags.nrw/coronavirus-fallzahlen-nrw"
     response = urllib.request.urlopen(url)
     urldata = response.read()
@@ -119,61 +141,52 @@ def scrapeOfficialNumbers():
         
         faelle = cols[1].text.strip()        
         
-        numcaseslookup[landkreis] = [int(faelle) if (faelle != "" and faelle != "-") else 0, datetext, url]
+        numcaseslookup[landkreis] = [int(faelle) if (faelle != "" and faelle != "-") else 0, datetext, url]        
 
     print(numcaseslookup)
-    
-    with open("ncov19.csv","w") as f:
-        f.write("Names,Cases\n")
-        for n in numcaseslookup:
-            pn = n.replace(" (district)", "")
-            f.write(pn+","+str(numcaseslookup[n])+"\n")    
 
-readNewCSV()
-#scrapeOfficialNumbers()
+    return numcaseslookup
 
-with open("landkreise_simplify200_simplified.geojson", "r", encoding="utf-8") as source:
-    geojsondata = json.load(source)
-    totalCases = 0
-    updatetime = datetime.datetime(2020,1,1)
-    unmatchedgeojsonnames = []
+def eliminateAmbiguousNames(geojsondata):
+    allnames = dict()
     for f in geojsondata["features"]:
         p = f["properties"]
-        name = p["GEN"]        
-        if p["BEZ"]=="Landkreis" or p["BEZ"]=="Kreis":
-          name = name + " Landkreis"        
+        n = p["GEN"]
+        if n=="Oldenburg (Oldb)":
+            n = "Oldenburg Stadt"
+            p["GEN"] = n
+        elif n in allnames and allnames[n]!=p["RS"]:
+            if p["BEZ"]=="Landkreis" or p["BEZ"]=="Kreis":
+              unambiguousname = n + " Landkreis"        
+            else:
+              unambiguousname = n + " Stadt"        
+            p["GEN"] = unambiguousname
         else:
-          name = name + " Stadt"
-        v = [0, "", ""]
+            allnames[p["GEN"]] = p["RS"]
+
+def geojsonprop_caseskey(f, numcaseslookup):
+    p = f["properties"]
+    try:
+        name = p["GEN"]
         try:
+            if p["BEZ"]=="Landkreis" or p["BEZ"]=="Kreis":
+              name2 = name + " Landkreis"        
+            else:
+              name2 = name + " Stadt"        
+            v = numcaseslookup.pop(name2)
+            name = name2
+        except:            
             v = numcaseslookup.pop(name)
-        except:
-            try:
-                origname = p["GEN"]
-                v = numcaseslookup.pop(origname)
-                name = origname
-            except:
-                unmatchedgeojsonnames.append(name)
-        p["NAME"] = name
-        p["ID"] = p["RS"]
-        p["CASES"] = v[0]
-        if v[1] != "":
-            d = datetime.datetime.strptime(v[1],"%d/%m/%Y %H:%M")
-            if updatetime<d:
-                updatetime = d
-            p["LASTUPDATE"] = d.strftime(buildhelpers.dateformat)
-        else:
-            p["LASTUPDATE"] = ""
-        p["POPULATION"] = p["destatis"]["population"]
-        p["CASESPER10000"] = p["CASES"] / p["POPULATION"] * 10000
-        p["SOURCEURL"] = v[2]
-        buildhelpers.addstyle(p)
-        totalCases = totalCases + p["CASES"]
-    if len(numcaseslookup)>0:
-        for key in numcaseslookup:
-            print("Not found: '"+key+"' ('"+str(key.encode('unicode-escape'))+"') Cases: ",numcaseslookup[key])
-        print("GEOJSON contains the following unmatched names:")
-        for n in unmatchedgeojsonnames:
-            print("'"+n+"' ('"+str(n.encode('unicode-escape'))+"') "+p["BEZ"])
-            
-buildhelpers.generateOutput("GERMANY", geojsondata, totalCases, updatetime)
+    except:
+        name = p["GEN"]
+        v = None
+    return name,v
+
+numcaseslookup = readNewCSV()
+#numcaseslookup = scrapeOfficialNumbers()
+processGEOJSON("GERMANY", "landkreise_simplify200_simplified.geojson",
+               geojsonprop_caseskey,
+               "RS", numcaseslookup,
+               lambda f: f["properties"]["destatis"]["population"],
+               eliminateAmbiguousNames)
+

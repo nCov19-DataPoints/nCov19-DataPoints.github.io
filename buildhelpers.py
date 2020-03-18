@@ -3,7 +3,10 @@ import csv
 from io import StringIO
 import json
 import datetime
+import pytz
 from collections import namedtuple
+
+CET = pytz.timezone('CET')
 
 Color = namedtuple("Color",['r','g','b','a'])
 colortable = [
@@ -37,8 +40,65 @@ def calculateColor(v):
         int(fl*l["b"]+fh*h["b"]),
         fl*l["a"]+fh*h["a"]
         )
+      
+class datapoint:
+    def __init__(self, numcases, timestamp, sourceurl):
+        self.numcases = numcases
+        self.timestamp = timestamp
+        self.sourceurl = sourceurl
+       
+    def __str__(self):
+        return "datapoint(numcases="+str(self.numcases)+",timestamp="+self.timestamp.isoformat()+",sourceurl='"+self.sourceurl+"'"
+        
+def processGEOJSON(country, geojsonfilename, geojsonprop_caseskey, geojsonprop_id, numcaseslookup, populationlookup, preprocessgeojson = None):
+    totalCases = 0
+    mostrecentupdate = max(numcaseslookup[n].timestamp for n in numcaseslookup)
 
-def generateOutput(country, geojsondata, totalCases, updatetime):
+    with open("ncov19.csv","w") as f:
+        f.write("Names,Cases\n")
+        for n in numcaseslookup:
+            f.write(n + "," + str(numcaseslookup[n].numcases) + "," + numcaseslookup[n].timestamp.isoformat() + "," + numcaseslookup[n].sourceurl+"\n")
+
+    with open(geojsonfilename, "r", encoding="utf-8") as source:
+        geojsondata = json.load(source)
+                
+        if preprocessgeojson:
+           preprocessgeojson(geojsondata)
+        unmatchedgeojsonnames = []
+        for f in geojsondata["features"]:
+            p = f["properties"]
+            if isinstance(geojsonprop_caseskey, str):
+                name = p[geojsonprop_caseskey]    
+                try:
+                    v = numcaseslookup.pop(name)
+                except:
+                    v = None
+            else:
+                name, v = geojsonprop_caseskey(f, numcaseslookup)
+            if v==None:
+                v = datapoint(numcases = 0, timestamp = mostrecentupdate, sourceurl = "")
+                unmatchedgeojsonnames.append(name)
+            p["NAME"] = name
+            p["ID"] = p[geojsonprop_id] if isinstance(geojsonprop_id, str) else geojsonprop_id(f)
+            p["CASES"] = v.numcases
+            p["LASTUPDATE"] = v.timestamp.isoformat()
+            p["POPULATION"] = populationlookup[name] if isinstance(populationlookup, dict) else populationlookup(f)
+            p["CASESPER10000"] = p["CASES"] / p["POPULATION"] * 10000
+            p["SOURCEURL"] = v.sourceurl
+            fillColor = calculateColor(p["CASESPER10000"])
+            p["fill"] = True
+            p["fillColor"] = "#{0:02x}{1:02x}{2:02x}".format(fillColor.r,fillColor.g,fillColor.b)
+            p["fillOpacity"] = fillColor.a
+            p["weight"] = 1
+            p["opacity"] = 0.3
+            totalCases = totalCases + p["CASES"]
+        if len(numcaseslookup)>0:
+            for key in numcaseslookup:
+                print("Not found: '"+key+"' ('"+str(key.encode('unicode-escape'))+"') Datapoint: ",numcaseslookup[key])
+            print("GEOJSON contains the following unmatched names:")
+            for n in unmatchedgeojsonnames:
+                print("'"+n+"' ('"+str(n.encode('unicode-escape'))+"')")
+        
     print(country+": assigned "+str(totalCases)+" cases to geojson features.")
 
     with open("ncov19map.geojson", "w") as dest:
@@ -49,7 +109,9 @@ def generateOutput(country, geojsondata, totalCases, updatetime):
         json.dump(geojsondata,dest)
         dest.write(";")
         dest.write("\nGEOJSON_totalCases=GEOJSON_totalCases+"+str(totalCases))
-        dest.write("\nGEOJSON_lastoverallupdate=new Date(Math.max("+str((updatetime - datetime.datetime(1970,1,1)).total_seconds()*1000)+",GEOJSON_lastoverallupdate.valueOf()));")
+        dest.write("\nGEOJSON_lastoverallupdate=new Date(Math.max("+str((mostrecentupdate - datetime.datetime(1970,1,1, tzinfo=datetime.timezone.utc)).total_seconds()*1000)+",GEOJSON_lastoverallupdate.valueOf()));")
+        now = datetime.datetime.utcnow()
+        dest.write("\nGEOJSON_lastbuildrunutc=new Date(Math.max(Date.UTC("+str(now.year)+","+str(now.month-1)+","+str(now.day)+","+str(now.hour)+","+str(now.minute)+","+str(now.second)+"),GEOJSON_lastbuildrunutc));")
         dest.write("\nlegendColors=[")
         for i in range(0,len(colortable)):
             dest.write("\n  {{ v:{0},c:\"#{1:02x}{2:02x}{3:02x}\",o:{4} }}".format(colortable[i]["t"],colortable[i]["c"]["r"],colortable[i]["c"]["g"],colortable[i]["c"]["b"],colortable[i]["c"]["a"]))
@@ -59,12 +121,3 @@ def generateOutput(country, geojsondata, totalCases, updatetime):
     print("Completed exporting "+country)
 
 
-def addstyle(p):
-    fillColor = calculateColor(p["CASESPER10000"])
-    p["fill"] = True
-    p["fillColor"] = "#{0:02x}{1:02x}{2:02x}".format(fillColor.r,fillColor.g,fillColor.b)
-    p["fillOpacity"] = fillColor.a
-    p["weight"] = 1
-    p["opacity"] = 0.3
-    
-dateformat = "%d/%m/%Y %H:%M"

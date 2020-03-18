@@ -3,11 +3,13 @@ import csv
 from io import StringIO
 import json
 import datetime
+import pytz
 from collections import namedtuple
 import sys
 sys.path.append('../')
 import buildhelpers
 
+CET = pytz.timezone('CET')
 
 regionpop = {
 	"Île-de-France":12117132,
@@ -140,15 +142,9 @@ regiongeojson = "./regions-avec-outre-mer_simplified.geojson"
 #departementgeojson = "./departements-version-simplifiee.geojson"
 departementgeojson = "./departements-avec-outre-mer_simplified.geojson"
 
-francegeojson = ""
-francepop = dict()
-numcaseslookup = dict()
-lastupdate = ""
-
 def readNewCSV():
-    global numcaseslookup
-    global francegeojson
-    global francepop
+    numcaseslookup = dict()
+    
     namesubst = {
         "Ile-de-France": "Île-de-France",
         "Provence-Alpes-Côte d’Azur": "Provence-Alpes-Côte d'Azur",
@@ -156,33 +152,23 @@ def readNewCSV():
         "Vendee": "Vendée",
         "Territoire-de-Belfort": "Territoire de Belfort",
         "Essone": "Essonne",
-        "Saint-Saint-Denis": "Seine-Saint-Denis"
+        "Saint-Saint-Denis": "Seine-Saint-Denis",
+        "Corse du Sud": "Corse-du-Sud"
         }
     url="https://github.com/opencovid19-fr/data/raw/master/dist/chiffres-cles.csv"
     response = urllib.request.urlopen(url)
     data = response.read()
     text = data.decode('utf-8')
 
-    latestdate = ""
     with StringIO(text) as f:
-        # Find latest date
-        csvreader = csv.reader(f, delimiter=',')
-        for ncovdatapoint in csvreader:
-            if ncovdatapoint[1] != "departement": # and ncovdatapoint[1] != "region":  departements seem to be one day delayed. accept that for now for the better granularity.
-                continue
-            latestdate = ncovdatapoint[0]
-
-    d = datetime.datetime.strptime(latestdate, "%Y-%m-%d")
-
-    with StringIO(text) as f:
-        # Gather departements and regions, preferably use departements but only if the data is current
+        # Gather departements and regions, for now use departements even though the data is not quite as current
         numcasesregion = dict()
         numcasesdepartement = dict()
         csvreader = csv.reader(f, delimiter=',')
         for ncovdatapoint in csvreader:
             if ncovdatapoint[1] != "region" and ncovdatapoint[1] != "departement":
                 continue
-            d = datetime.datetime.strptime(ncovdatapoint[0], "%Y-%m-%d")
+            d = CET.localize(datetime.datetime.strptime(ncovdatapoint[0], "%Y-%m-%d"))
             name = ncovdatapoint[3].strip();
             if name=="Côtes d'Armor": # duplicate? There is also Côtes-d'Armor with the same ID
                 continue
@@ -190,12 +176,16 @@ def readNewCSV():
                 name = namesubst[name]
             except:
                 pass
-            v = [int(ncovdatapoint[4]) if ncovdatapoint[4] != "" else 0, d, ncovdatapoint[7]]
+            v = buildhelpers.datapoint(
+                numcases = int(ncovdatapoint[4]) if ncovdatapoint[4] != "" else 0,
+                timestamp = d,
+                sourceurl = ncovdatapoint[7]
+                )
             if ncovdatapoint[1] == "departement":           
-                if not (name in numcasesdepartement) or d>numcasesdepartement[name][1]:
+                if not (name in numcasesdepartement) or d>numcasesdepartement[name].timestamp:
                     numcasesdepartement[name] = v
             else:
-                if not (name in numcasesregion) or d>numcasesregion[name][1]:
+                if not (name in numcasesregion) or d>numcasesregion[name].timestamp:
                     numcasesregion[name] = v
         if len(numcasesdepartement)>0:
             numcaseslookup = numcasesdepartement
@@ -205,49 +195,11 @@ def readNewCSV():
             numcaseslookup = numcasesregion
             francepop = regionpop
             francegeojson = regiongeojson
-        for n in numcaseslookup:
-            numcaseslookup[n][1] = numcaseslookup[n][1].strftime(buildhelpers.dateformat)
-        with open("ncov19.csv","w") as f:
-            f.write("Names,Cases\n")
-            for n in numcaseslookup:
-                f.write(n+","+str(numcaseslookup[n])+"\n")
 
-readNewCSV()
+    return numcaseslookup, francegeojson, francepop
 
-with open(francegeojson, "r", encoding="utf-8") as source:
-    geojsondata = json.load(source)
-    totalCases = 0
-    updatetime = datetime.datetime(2020,1,1)
-    unmatchedgeojsonnames = []
-    for f in geojsondata["features"]:
-        p = f["properties"]
-        name = p["nom"]
-        v = [0, "", ""]
-        try:
-            v = numcaseslookup.pop(name)
-        except:
-            unmatchedgeojsonnames.append(name)
-        p["NAME"] = name
-        p["ID"] = p["code"]
-        p["CASES"] = v[0]
-        if v[1] != "":
-            d = datetime.datetime.strptime(v[1],"%d/%m/%Y %H:%M")
-            if updatetime<d:
-                updatetime = d
-            p["LASTUPDATE"] = d.strftime(buildhelpers.dateformat)
-        else:
-            p["LASTUPDATE"] = ""      
-        p["POPULATION"] = francepop[name]
-        p["CASESPER10000"] = p["CASES"] / p["POPULATION"] * 10000
-        p["SOURCEURL"] = v[2]
-        buildhelpers.addstyle(p)
-        totalCases = totalCases + p["CASES"]
-    if len(numcaseslookup)>0:
-        for key in numcaseslookup:
-            print("Not found: '"+key+"' ('"+str(key.encode('unicode-escape'))+"') Cases: ",numcaseslookup[key])
-        print("GEOJSON contains the following unmatched names:")
-        for n in unmatchedgeojsonnames:
-            print("'"+n+"' ('"+str(n.encode('unicode-escape'))+"')")
+numcaseslookup, francegeojson, francepop = readNewCSV()
 
-buildhelpers.generateOutput("FRANCE", geojsondata, totalCases, updatetime)
+buildhelpers.processGEOJSON("FRANCE", francegeojson,"nom", "code", numcaseslookup, francepop)
+
        

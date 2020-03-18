@@ -3,44 +3,12 @@ import csv
 from io import StringIO
 import json
 import datetime
+import pytz
 from collections import namedtuple
 import sys
 sys.path.append('../')
 import buildhelpers
 
-numcaseslookup = dict()
-lastupdate = ""
-
-def readNewCSV():
-    landkreissubst = {
-        "Bolzano": "Bolzano/Bozen",
-        "ForlÃ¬-Cesena": "Forlì-Cesena",
-        "Massa Carrara": "Massa-Carrara",
-        "Aosta": "Valle d'Aosta/Vallée d'Aoste"
-        }
-    url="https://github.com/pcm-dpc/COVID-19/raw/master/dati-province/dpc-covid19-ita-province.csv"
-    response = urllib.request.urlopen(url)
-    data = response.read()
-    text = data.decode('utf-8')
-        
-    with StringIO(text) as f:
-        csvreader = csv.reader(f, delimiter=',')
-        for ncovdatapoint in csvreader:
-            landkreis = ncovdatapoint[5].strip();            
-            if landkreis == "denominazione_provincia" or landkreis == "" or landkreis == "In fase di definizione/aggiornamento":
-                continue
-            try:
-                landkreis = landkreissubst[landkreis]
-            except:
-                pass
-            numcaseslookup[landkreis] = [int(ncovdatapoint[9]) if ncovdatapoint[9] != "" else 0, ncovdatapoint[0].strip(), "https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv"]
-        with open("ncov19.csv","w") as f:
-            f.write("Names,Cases\n")
-            for n in numcaseslookup:
-                f.write(n+","+str(numcaseslookup[n])+"\n")
-
-readNewCSV()
-        
 italypop = {
     "Agrigento":438276,
     "Alessandria":424174,
@@ -150,36 +118,42 @@ italypop = {
     "Vicenza":870740,
     "Viterbo":320294
 }
-        
-with open("limits_IT_provinces_simplified.geojson", "r", encoding="utf-8") as source:
-    geojsondata = json.load(source)
-    totalCases = 0
-    updatetime = datetime.datetime(2020,1,1)
-    for f in geojsondata["features"]:
-        p = f["properties"]
-        name = p["prov_name"]        
-        v = [0, "", ""]
-        try:
-            v = numcaseslookup.pop(name)
-        except:
-            pass
-        p["NAME"] = name
-        p["ID"] = p["prov_istat_code"]
-        p["CASES"] = v[0]
-        if v[1] != "":
-            d = datetime.datetime.strptime(v[1],"%Y-%m-%d %H:%M:%S")
-            if updatetime<d:
-                updatetime = d
-            p["LASTUPDATE"] = d.strftime(buildhelpers.dateformat)
-        else:
-            p["LASTUPDATE"] = ""
-        p["POPULATION"] = italypop[name]
-        p["CASESPER10000"] = p["CASES"] / p["POPULATION"] * 10000
-        p["SOURCEURL"] = v[2]        
-        buildhelpers.addstyle(p)
-        totalCases = totalCases + p["CASES"]
-    for key in numcaseslookup:
-        print("Not found: '"+key+"' Cases: ",numcaseslookup[key])
 
-buildhelpers.generateOutput("ITALY", geojsondata, totalCases, updatetime)
+CET = pytz.timezone('CET')
+
+def readNewCSV():
+    namesubst = {
+        "Bolzano": "Bolzano/Bozen",
+        "ForlÃ¬-Cesena": "Forlì-Cesena",
+        "Massa Carrara": "Massa-Carrara",
+        "Aosta": "Valle d'Aosta/Vallée d'Aoste"
+        }
+    url="https://github.com/pcm-dpc/COVID-19/raw/master/dati-province/dpc-covid19-ita-province.csv"
+    response = urllib.request.urlopen(url)
+    data = response.read()
+    text = data.decode('utf-8')
+
+    numcaseslookup = dict()
+    with StringIO(text) as f:
+        csvreader = csv.reader(f, delimiter=',')
+        for ncovdatapoint in csvreader:
+            name = ncovdatapoint[5].strip();            
+            if name == "denominazione_provincia" or name == "" or name == "In fase di definizione/aggiornamento":
+                continue
+            try:
+                name = namesubst[name]
+            except:
+                pass
+            d = CET.localize(datetime.datetime.strptime(ncovdatapoint[0].strip(),"%Y-%m-%d %H:%M:%S"))
+            numcaseslookup[name] = buildhelpers.datapoint(
+                numcases= int(ncovdatapoint[9]) if ncovdatapoint[9] != "" else 0,
+                timestamp= d,
+                sourceurl= "https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv"
+            )
+            
+    return numcaseslookup
+
+numcaseslookup = readNewCSV()        
+    
+buildhelpers.processGEOJSON("ITALY", "./limits_IT_provinces_simplified.geojson", "prov_name", "prov_istat_code", numcaseslookup, italypop)
        

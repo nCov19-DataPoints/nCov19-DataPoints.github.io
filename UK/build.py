@@ -3,42 +3,11 @@ import csv
 from io import StringIO
 import json
 import datetime
+import pytz
 from collections import namedtuple
 import sys
 sys.path.append('../')
-import buildhelpers
-
-numcaseslookup = dict()
-lastupdate = ""
-
-def readNewCSV():
-    landkreissubst = {
-        "Hackney and City of London": "Hackney",
-        "Cornwall and Isles of Scilly": "Cornwall"
-        }
-    url="https://www.arcgis.com/sharing/rest/content/items/b684319181f94875a6879bbc833ca3a6/data"
-    response = urllib.request.urlopen(url)
-    data = response.read()
-    text = data.decode('utf-8')
-
-    d = datetime.datetime.now()        
-    with StringIO(text) as f:
-        csvreader = csv.reader(f, delimiter=',')
-        for ncovdatapoint in csvreader:
-            landkreis = ncovdatapoint[1].strip();            
-            if landkreis == "GSS_NM" or landkreis == "":
-                continue
-            try:
-                landkreis = landkreissubst[landkreis]
-            except:
-                pass
-            numcaseslookup[landkreis] = [int(ncovdatapoint[2]) if ncovdatapoint[2] != "" else 0, d.strftime(buildhelpers.dateformat), "https://www.arcgis.com/home/item.html?id=e5fd11150d274bebaaf8fe2a7a2bda11"]
-        with open("ncov19.csv","w") as f:
-            f.write("Names,Cases\n")
-            for n in numcaseslookup:
-                f.write(n+","+str(numcaseslookup[n])+"\n")
-
-readNewCSV()
+from buildhelpers import datapoint, processGEOJSON 
 
 englandpop = {
     "County Durham":526980,
@@ -421,35 +390,40 @@ englandpop = {
     "Hackney and City of London":279665+8706
 };
 
-with open("Counties_and_Unitary_Authorities_April_2019_Boundaries_EW_BUC.geojson", "r", encoding="utf-8") as source:
-    geojsondata = json.load(source)
-    totalCases = 0
-    updatetime = datetime.datetime(2020,1,1)
-    for f in geojsondata["features"]:
-        p = f["properties"]
-        name = p["ctyua19nm"]        
-        v = [0, "", ""]
-        try:
-            v = numcaseslookup.pop(name)
-        except:
-            pass
-        p["NAME"] = name
-        p["ID"] = p["objectid"]
-        p["CASES"] = v[0]
-        if v[1] != "":
-            d = datetime.datetime.strptime(v[1],"%d/%m/%Y %H:%M")
-            if updatetime<d:
-                updatetime = d
-            p["LASTUPDATE"] = d.strftime(buildhelpers.dateformat)
-        else:
-            p["LASTUPDATE"] = ""      
-        p["POPULATION"] = englandpop[name]
-        p["CASESPER10000"] = p["CASES"] / p["POPULATION"] * 10000
-        p["SOURCEURL"] = v[2]
-        buildhelpers.addstyle(p)
-        totalCases = totalCases + p["CASES"]
-    for key in numcaseslookup:
-        print("Not found: '"+key+"' Cases: ",numcaseslookup[key])
+BST = pytz.timezone('GB')
 
-buildhelpers.generateOutput("UK", geojsondata, totalCases, updatetime)
+def readNewCSV():
+    namesubst = {
+        "Hackney and City of London": "Hackney",
+        "Cornwall and Isles of Scilly": "Cornwall"
+        }
+    url="https://www.arcgis.com/sharing/rest/content/items/b684319181f94875a6879bbc833ca3a6/data"
+    response = urllib.request.urlopen(url)
+    data = response.read()
+    text = data.decode('utf-8')
+
+    numcaseslookup = dict()
+    d = datetime.datetime.now(datetime.timezone.utc)
+    d = d.replace(second = 0,microsecond = 0)
+    with StringIO(text) as f:
+        csvreader = csv.reader(f, delimiter=',')
+        for ncovdatapoint in csvreader:
+            name = ncovdatapoint[1].strip();            
+            if name == "GSS_NM" or name == "":
+                continue
+            try:
+                name = namesubst[name]
+            except:
+                pass
+            numcaseslookup[name] = datapoint(
+                numcases=int(ncovdatapoint[2]) if ncovdatapoint[2] != "" else 0,
+                timestamp=d,
+                sourceurl="https://www.arcgis.com/home/item.html?id=b684319181f94875a6879bbc833ca3a6"
+                )
+    return numcaseslookup
+
+numcaseslookup = readNewCSV()
+
+processGEOJSON("UK", "Counties_and_Unitary_Authorities_April_2019_Boundaries_EW_BUC.geojson", "ctyua19nm", "objectid", numcaseslookup, englandpop)
+
        

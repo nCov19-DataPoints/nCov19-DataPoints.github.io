@@ -23,7 +23,7 @@
 		}
 		.info { 
 			font: 14px/20px Arial, Helvetica, sans-serif; 
-			width: 18em;
+			width: 20em;
 			height: auto;
 			min-height: 8em;
 			padding: 6px 8px; 
@@ -68,6 +68,7 @@
 <script>
 var GEOJSON_totalCases = 0;
 var GEOJSON_lastoverallupdate = new Date(2020, 0, 1);
+var GEOJSON_lastbuildrunutc = new Date(2020, 0, 1);
 </script>
 <script type="text/javascript"  src="./Germany/ncov19map.js" ></script>
 <script type="text/javascript"  src="./Italy/ncov19map.js" ></script>
@@ -115,16 +116,37 @@ var GEOJSON_lastoverallupdate = new Date(2020, 0, 1);
 
 	var geojsonlayer;
 
-	function featureDescription(props) {
-		var d = parseDate(props.LASTUPDATE);
-		return '<h4>' + props.NAME + '</h4>' + props.CASES + (props.CASES == 1 ? ' case' : ' cases')  + '<br/>' + props.POPULATION + ' pop.' + '<br/>' +props.CASESPER10000.toFixed(1)*10 + ' cases per 100.000 pop.<br/>Last update: '+d+"<br/><a href='"+props.SOURCEURL+"'>Source link</a>";
-	}
+    var timestampFormatter = Intl.DateTimeFormat(undefined, { dateStyle: "medium", timeStyle: "short", year:"numeric", month:"numeric", day:"numeric", hour:"2-digit", minute:"2-digit" });
 	
+	function featureDescription(props) {
+		var d = Date.parse(props.LASTUPDATE);
+		return '<h4>' + props.NAME + '</h4>' + props.CASES + (props.CASES == 1 ? ' case' : ' cases')  + '<br/>' + props.POPULATION + ' pop.' + '<br/>' +props.CASESPER10000.toFixed(1)*10 + ' cases per 100.000 pop.<br/>Last update: '+timestampFormatter.format(d)+"<br/><a href='"+props.SOURCEURL+"'>Source link</a>";
+	}
+
 	info.update = function (props) {
 		if (props) {
 		  this._div.innerHTML = featureDescription(props);
 		} else {
-		  this._div.innerHTML = 'Cases total: ' + GEOJSON_totalCases + "<br/>Last update: " + Intl.DateTimeFormat(undefined, { dateStyle: "short", timeStyle: "medium" }).format(GEOJSON_lastoverallupdate) + "<br/><br/><a href=\"https://github.com/nCov19-DataPoints/nCov19-DataPoints.github.io\">More information</a>";
+		  var hoursForUpdate = [ 20 ];
+		  d = new Date();
+		  d.setUTCMinutes(0);
+		  d.setUTCSeconds(0);
+		  for(var i=0;i<hoursForUpdate.length;++i) {
+			if(d.getUTCHours()<=hoursForUpdate[i]) {
+				break;
+			}
+		  }
+          if(i<hoursForUpdate.length) {
+			d.setUTCHours(hoursForUpdate[i]);					
+		  }
+		  else {
+			d = new Date(d.valueOf() + 1000*3600*(24-d.getUTCHours()+hoursForUpdate[i]));
+		  }
+		  this._div.innerHTML = 'Cases total: ' + GEOJSON_totalCases + 
+			"<br/>Last data point update: " + timestampFormatter.format(GEOJSON_lastoverallupdate) + 
+			"<br/>Last map update: " + timestampFormatter.format(GEOJSON_lastbuildrunutc) + 
+			"<br/>Next scheduled update: " + timestampFormatter.format(d) +
+			"<br/><br/><a href=\"https://github.com/nCov19-DataPoints/nCov19-DataPoints.github.io\">More information</a>";		
 		}
 	};
 
