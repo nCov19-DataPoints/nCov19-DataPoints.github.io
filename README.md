@@ -33,8 +33,10 @@ Many thanks must go to the people gathering all the information which makes proj
   * Italy: http://github.com/pcm-dpc/COVID-19
   * England: http://www.arcgis.com/home/item.html?id=e5fd11150d274bebaaf8fe2a7a2bda11 - though it would be nice if England would do the data more fine-grained - areas with a population of more than 1 million tend to obscure hotspots in the map.
 * The Swiss data can be found here: https://github.com/openZH/covid_19 (again thanks!).
-* For Germany the data from the Robert Koch-Institut is used: SurvStat@RKI 2.0, https://survstat.rki.de 
+* For Germany I still manually(!) crawl through the various Gesundheitsministerien der Länder - the links are displayed on the map and in the csv file, if you are curious. 
   * Kudos to the people in those places gathering data.   
+  * The [RKI](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html) has the numbers in digital form and publishes them (and a map much like this one) in their [daily updates](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Situationsberichte/Gesamt.html) but unfortunately does not publish it on "Landkreis" granularity in a machine-readable form. If one of the dedicated civil servants doing overtime right now reads this: it would be awesome if you could just upload a csv with the data with the daily update. Please, please, pretty please with sugar on the top?
+  * If you need the data, feel free to use [the csv-file](./Germany/ncov19.csv). I aim to update it once a day, usually in the evening, to the best of my abilites. Once the RKI publishes the information, I will use that as a source, and the CSV file will then just contain the RKI data.
 * Many thanks to all the people who refined the geojson data and made it ready-to-use:
   * Germany: http://opendatalab.de/projects/geojson-utilities/
   * Italy: http://github.com/openpolis/geojson-italy
