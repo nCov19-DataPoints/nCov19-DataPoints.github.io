@@ -16,40 +16,49 @@ from bs4 import BeautifulSoup
 CET = pytz.timezone('CET')
 
 landkreissubst = {
-    "Aachen & Städteregion Aachen": "Städteregion Aachen",
-    "Mülheim / Ruhr": "Mülheim an der Ruhr",
-    "Nienburg": "Nienburg (Weser)",
-    "Rotenburg": "Rotenburg (Wümme)",
-    "Wunsiedel i.Fichtelgebirge": "Wunsiedel i. Fichtelgebirge",
-    "Oldenburg": "Oldenburg Stadt",
-    "Aschaffenburg": "Aschaffenburg Landkreis",
-    "Augsburg": "Augsburg Landkreis",
-    "Bamberg": "Bamberg Landkreis",
-    "Fürth": "Fürth Landkreis",
-    "Hof": "Hof Landkreis",
-    "Landshut": "Landshut Landkreis",
-    "München": "München Landkreis",
-    "Passau": "Passau Landkreis",
-    "Regensburg": "Regensburg Landkreis",
-    "Würzburg": "Würzburg Landkreis",
-    "Kaiserslautern": "Kaiserslautern Landkreis",
-    "Heilbronn": "Heilbronn Landkreis",
-    "Karlsruhe": "Karlsruhe Landkreis",
-    "Mühldorf a.Inn": "Mühldorf a. Inn",
-    "Rosenheim": "Rosenheim Landkreis",
-
-    "Frankfurt": "Frankfurt am Main",
-    "Offenbach (Landkreis)": "Offenbach", 
-    "Offenbach (Stadt)": "Offenbach am Main",
-    "Landeshauptstadt Dresden": "Dresden",
-    "Pfaffenhofen a.d.Ilm": "Pfaffenhofen a.d. Ilm",
-    "Neumarkt i.d.Opf.": "Neumarkt i.d. OPf.",
-    "Saarpfalz": "Saarpfalz-Kreis",
-    "Weiden Stadt": "Weiden i.d. OPf.",
-    "Brandenburg a. d. Havel": "Brandenburg an der Havel",
-    "Bad Tölz": "Bad Tölz-Wolfratshausen",
-    "Halle": "Halle (Saale)",
-    }
+    "SK Freiburg i.Breisgau": 'SK Freiburg im Breisgau',
+    'LK Neustadt/Aisch-Bad Windsheim': 'LK Neustadt a.d. Aisch-Bad Windsheim',
+    'LK Landsberg a.Lech': 'LK Landsberg am Lech',
+    'LK Mühldorf a.Inn': 'LK Mühldorf a. Inn',
+    'LK Pfaffenhofen a.d.Ilm': 'LK Pfaffenhofen a.d. Ilm',
+    'LK Wunsiedel i.Fichtelgebirge': 'LK Wunsiedel i. Fichtelgebirge',
+    'LK Neumarkt i.d.OPf.': 'LK Neumarkt i.d. OPf.',
+    'LK Neustadt a.d.Waldnaab': 'LK Neustadt a.d. Waldnaab',
+    'SK Weiden i.d.OPf.': 'SK Weiden i.d. OPf.',
+    'LK Dillingen a.d.Donau': 'LK Dillingen a.d. Donau',
+    'SK Kempten':'SK Kempten (Allgäu)',
+    'LK Lindau':'LK Lindau (Bodensee)',
+    'SK Berlin Charlottenburg-Wilmersdorf':'SK Berlin',
+    'SK Berlin Friedrichshain-Kreuzberg':'SK Berlin',
+    'SK Berlin Lichtenberg':'SK Berlin',
+    'SK Berlin Marzahn-Hellersdorf':'SK Berlin',
+    'SK Berlin Mitte':'SK Berlin',
+    'SK Berlin Neukölln':'SK Berlin',
+    'SK Berlin Pankow':'SK Berlin',
+    'SK Berlin Reinickendorf':'SK Berlin',
+    'SK Berlin Spandau':'SK Berlin',
+    'SK Berlin Steglitz-Zehlendorf':'SK Berlin',
+    'SK Berlin Tempelhof-Schöneberg':'SK Berlin',
+    'SK Berlin Treptow-Köpenick':'SK Berlin',
+    'SK Brandenburg a.d.Havel':'SK Brandenburg an der Havel',
+    'SK Offenbach':'SK Offenbach am Main',
+    'SK Oldenburg':'SK Oldenburg (Oldb)',
+    'SK Mülheim a.d.Ruhr':'SK Mülheim an der Ruhr',
+    'LK Altenkirchen':'LK Altenkirchen (Westerwald)',
+    'SK Frankenthal':'SK Frankenthal (Pfalz)',
+    'SK Landau i.d.Pfalz':'SK Landau in der Pfalz',
+    'SK Ludwigshafen':'SK Ludwigshafen am Rhein',
+    'SK Neustadt a.d.Weinstraße':'SK Neustadt an der Weinstraße',
+    'LK Bitburg-Prüm':'LK Eifelkreis Bitburg-Prüm',
+    'LK Saar-Pfalz-Kreis':'LK Saarpfalz-Kreis',
+    'LK Sankt Wendel':'LK St. Wendel',
+    'LK Stadtverband Saarbrücken':'LK Regionalverband Saarbrücken',
+    'SK Halle':'SK Halle (Saale)',
+    'LK Ludwigslust–Parchim':'LK Ludwigslust-Parchim',
+    'LK Vorpommern–Greifswald':'LK Vorpommern-Greifswald',
+    'LK Vorpommern–Rügen':'LK Vorpommern-Rügen',
+    'StädteRegion Aachen':'Städteregion Aachen'
+}
 
 def readNewCSV():
     numcaseslookup = dict()
@@ -70,122 +79,32 @@ def readNewCSV():
                 landkreis = landkreissubst[landkreis]
             except:
                 pass            
-            landkreis = landkreis.replace(" (Stadt)"," Stadt")
-            landkreis = landkreis.replace(" (Land)"," Landkreis")
-            landkreis = landkreis.replace(" (Kreis)"," Landkreis")
-            if landkreis.startswith("Landkreis "):
-                landkreis = landkreis.replace("Landkreis ","") + " Landkreis"
-            if landkreis.startswith("Stadt "):
-                landkreis = landkreis.replace("Stadt ","") + " Stadt"
-            landkreis = landkreis.replace(" (kreisfreie Stadt)"," Stadt")
-            landkreis = landkreis.replace(" (Stadtkreis)"," Stadt")
             d = CET.localize(datetime.datetime.strptime(ncovdatapoint[4], "%d/%m/%Y %H:%M"))
-            numcaseslookup[landkreis] = datapoint(
-                numcases=int(ncovdatapoint[2]) if (ncovdatapoint[2] != "" and ncovdatapoint[2] != "-") else 0,
-                timestamp=d,
-                sourceurl=ncovdatapoint[3]
-                )
+            if landkreis in numcaseslookup:
+                # Special case for Berlin for now
+                numcaseslookup[landkreis].numcases = numcaseslookup[landkreis].numcases + int(ncovdatapoint[2]) if (ncovdatapoint[2] != "" and ncovdatapoint[2] != "-") else 0
+            else:
+                numcaseslookup[landkreis] = datapoint(
+                    numcases=int(ncovdatapoint[2]) if (ncovdatapoint[2] != "" and ncovdatapoint[2] != "-") else 0,
+                    timestamp=d,
+                    sourceurl=ncovdatapoint[3]
+                    )
                
     return numcaseslookup
 
-def parseDateTimeWithLocale(datetext, dateformat, datelocale):
-  lc = locale.setlocale(locale.LC_TIME)
-  try:
-    locale.setlocale(locale.LC_TIME, datelocale)
-    return datetime.datetime.strptime(datetext, dateformat)
-  finally:
-    locale.setlocale(locale.LC_TIME, lc)
-    
-def scrapeOfficialNumbers():
-    numcaseslookup = dict()
-    url="http://www.mags.nrw/coronavirus-fallzahlen-nrw"
-    response = urllib.request.urlopen(url)
-    urldata = response.read()
-    html_doc = urldata.decode('utf-8')
-    soup = BeautifulSoup(html_doc, 'html.parser')
-
-    dateregex = re.compile(".*Aktueller Stand der Liste: (.*) Uhr")
-    blabla = soup.find("p",string=dateregex)
-    datematch = dateregex.match(blabla.text)
-    datetext = datematch.group(1)
-    lastupdate = parseDateTimeWithLocale(datetext, "%d. %B %Y, %H.%M", "de_DE")
-    datetext = lastupdate.strftime("%d/%m/%Y %H:%M")
-    
-    th = soup.find('th', string='Bestätigte Fälle')
-    table_body = th.parent.parent.parent.find('tbody')
-
-    rows = table_body.find_all('tr')
-    if len(rows)!=54:
-        print("Expecting 54 rows in '"+url+"' but found "+str(len(rows))+" rows instead. Rows:\n"+str(rows))
-        
-    for row in rows:
-        cols = row.find_all('td')
-        if len(cols)!=2:
-            print("Expecting 2 columns in row '"+str(row)+"' scraped from '"+url+"' but found "+str(len(cols))+" columns instead.")
-
-        landkreis = cols[0].text.strip()
-        if landkreis=="Gesamt":
-            continue       
-        try:
-            landkreis = landkreissubst[landkreis]
-        except:
-            pass
-        landkreis = landkreis.replace(" (Stadt)"," Stadt")
-        landkreis = landkreis.replace(" (Land)"," Landkreis")
-        if landkreis.startswith("Landkreis "):
-            landkreis = landkreis.replace("Landkreis ","") + " Landkreis"
-        if landkreis.startswith("Stadt "):
-            landkreis = landkreis.replace("Stadt ","") + " Stadt"
-        landkreis = landkreis.replace(" (kreisfreie Stadt)"," Stadt")
-        landkreis = landkreis.replace(" (Stadtkreis)"," Stadt")
-        
-        faelle = cols[1].text.strip()        
-        
-        numcaseslookup[landkreis] = [int(faelle) if (faelle != "" and faelle != "-") else 0, datetext, url]        
-
-    print(numcaseslookup)
-
-    return numcaseslookup
-
 def eliminateAmbiguousNames(geojsondata):
-    allnames = dict()
     for f in geojsondata["features"]:
         p = f["properties"]
         n = p["GEN"]
-        if n=="Oldenburg (Oldb)":
-            n = "Oldenburg Stadt"
-            p["GEN"] = n
-        elif n in allnames and allnames[n]!=p["RS"]:
+        if not (n.startswith("Region ") or n.startswith("Städteregion ")):
             if p["BEZ"]=="Landkreis" or p["BEZ"]=="Kreis":
-              unambiguousname = n + " Landkreis"        
+              p["GEN"] = "LK " + n
             else:
-              unambiguousname = n + " Stadt"        
-            p["GEN"] = unambiguousname
-        else:
-            allnames[p["GEN"]] = p["RS"]
-
-def geojsonprop_caseskey(f, numcaseslookup):
-    p = f["properties"]
-    try:
-        name = p["GEN"]
-        try:
-            if p["BEZ"]=="Landkreis" or p["BEZ"]=="Kreis":
-              name2 = name + " Landkreis"        
-            else:
-              name2 = name + " Stadt"        
-            v = numcaseslookup.pop(name2)
-            name = name2
-        except:            
-            v = numcaseslookup.pop(name)
-    except:
-        name = p["GEN"]
-        v = None
-    return name,v
+              p["GEN"] = "SK " + n
 
 numcaseslookup = readNewCSV()
-#numcaseslookup = scrapeOfficialNumbers()
-processGEOJSON("GERMANY", "landkreise_simplify200_simplified.geojson",
-               geojsonprop_caseskey,
+processGEOJSON("GERMANY", "landkreise_simplify200.geojson",
+               "GEN",
                "RS", numcaseslookup,
                lambda f: f["properties"]["destatis"]["population"],
                eliminateAmbiguousNames)
