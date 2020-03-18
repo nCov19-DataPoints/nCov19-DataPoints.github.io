@@ -1,32 +1,4 @@
 Names,Cases
-<<<<<<< HEAD
-AG,[31, '14/03/2020 00:00', 'https://github.com/openZH/covid_19/raw/master/COVID19_Cases_Cantons_CH_total.csv']
-AI,[0, '14/03/2020 00:00', 'https://github.com/openZH/covid_19/raw/master/COVID19_Cases_Cantons_CH_total.csv']
-AR,[5, '14/03/2020 00:00', 'https://github.com/openZH/covid_19/raw/master/COVID19_Cases_Cantons_CH_total.csv']
-BE,[78, '14/03/2020 00:00', 'https://github.com/openZH/covid_19/raw/master/COVID19_Cases_Cantons_CH_total.csv']
-BL,[48, '14/03/2020 00:00', 'https://github.com/openZH/covid_19/raw/master/COVID19_Cases_Cantons_CH_total.csv']
-BS,[165, '17/03/2020 00:00', 'https://github.com/openZH/covid_19/raw/master/COVID19_Cases_Cantons_CH_total.csv']
-FR,[38, '14/03/2020 00:00', 'https://github.com/openZH/covid_19/raw/master/COVID19_Cases_Cantons_CH_total.csv']
-GE,[107, '14/03/2020 00:00', 'https://github.com/openZH/covid_19/raw/master/COVID19_Cases_Cantons_CH_total.csv']
-GL,[5, '14/03/2020 00:00', 'https://github.com/openZH/covid_19/raw/master/COVID19_Cases_Cantons_CH_total.csv']
-GR,[47, '14/03/2020 00:00', 'https://github.com/openZH/covid_19/raw/master/COVID19_Cases_Cantons_CH_total.csv']
-JU,[10, '14/03/2020 00:00', 'https://github.com/openZH/covid_19/raw/master/COVID19_Cases_Cantons_CH_total.csv']
-LU,[19, '14/03/2020 00:00', 'https://github.com/openZH/covid_19/raw/master/COVID19_Cases_Cantons_CH_total.csv']
-NE,[39, '14/03/2020 00:00', 'https://github.com/openZH/covid_19/raw/master/COVID19_Cases_Cantons_CH_total.csv']
-NW,[5, '14/03/2020 00:00', 'https://github.com/openZH/covid_19/raw/master/COVID19_Cases_Cantons_CH_total.csv']
-OW,[8, '14/03/2020 00:00', 'https://github.com/openZH/covid_19/raw/master/COVID19_Cases_Cantons_CH_total.csv']
-SG,[26, '14/03/2020 00:00', 'https://github.com/openZH/covid_19/raw/master/COVID19_Cases_Cantons_CH_total.csv']
-SH,[1, '14/03/2020 00:00', 'https://github.com/openZH/covid_19/raw/master/COVID19_Cases_Cantons_CH_total.csv']
-SO,[10, '14/03/2020 00:00', 'https://github.com/openZH/covid_19/raw/master/COVID19_Cases_Cantons_CH_total.csv']
-SZ,[13, '14/03/2020 00:00', 'https://github.com/openZH/covid_19/raw/master/COVID19_Cases_Cantons_CH_total.csv']
-TG,[5, '14/03/2020 00:00', 'https://github.com/openZH/covid_19/raw/master/COVID19_Cases_Cantons_CH_total.csv']
-TI,[262, '14/03/2020 00:00', 'https://github.com/openZH/covid_19/raw/master/COVID19_Cases_Cantons_CH_total.csv']
-UR,[0, '14/03/2020 00:00', 'https://github.com/openZH/covid_19/raw/master/COVID19_Cases_Cantons_CH_total.csv']
-VD,[273, '14/03/2020 00:00', 'https://github.com/openZH/covid_19/raw/master/COVID19_Cases_Cantons_CH_total.csv']
-VS,[47, '14/03/2020 00:00', 'https://github.com/openZH/covid_19/raw/master/COVID19_Cases_Cantons_CH_total.csv']
-ZG,[9, '14/03/2020 00:00', 'https://github.com/openZH/covid_19/raw/master/COVID19_Cases_Cantons_CH_total.csv']
-ZH,[148, '14/03/2020 00:00', 'https://github.com/openZH/covid_19/raw/master/COVID19_Cases_Cantons_CH_total.csv']
-=======
 Aargau,31,2020-03-14T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Cases_Cantons_CH_total.csv
 Appenzell Innerrhoden,0,2020-03-14T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Cases_Cantons_CH_total.csv
 Appenzell Ausserrhoden,5,2020-03-14T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Cases_Cantons_CH_total.csv
@@ -34,12 +6,12 @@ Bern/Berne,193,2020-03-18T00:00:00+01:00,https://github.com/openZH/covid_19/blob
 Basel-Landschaft,48,2020-03-14T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Cases_Cantons_CH_total.csv
 Basel-Stadt,165,2020-03-17T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Fallzahlen_Kanton_BS_total.csv
 Fribourg,38,2020-03-14T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Cases_Cantons_CH_total.csv
-Genève,107,2020-03-14T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Cases_Cantons_CH_total.csv
+GenÃ¨ve,107,2020-03-14T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Cases_Cantons_CH_total.csv
 Glarus,5,2020-03-14T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Cases_Cantons_CH_total.csv
-Graubünden/Grigioni,47,2020-03-14T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Cases_Cantons_CH_total.csv
+GraubÃ¼nden/Grigioni,47,2020-03-14T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Cases_Cantons_CH_total.csv
 Jura,10,2020-03-14T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Cases_Cantons_CH_total.csv
 Luzern,19,2020-03-14T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Cases_Cantons_CH_total.csv
-Neuchâtel,39,2020-03-14T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Cases_Cantons_CH_total.csv
+NeuchÃ¢tel,39,2020-03-14T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Cases_Cantons_CH_total.csv
 Nidwalden,5,2020-03-14T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Cases_Cantons_CH_total.csv
 Obwalden,8,2020-03-14T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Cases_Cantons_CH_total.csv
 St. Gallen,26,2020-03-14T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Cases_Cantons_CH_total.csv
@@ -52,5 +24,4 @@ Uri,0,2020-03-14T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/C
 Vaud,273,2020-03-14T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Cases_Cantons_CH_total.csv
 Valais/Wallis,47,2020-03-14T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Cases_Cantons_CH_total.csv
 Zug,9,2020-03-14T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Cases_Cantons_CH_total.csv
-Zürich,424,2020-03-18T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Fallzahlen_Kanton_ZH_total.csv
->>>>>>> Refactor all build scripts, fix update dates
+ZÃ¼rich,424,2020-03-18T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Fallzahlen_Kanton_ZH_total.csv

@@ -1,112 +1,14 @@
 Names,Cases
-<<<<<<< HEAD
-Charente,[4, '16/03/2020 00:00', 'https://www.nouvelle-aquitaine.ars.sante.fr/system/files/2020-03/CP_Covid19_ARSNA_16_03_2020.pdf']
-Charente-Maritime,[27, '16/03/2020 00:00', 'https://www.nouvelle-aquitaine.ars.sante.fr/system/files/2020-03/CP_Covid19_ARSNA_16_03_2020.pdf']
-CorrÃ¨ze,[5, '16/03/2020 00:00', 'https://www.nouvelle-aquitaine.ars.sante.fr/system/files/2020-03/CP_Covid19_ARSNA_16_03_2020.pdf']
-Creuse,[2, '16/03/2020 00:00', 'https://www.nouvelle-aquitaine.ars.sante.fr/system/files/2020-03/CP_Covid19_ARSNA_16_03_2020.pdf']
-Dordogne,[7, '16/03/2020 00:00', 'https://www.nouvelle-aquitaine.ars.sante.fr/system/files/2020-03/CP_Covid19_ARSNA_16_03_2020.pdf']
-Gironde,[24, '16/03/2020 00:00', 'https://www.nouvelle-aquitaine.ars.sante.fr/system/files/2020-03/CP_Covid19_ARSNA_16_03_2020.pdf']
-Landes,[5, '16/03/2020 00:00', 'https://www.nouvelle-aquitaine.ars.sante.fr/system/files/2020-03/CP_Covid19_ARSNA_16_03_2020.pdf']
-Lot-et-Garonne,[44, '16/03/2020 00:00', 'https://www.nouvelle-aquitaine.ars.sante.fr/system/files/2020-03/CP_Covid19_ARSNA_16_03_2020.pdf']
-PyrÃ©nÃ©es-Atlantiques,[18, '16/03/2020 00:00', 'https://www.nouvelle-aquitaine.ars.sante.fr/system/files/2020-03/CP_Covid19_ARSNA_16_03_2020.pdf']
-Deux-SÃ¨vres,[4, '16/03/2020 00:00', 'https://www.nouvelle-aquitaine.ars.sante.fr/system/files/2020-03/CP_Covid19_ARSNA_16_03_2020.pdf']
-Vienne,[14, '16/03/2020 00:00', 'https://www.nouvelle-aquitaine.ars.sante.fr/system/files/2020-03/CP_Covid19_ARSNA_16_03_2020.pdf']
-Haute-Vienne,[2, '16/03/2020 00:00', 'https://www.nouvelle-aquitaine.ars.sante.fr/system/files/2020-03/CP_Covid19_ARSNA_16_03_2020.pdf']
-Aisne,[0, '16/03/2020 00:00', 'https://www.hauts-de-france.ars.sante.fr/coronavirus-covid-19-point-de-situation-dans-les-hauts-de-france']
-Nord,[0, '16/03/2020 00:00', 'https://www.hauts-de-france.ars.sante.fr/coronavirus-covid-19-point-de-situation-dans-les-hauts-de-france']
-Oise,[0, '16/03/2020 00:00', 'https://www.hauts-de-france.ars.sante.fr/coronavirus-covid-19-point-de-situation-dans-les-hauts-de-france']
-Pas-de-Calais,[0, '16/03/2020 00:00', 'https://www.hauts-de-france.ars.sante.fr/coronavirus-covid-19-point-de-situation-dans-les-hauts-de-france']
-Somme,[0, '16/03/2020 00:00', 'https://www.hauts-de-france.ars.sante.fr/coronavirus-covid-19-point-de-situation-dans-les-hauts-de-france']
-Haute-Savoie,[126, '16/03/2020 00:00', 'https://www.auvergne-rhone-alpes.ars.sante.fr/system/files/2020-03/200316_ARSARA_COVID-19_Point_Situation.pdf']
-Ain,[59, '16/03/2020 00:00', 'https://www.auvergne-rhone-alpes.ars.sante.fr/system/files/2020-03/200316_ARSARA_COVID-19_Point_Situation.pdf']
-Ardennes,[1, '16/03/2020 00:00', 'https://www.grand-est.ars.sante.fr/system/files/2020-03/CPCoronavirus_GrandEst160320.pdf']
-Aube,[12, '16/03/2020 00:00', 'https://www.grand-est.ars.sante.fr/system/files/2020-03/CPCoronavirus_GrandEst160320.pdf']
-Eure,[25, '15/03/2020 00:00', 'https://www.normandie.ars.sante.fr/system/files/2020-03/20200315_CP-point-situation-normandie.pdf']
-Marne,[37, '16/03/2020 00:00', 'https://www.grand-est.ars.sante.fr/system/files/2020-03/CPCoronavirus_GrandEst160320.pdf']
-Haute-Marne,[3, '16/03/2020 00:00', 'https://www.grand-est.ars.sante.fr/system/files/2020-03/CPCoronavirus_GrandEst160320.pdf']
-Meurthe-et-Moselle,[66, '16/03/2020 00:00', 'https://www.grand-est.ars.sante.fr/system/files/2020-03/CPCoronavirus_GrandEst160320.pdf']
-Meuse,[10, '16/03/2020 00:00', 'https://www.grand-est.ars.sante.fr/system/files/2020-03/CPCoronavirus_GrandEst160320.pdf']
-Moselle,[222, '16/03/2020 00:00', 'https://www.grand-est.ars.sante.fr/system/files/2020-03/CPCoronavirus_GrandEst160320.pdf']
-Bas-Rhin,[354, '16/03/2020 00:00', 'https://www.grand-est.ars.sante.fr/system/files/2020-03/CPCoronavirus_GrandEst160320.pdf']
-Haut-Rhin,[688, '16/03/2020 00:00', 'https://www.grand-est.ars.sante.fr/system/files/2020-03/CPCoronavirus_GrandEst160320.pdf']
-RhÃ´ne,[164, '16/03/2020 00:00', 'https://www.auvergne-rhone-alpes.ars.sante.fr/system/files/2020-03/200316_ARSARA_COVID-19_Point_Situation.pdf']
-Vosges,[61, '16/03/2020 00:00', 'https://www.grand-est.ars.sante.fr/system/files/2020-03/CPCoronavirus_GrandEst160320.pdf']
-Savoie,[26, '16/03/2020 00:00', 'https://www.auvergne-rhone-alpes.ars.sante.fr/system/files/2020-03/200316_ARSARA_COVID-19_Point_Situation.pdf']
-DrÃ´me,[69, '16/03/2020 00:00', 'https://www.auvergne-rhone-alpes.ars.sante.fr/system/files/2020-03/200316_ARSARA_COVID-19_Point_Situation.pdf']
-Alpes-Maritimes,[43, '13/03/2020 00:00', 'https://www.paca.ars.sante.fr/coronavirus-en-provence-alpes-cote-dazur-point-de-situation-au-13-mars']
-Bouches-du-RhÃ´ne,[93, '13/03/2020 00:00', 'https://www.paca.ars.sante.fr/coronavirus-en-provence-alpes-cote-dazur-point-de-situation-au-13-mars']
-CÃ´te-d'Or,[1, '04/03/2020 00:00', 'https://www.bourgogne-franche-comte.ars.sante.fr/system/files/2020-03/2020.03.04_COVID19_SITUATION%20BFC.pdf']
-CÃ´tes-d'Armor,[5, '16/03/2020 00:00', 'https://www.bretagne.ars.sante.fr/system/files/2020-03/CP%20Coronavirus_Bretagne_point%20de%20situation%2017h30_200316.pdf']
-FinistÃ¨re,[35, '16/03/2020 00:00', 'https://www.bretagne.ars.sante.fr/system/files/2020-03/CP%20Coronavirus_Bretagne_point%20de%20situation%2017h30_200316.pdf']
-Ille-et-Vilaine,[44, '16/03/2020 00:00', 'https://www.bretagne.ars.sante.fr/system/files/2020-03/CP%20Coronavirus_Bretagne_point%20de%20situation%2017h30_200316.pdf']
-Morbihan,[129, '16/03/2020 00:00', 'https://www.bretagne.ars.sante.fr/system/files/2020-03/CP%20Coronavirus_Bretagne_point%20de%20situation%2017h30_200316.pdf']
-Vaucluse,[5, '13/03/2020 00:00', 'https://www.paca.ars.sante.fr/coronavirus-en-provence-alpes-cote-dazur-point-de-situation-au-13-mars']
-Hautes-Alpes,[18, '13/03/2020 00:00', 'https://www.paca.ars.sante.fr/coronavirus-en-provence-alpes-cote-dazur-point-de-situation-au-13-mars']
-Cher,[5, '16/03/2020 00:00', 'https://www.centre-val-de-loire.ars.sante.fr/system/files/2020-03/2020-03-16-bulletin%20information%20COVID-19.pdf']
-Eure-et-Loir,[25, '16/03/2020 00:00', 'https://www.centre-val-de-loire.ars.sante.fr/system/files/2020-03/2020-03-16-bulletin%20information%20COVID-19.pdf']
-Corse du Sud,[102, '16/03/2020 00:00', 'https://twitter.com/ARSCORSE1/status/1239595508013969409']
-Haute-Corse,[24, '16/03/2020 00:00', 'https://twitter.com/ARSCORSE1/status/1239595508013969409']
-Indre,[1, '16/03/2020 00:00', 'https://www.centre-val-de-loire.ars.sante.fr/system/files/2020-03/2020-03-16-bulletin%20information%20COVID-19.pdf']
-Indre-et-Loire,[22, '16/03/2020 00:00', 'https://www.centre-val-de-loire.ars.sante.fr/system/files/2020-03/2020-03-16-bulletin%20information%20COVID-19.pdf']
-Loir-et-Cher,[5, '16/03/2020 00:00', 'https://www.centre-val-de-loire.ars.sante.fr/system/files/2020-03/2020-03-16-bulletin%20information%20COVID-19.pdf']
-Loiret,[32, '16/03/2020 00:00', 'https://www.centre-val-de-loire.ars.sante.fr/system/files/2020-03/2020-03-16-bulletin%20information%20COVID-19.pdf']
-Paris,[126, '12/03/2020 00:00', 'https://www.iledefrance.ars.sante.fr/system/files/2020-03/PointSituationCovid10_20200312.pdf']
-Seine-et-Marne,[42, '12/03/2020 00:00', 'https://www.iledefrance.ars.sante.fr/system/files/2020-03/PointSituationCovid10_20200312.pdf']
-Yvelines,[70, '12/03/2020 00:00', 'https://www.iledefrance.ars.sante.fr/system/files/2020-03/PointSituationCovid10_20200312.pdf']
-Var,[48, '13/03/2020 00:00', 'https://www.paca.ars.sante.fr/coronavirus-en-provence-alpes-cote-dazur-point-de-situation-au-13-mars']
-Essonne,[30, '12/03/2020 00:00', 'https://www.iledefrance.ars.sante.fr/system/files/2020-03/PointSituationCovid10_20200312.pdf']
-Hauts-de-Seine,[59, '12/03/2020 00:00', 'https://www.iledefrance.ars.sante.fr/system/files/2020-03/PointSituationCovid10_20200312.pdf']
-Seine-Saint-Denis,[45, '12/03/2020 00:00', 'https://www.iledefrance.ars.sante.fr/system/files/2020-03/PointSituationCovid10_20200312.pdf']
-Val-de-Marne,[48, '12/03/2020 00:00', 'https://www.iledefrance.ars.sante.fr/system/files/2020-03/PointSituationCovid10_20200312.pdf']
-Val-d'Oise,[60, '12/03/2020 00:00', 'https://www.iledefrance.ars.sante.fr/system/files/2020-03/PointSituationCovid10_20200312.pdf']
-ArdÃ¨che,[29, '16/03/2020 00:00', 'https://www.auvergne-rhone-alpes.ars.sante.fr/system/files/2020-03/200316_ARSARA_COVID-19_Point_Situation.pdf']
-Loire,[76, '16/03/2020 00:00', 'https://www.auvergne-rhone-alpes.ars.sante.fr/system/files/2020-03/200316_ARSARA_COVID-19_Point_Situation.pdf']
-Loire-Atlantique,[39, '15/03/2020 00:00', 'https://www.pays-de-la-loire.ars.sante.fr/system/files/2020-03/2020-03-15-bulletin%20information%20COVID-19_0.pdf']
-Maine-et-Loire,[27, '15/03/2020 00:00', 'https://www.pays-de-la-loire.ars.sante.fr/system/files/2020-03/2020-03-15-bulletin%20information%20COVID-19_0.pdf']
-Mayenne,[5, '15/03/2020 00:00', 'https://www.pays-de-la-loire.ars.sante.fr/system/files/2020-03/2020-03-15-bulletin%20information%20COVID-19_0.pdf']
-Puy-de-DÃ´me,[20, '16/03/2020 00:00', 'https://www.auvergne-rhone-alpes.ars.sante.fr/system/files/2020-03/200316_ARSARA_COVID-19_Point_Situation.pdf']
-Sarthe,[19, '15/03/2020 00:00', 'https://www.pays-de-la-loire.ars.sante.fr/system/files/2020-03/2020-03-15-bulletin%20information%20COVID-19_0.pdf']
-VendÃ©e,[9, '15/03/2020 00:00', 'https://www.pays-de-la-loire.ars.sante.fr/system/files/2020-03/2020-03-15-bulletin%20information%20COVID-19_0.pdf']
-Aude,[34, '16/03/2020 00:00', 'https://www.occitanie.ars.sante.fr/system/files/2020-03/%40ARSOC_%23COVID-19_BulletinInfo8_20200316.pdf']
-Aveyron,[16, '16/03/2020 00:00', 'https://www.occitanie.ars.sante.fr/system/files/2020-03/%40ARSOC_%23COVID-19_BulletinInfo8_20200316.pdf']
-Calvados,[57, '15/03/2020 00:00', 'https://www.normandie.ars.sante.fr/system/files/2020-03/20200315_CP-point-situation-normandie.pdf']
-Gard,[27, '16/03/2020 00:00', 'https://www.occitanie.ars.sante.fr/system/files/2020-03/%40ARSOC_%23COVID-19_BulletinInfo8_20200316.pdf']
-Haute-Garonne,[47, '16/03/2020 00:00', 'https://www.occitanie.ars.sante.fr/system/files/2020-03/%40ARSOC_%23COVID-19_BulletinInfo8_20200316.pdf']
-HÃ©rault,[109, '16/03/2020 00:00', 'https://www.occitanie.ars.sante.fr/system/files/2020-03/%40ARSOC_%23COVID-19_BulletinInfo8_20200316.pdf']
-Lot,[3, '16/03/2020 00:00', 'https://www.occitanie.ars.sante.fr/system/files/2020-03/%40ARSOC_%23COVID-19_BulletinInfo8_20200316.pdf']
-Manche,[28, '15/03/2020 00:00', 'https://www.normandie.ars.sante.fr/system/files/2020-03/20200315_CP-point-situation-normandie.pdf']
-NiÃ¨vre,[0, '16/03/2020 00:00', 'https://www.bourgogne-franche-comte.ars.sante.fr/system/files/2020-03/2020.03.16_COVID19_SITUATION%20BFC.pdf']
-Orne,[3, '15/03/2020 00:00', 'https://www.normandie.ars.sante.fr/system/files/2020-03/20200315_CP-point-situation-normandie.pdf']
-Seine-Maritime,[30, '15/03/2020 00:00', 'https://www.normandie.ars.sante.fr/system/files/2020-03/20200315_CP-point-situation-normandie.pdf']
-Tarn,[10, '16/03/2020 00:00', 'https://www.occitanie.ars.sante.fr/system/files/2020-03/%40ARSOC_%23COVID-19_BulletinInfo8_20200316.pdf']
-Tarn-et-Garonne,[7, '16/03/2020 00:00', 'https://www.occitanie.ars.sante.fr/system/files/2020-03/%40ARSOC_%23COVID-19_BulletinInfo8_20200316.pdf']
-Yonne,[0, '16/03/2020 00:00', 'https://www.bourgogne-franche-comte.ars.sante.fr/system/files/2020-03/2020.03.16_COVID19_SITUATION%20BFC.pdf']
-Alpes-de-Haute-Provence,[4, '13/03/2020 00:00', 'https://www.paca.ars.sante.fr/coronavirus-en-provence-alpes-cote-dazur-point-de-situation-au-13-mars']
-Gers,[9, '16/03/2020 00:00', 'https://www.occitanie.ars.sante.fr/system/files/2020-03/%40ARSOC_%23COVID-19_BulletinInfo8_20200316.pdf']
-IsÃ¨re,[35, '16/03/2020 00:00', 'https://www.auvergne-rhone-alpes.ars.sante.fr/system/files/2020-03/200316_ARSARA_COVID-19_Point_Situation.pdf']
-Doubs,[0, '16/03/2020 00:00', 'https://www.bourgogne-franche-comte.ars.sante.fr/system/files/2020-03/2020.03.16_COVID19_SITUATION%20BFC.pdf']
-Jura,[0, '16/03/2020 00:00', 'https://www.bourgogne-franche-comte.ars.sante.fr/system/files/2020-03/2020.03.16_COVID19_SITUATION%20BFC.pdf']
-Haute-Loire,[7, '16/03/2020 00:00', 'https://www.auvergne-rhone-alpes.ars.sante.fr/system/files/2020-03/200316_ARSARA_COVID-19_Point_Situation.pdf']
-Hautes-PyrÃ©nÃ©es,[6, '16/03/2020 00:00', 'https://www.occitanie.ars.sante.fr/system/files/2020-03/%40ARSOC_%23COVID-19_BulletinInfo8_20200316.pdf']
-Allier,[5, '16/03/2020 00:00', 'https://www.auvergne-rhone-alpes.ars.sante.fr/system/files/2020-03/200316_ARSARA_COVID-19_Point_Situation.pdf']
-PyrÃ©nÃ©es-Orientales,[11, '16/03/2020 00:00', 'https://www.occitanie.ars.sante.fr/system/files/2020-03/%40ARSOC_%23COVID-19_BulletinInfo8_20200316.pdf']
-Haute-SaÃ´ne,[0, '16/03/2020 00:00', 'https://www.bourgogne-franche-comte.ars.sante.fr/system/files/2020-03/2020.03.16_COVID19_SITUATION%20BFC.pdf']
-SaÃ´ne-et-Loire,[0, '16/03/2020 00:00', 'https://www.bourgogne-franche-comte.ars.sante.fr/system/files/2020-03/2020.03.16_COVID19_SITUATION%20BFC.pdf']
-LozÃ¨re,[3, '16/03/2020 00:00', 'https://www.occitanie.ars.sante.fr/system/files/2020-03/%40ARSOC_%23COVID-19_BulletinInfo8_20200316.pdf']
-Cantal,[0, '16/03/2020 00:00', 'https://www.auvergne-rhone-alpes.ars.sante.fr/system/files/2020-03/200316_ARSARA_COVID-19_Point_Situation.pdf']
-Territoire de Belfort,[0, '16/03/2020 00:00', 'https://www.bourgogne-franche-comte.ars.sante.fr/system/files/2020-03/2020.03.16_COVID19_SITUATION%20BFC.pdf']
-AriÃ¨ge,[2, '16/03/2020 00:00', 'https://www.occitanie.ars.sante.fr/system/files/2020-03/%40ARSOC_%23COVID-19_BulletinInfo8_20200316.pdf']
-=======
 Charente,4,2020-03-16T00:00:00+01:00,https://www.nouvelle-aquitaine.ars.sante.fr/system/files/2020-03/CP_Covid19_ARSNA_16_03_2020.pdf
 Charente-Maritime,27,2020-03-16T00:00:00+01:00,https://www.nouvelle-aquitaine.ars.sante.fr/system/files/2020-03/CP_Covid19_ARSNA_16_03_2020.pdf
-Corrèze,5,2020-03-16T00:00:00+01:00,https://www.nouvelle-aquitaine.ars.sante.fr/system/files/2020-03/CP_Covid19_ARSNA_16_03_2020.pdf
+CorrÃ¨ze,5,2020-03-16T00:00:00+01:00,https://www.nouvelle-aquitaine.ars.sante.fr/system/files/2020-03/CP_Covid19_ARSNA_16_03_2020.pdf
 Creuse,2,2020-03-16T00:00:00+01:00,https://www.nouvelle-aquitaine.ars.sante.fr/system/files/2020-03/CP_Covid19_ARSNA_16_03_2020.pdf
 Dordogne,7,2020-03-16T00:00:00+01:00,https://www.nouvelle-aquitaine.ars.sante.fr/system/files/2020-03/CP_Covid19_ARSNA_16_03_2020.pdf
 Gironde,24,2020-03-16T00:00:00+01:00,https://www.nouvelle-aquitaine.ars.sante.fr/system/files/2020-03/CP_Covid19_ARSNA_16_03_2020.pdf
 Landes,5,2020-03-16T00:00:00+01:00,https://www.nouvelle-aquitaine.ars.sante.fr/system/files/2020-03/CP_Covid19_ARSNA_16_03_2020.pdf
 Lot-et-Garonne,44,2020-03-16T00:00:00+01:00,https://www.nouvelle-aquitaine.ars.sante.fr/system/files/2020-03/CP_Covid19_ARSNA_16_03_2020.pdf
-Pyrénées-Atlantiques,18,2020-03-16T00:00:00+01:00,https://www.nouvelle-aquitaine.ars.sante.fr/system/files/2020-03/CP_Covid19_ARSNA_16_03_2020.pdf
-Deux-Sèvres,4,2020-03-16T00:00:00+01:00,https://www.nouvelle-aquitaine.ars.sante.fr/system/files/2020-03/CP_Covid19_ARSNA_16_03_2020.pdf
+PyrÃ©nÃ©es-Atlantiques,18,2020-03-16T00:00:00+01:00,https://www.nouvelle-aquitaine.ars.sante.fr/system/files/2020-03/CP_Covid19_ARSNA_16_03_2020.pdf
+Deux-SÃ¨vres,4,2020-03-16T00:00:00+01:00,https://www.nouvelle-aquitaine.ars.sante.fr/system/files/2020-03/CP_Covid19_ARSNA_16_03_2020.pdf
 Vienne,14,2020-03-16T00:00:00+01:00,https://www.nouvelle-aquitaine.ars.sante.fr/system/files/2020-03/CP_Covid19_ARSNA_16_03_2020.pdf
 Haute-Vienne,2,2020-03-16T00:00:00+01:00,https://www.nouvelle-aquitaine.ars.sante.fr/system/files/2020-03/CP_Covid19_ARSNA_16_03_2020.pdf
 Aisne,0,2020-03-17T00:00:00+01:00,https://www.hauts-de-france.ars.sante.fr/coronavirus-covid-19-point-de-situation-dans-les-hauts-de-france
@@ -126,15 +28,15 @@ Meuse,10,2020-03-16T00:00:00+01:00,https://www.grand-est.ars.sante.fr/system/fil
 Moselle,222,2020-03-16T00:00:00+01:00,https://www.grand-est.ars.sante.fr/system/files/2020-03/CPCoronavirus_GrandEst160320.pdf
 Bas-Rhin,354,2020-03-16T00:00:00+01:00,https://www.grand-est.ars.sante.fr/system/files/2020-03/CPCoronavirus_GrandEst160320.pdf
 Haut-Rhin,688,2020-03-16T00:00:00+01:00,https://www.grand-est.ars.sante.fr/system/files/2020-03/CPCoronavirus_GrandEst160320.pdf
-Rhône,181,2020-03-17T00:00:00+01:00,https://www.auvergne-rhone-alpes.ars.sante.fr/system/files/2020-03/200317_ARSARA_COVID-19_Point_Situation.pdf
+RhÃ´ne,181,2020-03-17T00:00:00+01:00,https://www.auvergne-rhone-alpes.ars.sante.fr/system/files/2020-03/200317_ARSARA_COVID-19_Point_Situation.pdf
 Vosges,61,2020-03-16T00:00:00+01:00,https://www.grand-est.ars.sante.fr/system/files/2020-03/CPCoronavirus_GrandEst160320.pdf
 Savoie,26,2020-03-17T00:00:00+01:00,https://www.auvergne-rhone-alpes.ars.sante.fr/system/files/2020-03/200317_ARSARA_COVID-19_Point_Situation.pdf
-Drôme,71,2020-03-17T00:00:00+01:00,https://www.auvergne-rhone-alpes.ars.sante.fr/system/files/2020-03/200317_ARSARA_COVID-19_Point_Situation.pdf
+DrÃ´me,71,2020-03-17T00:00:00+01:00,https://www.auvergne-rhone-alpes.ars.sante.fr/system/files/2020-03/200317_ARSARA_COVID-19_Point_Situation.pdf
 Alpes-Maritimes,104,2020-03-17T00:00:00+01:00,https://www.paca.ars.sante.fr/coronavirus-en-provence-alpes-cote-dazur-point-de-situation-au-17-mars
-Bouches-du-Rhône,237,2020-03-17T00:00:00+01:00,https://www.paca.ars.sante.fr/coronavirus-en-provence-alpes-cote-dazur-point-de-situation-au-17-mars
-Côte-d'Or,1,2020-03-04T00:00:00+01:00,https://www.bourgogne-franche-comte.ars.sante.fr/system/files/2020-03/2020.03.04_COVID19_SITUATION%20BFC.pdf
-Côtes-d'Armor,11,2020-03-17T00:00:00+01:00,https://www.bretagne.ars.sante.fr/coronavirus-en-bretagne-point-de-situation-du-mardi-17-mars-2020-et-mesures-destinees-freiner-la
-Finistère,43,2020-03-17T00:00:00+01:00,https://www.bretagne.ars.sante.fr/coronavirus-en-bretagne-point-de-situation-du-mardi-17-mars-2020-et-mesures-destinees-freiner-la
+Bouches-du-RhÃ´ne,237,2020-03-17T00:00:00+01:00,https://www.paca.ars.sante.fr/coronavirus-en-provence-alpes-cote-dazur-point-de-situation-au-17-mars
+CÃ´te-d'Or,1,2020-03-04T00:00:00+01:00,https://www.bourgogne-franche-comte.ars.sante.fr/system/files/2020-03/2020.03.04_COVID19_SITUATION%20BFC.pdf
+CÃ´tes-d'Armor,11,2020-03-17T00:00:00+01:00,https://www.bretagne.ars.sante.fr/coronavirus-en-bretagne-point-de-situation-du-mardi-17-mars-2020-et-mesures-destinees-freiner-la
+FinistÃ¨re,43,2020-03-17T00:00:00+01:00,https://www.bretagne.ars.sante.fr/coronavirus-en-bretagne-point-de-situation-du-mardi-17-mars-2020-et-mesures-destinees-freiner-la
 Ille-et-Vilaine,50,2020-03-17T00:00:00+01:00,https://www.bretagne.ars.sante.fr/coronavirus-en-bretagne-point-de-situation-du-mardi-17-mars-2020-et-mesures-destinees-freiner-la
 Morbihan,132,2020-03-17T00:00:00+01:00,https://www.bretagne.ars.sante.fr/coronavirus-en-bretagne-point-de-situation-du-mardi-17-mars-2020-et-mesures-destinees-freiner-la
 Vaucluse,13,2020-03-17T00:00:00+01:00,https://www.paca.ars.sante.fr/coronavirus-en-provence-alpes-cote-dazur-point-de-situation-au-17-mars
@@ -157,23 +59,23 @@ Hauts-de-Seine,59,2020-03-12T00:00:00+01:00,https://www.iledefrance.ars.sante.fr
 Seine-Saint-Denis,45,2020-03-12T00:00:00+01:00,https://www.iledefrance.ars.sante.fr/system/files/2020-03/PointSituationCovid10_20200312.pdf
 Val-de-Marne,48,2020-03-12T00:00:00+01:00,https://www.iledefrance.ars.sante.fr/system/files/2020-03/PointSituationCovid10_20200312.pdf
 Val-d'Oise,60,2020-03-12T00:00:00+01:00,https://www.iledefrance.ars.sante.fr/system/files/2020-03/PointSituationCovid10_20200312.pdf
-Ardèche,40,2020-03-17T00:00:00+01:00,https://www.auvergne-rhone-alpes.ars.sante.fr/system/files/2020-03/200317_ARSARA_COVID-19_Point_Situation.pdf
+ArdÃ¨che,40,2020-03-17T00:00:00+01:00,https://www.auvergne-rhone-alpes.ars.sante.fr/system/files/2020-03/200317_ARSARA_COVID-19_Point_Situation.pdf
 Loire,87,2020-03-17T00:00:00+01:00,https://www.auvergne-rhone-alpes.ars.sante.fr/system/files/2020-03/200317_ARSARA_COVID-19_Point_Situation.pdf
 Loire-Atlantique,39,2020-03-15T00:00:00+01:00,https://www.pays-de-la-loire.ars.sante.fr/system/files/2020-03/2020-03-15-bulletin%20information%20COVID-19_0.pdf
 Maine-et-Loire,27,2020-03-15T00:00:00+01:00,https://www.pays-de-la-loire.ars.sante.fr/system/files/2020-03/2020-03-15-bulletin%20information%20COVID-19_0.pdf
 Mayenne,5,2020-03-15T00:00:00+01:00,https://www.pays-de-la-loire.ars.sante.fr/system/files/2020-03/2020-03-15-bulletin%20information%20COVID-19_0.pdf
-Puy-de-Dôme,26,2020-03-17T00:00:00+01:00,https://www.auvergne-rhone-alpes.ars.sante.fr/system/files/2020-03/200317_ARSARA_COVID-19_Point_Situation.pdf
+Puy-de-DÃ´me,26,2020-03-17T00:00:00+01:00,https://www.auvergne-rhone-alpes.ars.sante.fr/system/files/2020-03/200317_ARSARA_COVID-19_Point_Situation.pdf
 Sarthe,19,2020-03-15T00:00:00+01:00,https://www.pays-de-la-loire.ars.sante.fr/system/files/2020-03/2020-03-15-bulletin%20information%20COVID-19_0.pdf
-Vendée,9,2020-03-15T00:00:00+01:00,https://www.pays-de-la-loire.ars.sante.fr/system/files/2020-03/2020-03-15-bulletin%20information%20COVID-19_0.pdf
+VendÃ©e,9,2020-03-15T00:00:00+01:00,https://www.pays-de-la-loire.ars.sante.fr/system/files/2020-03/2020-03-15-bulletin%20information%20COVID-19_0.pdf
 Aude,38,2020-03-17T00:00:00+01:00,https://www.occitanie.ars.sante.fr/system/files/2020-03/%40ARSOC_%23COVID-19_BulletinInfo9_20200317.pdf
 Aveyron,16,2020-03-17T00:00:00+01:00,https://www.occitanie.ars.sante.fr/system/files/2020-03/%40ARSOC_%23COVID-19_BulletinInfo9_20200317.pdf
 Calvados,57,2020-03-15T00:00:00+01:00,https://www.normandie.ars.sante.fr/system/files/2020-03/20200315_CP-point-situation-normandie.pdf
 Gard,32,2020-03-17T00:00:00+01:00,https://www.occitanie.ars.sante.fr/system/files/2020-03/%40ARSOC_%23COVID-19_BulletinInfo9_20200317.pdf
 Haute-Garonne,48,2020-03-17T00:00:00+01:00,https://www.occitanie.ars.sante.fr/system/files/2020-03/%40ARSOC_%23COVID-19_BulletinInfo9_20200317.pdf
-Hérault,119,2020-03-17T00:00:00+01:00,https://www.occitanie.ars.sante.fr/system/files/2020-03/%40ARSOC_%23COVID-19_BulletinInfo9_20200317.pdf
+HÃ©rault,119,2020-03-17T00:00:00+01:00,https://www.occitanie.ars.sante.fr/system/files/2020-03/%40ARSOC_%23COVID-19_BulletinInfo9_20200317.pdf
 Lot,3,2020-03-17T00:00:00+01:00,https://www.occitanie.ars.sante.fr/system/files/2020-03/%40ARSOC_%23COVID-19_BulletinInfo9_20200317.pdf
 Manche,28,2020-03-15T00:00:00+01:00,https://www.normandie.ars.sante.fr/system/files/2020-03/20200315_CP-point-situation-normandie.pdf
-Nièvre,0,2020-03-16T00:00:00+01:00,https://www.bourgogne-franche-comte.ars.sante.fr/system/files/2020-03/2020.03.16_COVID19_SITUATION%20BFC.pdf
+NiÃ¨vre,0,2020-03-16T00:00:00+01:00,https://www.bourgogne-franche-comte.ars.sante.fr/system/files/2020-03/2020.03.16_COVID19_SITUATION%20BFC.pdf
 Orne,3,2020-03-15T00:00:00+01:00,https://www.normandie.ars.sante.fr/system/files/2020-03/20200315_CP-point-situation-normandie.pdf
 Seine-Maritime,30,2020-03-15T00:00:00+01:00,https://www.normandie.ars.sante.fr/system/files/2020-03/20200315_CP-point-situation-normandie.pdf
 Tarn,11,2020-03-17T00:00:00+01:00,https://www.occitanie.ars.sante.fr/system/files/2020-03/%40ARSOC_%23COVID-19_BulletinInfo9_20200317.pdf
@@ -181,19 +83,18 @@ Tarn-et-Garonne,7,2020-03-17T00:00:00+01:00,https://www.occitanie.ars.sante.fr/s
 Yonne,0,2020-03-16T00:00:00+01:00,https://www.bourgogne-franche-comte.ars.sante.fr/system/files/2020-03/2020.03.16_COVID19_SITUATION%20BFC.pdf
 Alpes-de-Haute-Provence,7,2020-03-17T00:00:00+01:00,https://www.paca.ars.sante.fr/coronavirus-en-provence-alpes-cote-dazur-point-de-situation-au-17-mars
 Gers,9,2020-03-17T00:00:00+01:00,https://www.occitanie.ars.sante.fr/system/files/2020-03/%40ARSOC_%23COVID-19_BulletinInfo9_20200317.pdf
-Isère,44,2020-03-17T00:00:00+01:00,https://www.auvergne-rhone-alpes.ars.sante.fr/system/files/2020-03/200317_ARSARA_COVID-19_Point_Situation.pdf
+IsÃ¨re,44,2020-03-17T00:00:00+01:00,https://www.auvergne-rhone-alpes.ars.sante.fr/system/files/2020-03/200317_ARSARA_COVID-19_Point_Situation.pdf
 Doubs,0,2020-03-16T00:00:00+01:00,https://www.bourgogne-franche-comte.ars.sante.fr/system/files/2020-03/2020.03.16_COVID19_SITUATION%20BFC.pdf
 Jura,0,2020-03-16T00:00:00+01:00,https://www.bourgogne-franche-comte.ars.sante.fr/system/files/2020-03/2020.03.16_COVID19_SITUATION%20BFC.pdf
 Haute-Loire,7,2020-03-17T00:00:00+01:00,https://www.auvergne-rhone-alpes.ars.sante.fr/system/files/2020-03/200317_ARSARA_COVID-19_Point_Situation.pdf
-Hautes-Pyrénées,6,2020-03-17T00:00:00+01:00,https://www.occitanie.ars.sante.fr/system/files/2020-03/%40ARSOC_%23COVID-19_BulletinInfo9_20200317.pdf
-Guadeloupe,18,2020-03-16T00:00:00+01:00,https://www.guadeloupe.ars.sante.fr/system/files/2020-03/Bulletin%20n°11%20coronavirus%20Guad.pdf
+Hautes-PyrÃ©nÃ©es,6,2020-03-17T00:00:00+01:00,https://www.occitanie.ars.sante.fr/system/files/2020-03/%40ARSOC_%23COVID-19_BulletinInfo9_20200317.pdf
+Guadeloupe,18,2020-03-16T00:00:00+01:00,https://www.guadeloupe.ars.sante.fr/system/files/2020-03/Bulletin%20nÂ°11%20coronavirus%20Guad.pdf
 Allier,7,2020-03-17T00:00:00+01:00,https://www.auvergne-rhone-alpes.ars.sante.fr/system/files/2020-03/200317_ARSARA_COVID-19_Point_Situation.pdf
-Pyrénées-Orientales,14,2020-03-17T00:00:00+01:00,https://www.occitanie.ars.sante.fr/system/files/2020-03/%40ARSOC_%23COVID-19_BulletinInfo9_20200317.pdf
-Haute-Saône,0,2020-03-16T00:00:00+01:00,https://www.bourgogne-franche-comte.ars.sante.fr/system/files/2020-03/2020.03.16_COVID19_SITUATION%20BFC.pdf
-Saône-et-Loire,0,2020-03-16T00:00:00+01:00,https://www.bourgogne-franche-comte.ars.sante.fr/system/files/2020-03/2020.03.16_COVID19_SITUATION%20BFC.pdf
-Lozère,8,2020-03-17T00:00:00+01:00,https://www.occitanie.ars.sante.fr/system/files/2020-03/%40ARSOC_%23COVID-19_BulletinInfo9_20200317.pdf
+PyrÃ©nÃ©es-Orientales,14,2020-03-17T00:00:00+01:00,https://www.occitanie.ars.sante.fr/system/files/2020-03/%40ARSOC_%23COVID-19_BulletinInfo9_20200317.pdf
+Haute-SaÃ´ne,0,2020-03-16T00:00:00+01:00,https://www.bourgogne-franche-comte.ars.sante.fr/system/files/2020-03/2020.03.16_COVID19_SITUATION%20BFC.pdf
+SaÃ´ne-et-Loire,0,2020-03-16T00:00:00+01:00,https://www.bourgogne-franche-comte.ars.sante.fr/system/files/2020-03/2020.03.16_COVID19_SITUATION%20BFC.pdf
+LozÃ¨re,8,2020-03-17T00:00:00+01:00,https://www.occitanie.ars.sante.fr/system/files/2020-03/%40ARSOC_%23COVID-19_BulletinInfo9_20200317.pdf
 Cantal,1,2020-03-17T00:00:00+01:00,https://www.auvergne-rhone-alpes.ars.sante.fr/system/files/2020-03/200317_ARSARA_COVID-19_Point_Situation.pdf
 Territoire de Belfort,0,2020-03-16T00:00:00+01:00,https://www.bourgogne-franche-comte.ars.sante.fr/system/files/2020-03/2020.03.16_COVID19_SITUATION%20BFC.pdf
-Ariège,2,2020-03-17T00:00:00+01:00,https://www.occitanie.ars.sante.fr/system/files/2020-03/%40ARSOC_%23COVID-19_BulletinInfo9_20200317.pdf
+AriÃ¨ge,2,2020-03-17T00:00:00+01:00,https://www.occitanie.ars.sante.fr/system/files/2020-03/%40ARSOC_%23COVID-19_BulletinInfo9_20200317.pdf
 Martinique,16,2020-03-16T00:00:00+01:00,https://www.martinique.ars.sante.fr/system/files/2020-03/Point%20de%20situation%2016%20Mars%202020.pdf
->>>>>>> Refactor all build scripts, fix update dates

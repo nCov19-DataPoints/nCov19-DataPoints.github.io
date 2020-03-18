@@ -1,113 +1,4 @@
 Names,Cases
-<<<<<<< HEAD
-Chieti,[41, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-L'Aquila,[19, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Pescara,[138, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Teramo,[31, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Matera,[4, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Potenza,[16, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Bolzano/Bozen,[291, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Catanzaro,[14, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Cosenza,[27, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Crotone,[21, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Reggio di Calabria,[46, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Vibo Valentia,[6, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Avellino,[56, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Benevento,[4, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Caserta,[65, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Napoli,[258, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Salerno,[65, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Bologna,[333, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Ferrara,[58, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Forlì-Cesena,[144, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Modena,[460, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Parma,[800, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Piacenza,[1204, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Ravenna,[124, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Reggio nell'Emilia,[299, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Rimini,[509, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Gorizia,[18, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Pordenone,[54, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Trieste,[177, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Udine,[145, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Frosinone,[49, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Latina,[23, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Rieti,[12, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Roma,[486, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Viterbo,[31, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Genova,[330, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Imperia,[76, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-La Spezia,[65, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Savona,[100, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Bergamo,[3993, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Brescia,[3300, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Como,[256, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Cremona,[2073, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Lecco,[440, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Lodi,[1418, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Mantova,[465, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Milano,[2326, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Monza e della Brianza,[376, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Pavia,[884, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Sondrio,[74, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Varese,[234, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Ancona,[356, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Ascoli Piceno,[23, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Fermo,[36, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Macerata,[128, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Pesaro e Urbino,[812, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Campobasso,[25, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Isernia,[0, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Alessandria,[323, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Asti,[90, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Biella,[96, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Cuneo,[119, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Novara,[150, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Torino,[749, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Verbano-Cusio-Ossola,[76, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Vercelli,[113, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Bari,[95, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Barletta-Andria-Trani,[23, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Brindisi,[52, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Foggia,[91, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Lecce,[62, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Taranto,[17, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Cagliari,[27, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Nuoro,[20, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Oristano,[2, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Sassari,[63, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Sud Sardegna,[5, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Agrigento,[22, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Caltanissetta,[4, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Catania,[108, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Enna,[8, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Messina,[16, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Palermo,[40, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Ragusa,[4, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Siracusa,[21, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Trapani,[14, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Arezzo,[71, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Firenze,[214, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Grosseto,[60, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Livorno,[59, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Lucca,[179, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Massa-Carrara,[143, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Pisa,[101, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Pistoia,[100, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Prato,[53, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Siena,[73, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Trento,[385, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Perugia,[129, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Terni,[63, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Valle d'Aosta/Vallée d'Aoste,[136, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Belluno,[109, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Padova,[781, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Rovigo,[28, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Treviso,[502, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Venezia,[378, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Verona,[481, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-Vicenza,[325, '2020-03-17 17:00:00', 'https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv']
-=======
 Chieti,41,2020-03-17T17:00:00+01:00,https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv
 L'Aquila,19,2020-03-17T17:00:00+01:00,https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv
 Pescara,138,2020-03-17T17:00:00+01:00,https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv
@@ -127,7 +18,7 @@ Napoli,258,2020-03-17T17:00:00+01:00,https://github.com/pcm-dpc/COVID-19/blob/ma
 Salerno,65,2020-03-17T17:00:00+01:00,https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv
 Bologna,333,2020-03-17T17:00:00+01:00,https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv
 Ferrara,58,2020-03-17T17:00:00+01:00,https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv
-Forl�-Cesena,144,2020-03-17T17:00:00+01:00,https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv
+Forlì-Cesena,144,2020-03-17T17:00:00+01:00,https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv
 Modena,460,2020-03-17T17:00:00+01:00,https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv
 Parma,800,2020-03-17T17:00:00+01:00,https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv
 Piacenza,1204,2020-03-17T17:00:00+01:00,https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv
@@ -207,7 +98,7 @@ Siena,73,2020-03-17T17:00:00+01:00,https://github.com/pcm-dpc/COVID-19/blob/mast
 Trento,385,2020-03-17T17:00:00+01:00,https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv
 Perugia,129,2020-03-17T17:00:00+01:00,https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv
 Terni,63,2020-03-17T17:00:00+01:00,https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv
-Valle d'Aosta/Vall�e d'Aoste,136,2020-03-17T17:00:00+01:00,https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv
+Valle d'Aosta/Vallée d'Aoste,136,2020-03-17T17:00:00+01:00,https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv
 Belluno,109,2020-03-17T17:00:00+01:00,https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv
 Padova,781,2020-03-17T17:00:00+01:00,https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv
 Rovigo,28,2020-03-17T17:00:00+01:00,https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv
@@ -215,4 +106,3 @@ Treviso,502,2020-03-17T17:00:00+01:00,https://github.com/pcm-dpc/COVID-19/blob/m
 Venezia,378,2020-03-17T17:00:00+01:00,https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv
 Verona,481,2020-03-17T17:00:00+01:00,https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv
 Vicenza,325,2020-03-17T17:00:00+01:00,https://github.com/pcm-dpc/COVID-19/blob/master/dati-province/dpc-covid19-ita-province.csv
->>>>>>> Refactor all build scripts, fix update dates
