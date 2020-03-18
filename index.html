@@ -120,11 +120,11 @@ var GEOJSON_lastbuildrunutc = new Date(2020, 0, 1);
 	
 	function featureDescription(props) {
 		var d = Date.parse(props.LASTUPDATE);
-		if(props.CASESPER10000.toFixed(1)*10>0) {
-			n =  props.CASESPER10000.toFixed(1)*10;
+		if((props.CASESPER10000*10.0).toFixed(0)>0) {
+			n =  (props.CASESPER10000*10.0).toFixed(0);
 		}
 		else {
-			n = props.CASESPER10000=0 ? "0" : "<1";
+			n = props.CASESPER10000==0 ? "0" : "<1";
 		}
 		return '<h4>' + props.NAME + '</h4>' +
 				props.CASES + (props.CASES == 1 ? ' case' : ' cases')  + '<br/>' +

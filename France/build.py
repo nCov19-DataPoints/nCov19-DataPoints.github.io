@@ -153,7 +153,10 @@ def readNewCSV():
         "Territoire-de-Belfort": "Territoire de Belfort",
         "Essone": "Essonne",
         "Saint-Saint-Denis": "Seine-Saint-Denis",
-        "Corse du Sud": "Corse-du-Sud"
+        "Corse du Sud": "Corse-du-Sud",
+		"Grand-Est": "Grand Est",
+		"Auvergne Rhône-Alpes": "Auvergne-Rhône-Alpes",
+		"Centre Val de Loire": "Centre-Val de Loire"
         }
     url="https://github.com/opencovid19-fr/data/raw/master/dist/chiffres-cles.csv"
     response = urllib.request.urlopen(url)
@@ -187,7 +190,7 @@ def readNewCSV():
             else:
                 if not (name in numcasesregion) or d>numcasesregion[name].timestamp:
                     numcasesregion[name] = v
-        if len(numcasesdepartement)>0:
+        if False: #len(numcasesdepartement)>0: need to do this hierarchical - use the departement data to augment the regional data
             numcaseslookup = numcasesdepartement
             francepop = departementpop
             francegeojson = departementgeojson
