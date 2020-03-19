@@ -2,9 +2,9 @@ Names,Cases
 Aargau,31,2020-03-14T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Cases_Cantons_CH_total.csv
 Appenzell Innerrhoden,0,2020-03-14T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Cases_Cantons_CH_total.csv
 Appenzell Ausserrhoden,5,2020-03-14T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Cases_Cantons_CH_total.csv
-Bern/Berne,193,2020-03-18T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Fallzahlen_Kanton_BE_total.csv
+Bern/Berne,282,2020-03-19T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Fallzahlen_Kanton_BE_total.csv
 Basel-Landschaft,48,2020-03-14T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Cases_Cantons_CH_total.csv
-Basel-Stadt,182,2020-03-18T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Fallzahlen_Kanton_BS_total.csv
+Basel-Stadt,222,2020-03-19T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Fallzahlen_Kanton_BS_total.csv
 Fribourg,38,2020-03-14T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Cases_Cantons_CH_total.csv
 Genève,107,2020-03-14T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Cases_Cantons_CH_total.csv
 Glarus,5,2020-03-14T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Cases_Cantons_CH_total.csv
@@ -18,10 +18,10 @@ St. Gallen,26,2020-03-14T00:00:00+01:00,https://github.com/openZH/covid_19/blob/
 Schaffhausen,1,2020-03-14T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Cases_Cantons_CH_total.csv
 Solothurn,10,2020-03-14T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Cases_Cantons_CH_total.csv
 Schwyz,13,2020-03-14T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Cases_Cantons_CH_total.csv
-Thurgau,32,2020-03-18T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Fallzahlen_Kanton_TG_total.csv
+Thurgau,36,2020-03-19T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Fallzahlen_Kanton_TG_total.csv
 Ticino,262,2020-03-14T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Cases_Cantons_CH_total.csv
 Uri,0,2020-03-14T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Cases_Cantons_CH_total.csv
 Vaud,273,2020-03-14T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Cases_Cantons_CH_total.csv
 Valais/Wallis,47,2020-03-14T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Cases_Cantons_CH_total.csv
 Zug,9,2020-03-14T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Cases_Cantons_CH_total.csv
-Zürich,424,2020-03-18T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Fallzahlen_Kanton_ZH_total.csv
+Zürich,526,2020-03-19T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Fallzahlen_Kanton_ZH_total.csv
