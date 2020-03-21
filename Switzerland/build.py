@@ -35,11 +35,7 @@ mapidtoname = {
     'VS': 'Valais/Wallis',
     'NE': 'Neuchâtel',
     'GE': 'Genève',
-    'JU': 'Jura',
-    'Canton_ZH': 'Zürich',
-    'Canton_TG': 'Thurgau',
-    'Canton_BE': 'Bern/Berne',
-    'Canton_BS': 'Basel-Stadt'
+    'JU': 'Jura'
 }
 
 pop = {
@@ -73,12 +69,16 @@ pop = {
 
 CET = pytz.timezone('CET')
 
-def readNewCSV(filename, dateformat, datecolumn, cantonidcolumn, casecolumn):
+def readNewCSV(filename, cantonidcolumn, casecolumn):
     numcaseslookup = dict()
     kantonsubst = {
         }
-    url="https://github.com/openZH/covid_19/raw/master/" + filename
-    response = urllib.request.urlopen(url)
+    url="https://github.com/openZH/covid_19/raw/master/fallzahlen_kanton_total_csv/" + filename
+    try:
+        response = urllib.request.urlopen(url)
+    except:
+        print("Failed to open URL '" + url + "' for Swiss data")
+        return numcaseslookup
     data = response.read()
     text = data.decode('utf-8')    
 
@@ -86,10 +86,16 @@ def readNewCSV(filename, dateformat, datecolumn, cantonidcolumn, casecolumn):
         csvreader = csv.reader(f, delimiter=',')
         for ncovdatapoint in csvreader:
             cantonid = ncovdatapoint[cantonidcolumn].strip();            
-            if cantonid in ["Area","canton" ,"","CH","FL"]:                
+            if cantonid in ["abbreviation_canton_and_fl","canton" ,"","CH","FL"]:
                 continue
             name = mapidtoname[cantonid]
-            d = CET.localize(datetime.datetime.strptime(ncovdatapoint[datecolumn], dateformat))
+            try:
+                if len(ncovdatapoint[1])>0:
+                    d = CET.localize(datetime.datetime.strptime(ncovdatapoint[0] + " " + ncovdatapoint[1], "%Y-%m-%d %H:%M"))
+                else:
+                    d = CET.localize(datetime.datetime.strptime(ncovdatapoint[0] , "%Y-%m-%d"))
+            except:
+                print("Column 0=Date='" + ncovdatapoint[0] + "' + Column 1=Time='" + ncovdatapoint[1] +"' does not match datetime format")
             try:
                 name = kantonsubst[name]
             except:
@@ -103,11 +109,9 @@ def readNewCSV(filename, dateformat, datecolumn, cantonidcolumn, casecolumn):
 
     return numcaseslookup
 
-numcaseslookup = readNewCSV("COVID19_Cases_Cantons_CH_total.csv", "%Y-%m-%d", 0, 1, 2)
-numcaseslookup = { **numcaseslookup, **readNewCSV("COVID19_Fallzahlen_Kanton_ZH_total.csv", "%d.%m.%Y", 0, 1, 3) }
-numcaseslookup = { **numcaseslookup, **readNewCSV("COVID19_Fallzahlen_Kanton_TG_total.csv", "%d.%m.%Y", 0, 1, 3) }
-numcaseslookup = { **numcaseslookup, **readNewCSV("COVID19_Fallzahlen_Kanton_BE_total.csv", "%d.%m.%Y", 0, 1, 3) }
-numcaseslookup = { **numcaseslookup, **readNewCSV("COVID19_Fallzahlen_Kanton_BS_total.csv", "%d.%m.%Y", 0, 1, 3) }
+numcaseslookup = {}
+for id in mapidtoname:
+    numcaseslookup = { **numcaseslookup, **readNewCSV("COVID19_Fallzahlen_Kanton_" + id + "_total.csv", 2, 4) }
 
 processGEOJSON("SWITZERLAND", "cantons.geojson", "name", lambda f: f["id"], numcaseslookup, pop)
 
