@@ -182,7 +182,7 @@ def readNewCSV():
             v = buildhelpers.datapoint(
                 numcases = int(ncovdatapoint[4]) if ncovdatapoint[4] != "" else 0,
                 timestamp = d,
-                sourceurl = ncovdatapoint[7]
+                sourceurl = "https://github.com/opencovid19-fr/data"
                 )
             if ncovdatapoint[1] == "departement":           
                 if not (name in numcasesdepartement) or d>numcasesdepartement[name].timestamp:
