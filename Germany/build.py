@@ -38,6 +38,9 @@ landkreissubst = {
     "Mühldorf a.Inn": "Mühldorf a. Inn",
     "Rosenheim": "Rosenheim Landkreis",
     "Schweinfurt": "Schweinfurt Landkreis",
+    "Ansbach": "Ansbach Landkreis",
+    "Bayreuth": "Bayreuth Landkreis",
+    "Offenbach": "Offenbach am Main",
 
     "Frankfurt": "Frankfurt am Main",
     "Offenbach (Landkreis)": "Offenbach", 
@@ -82,11 +85,30 @@ def readNewCSV():
             landkreis = landkreis.replace(" (kreisfreie Stadt)"," Stadt")
             landkreis = landkreis.replace(" (Stadtkreis)"," Stadt")
             d = CET.localize(datetime.datetime.strptime(ncovdatapoint[4], "%d/%m/%Y %H:%M"))
-            numcaseslookup[landkreis] = datapoint(
-                numcases=int(ncovdatapoint[2]) if (ncovdatapoint[2] != "" and ncovdatapoint[2] != "-") else 0,
-                timestamp=d,
-                sourceurl=ncovdatapoint[3]
+            if landkreis=="Oberallgäu":
+                # Oberallgäu und Stadt Kempten sind nicht getrennt in der Statistik
+                # Einwohner Oberallgäu: 155362, Kempten: 68907
+                # Die Fälle für Oberallgäu entsprechend aufteilen
+                numCases = int(ncovdatapoint[2]) if (ncovdatapoint[2] != "" and ncovdatapoint[2] != "-") else 0
+                numCasesOberallgaeu = int(numCases * 155362.0 / (68907.0 + 155362.0))
+                numCasesKempten = numCases - numCasesOberallgaeu
+                ncovdatapoint[2] = str(numCasesOberallgaeu)
+                numcaseslookup["Kempten (Allgäu)"] = datapoint(
+                    numcases=numCasesKempten,
+                    timestamp=d,
+                    sourceurl=ncovdatapoint[3]
+                    )
+                numcaseslookup["Oberallgäu"] = datapoint(
+                    numcases=numCasesOberallgaeu,
+                    timestamp=d,
+                    sourceurl=ncovdatapoint[3]
                 )
+            else:
+                numcaseslookup[landkreis] = datapoint(
+                    numcases=int(ncovdatapoint[2]) if (ncovdatapoint[2] != "" and ncovdatapoint[2] != "-") else 0,
+                    timestamp=d,
+                    sourceurl=ncovdatapoint[3]
+                    )
                
     return numcaseslookup
 
