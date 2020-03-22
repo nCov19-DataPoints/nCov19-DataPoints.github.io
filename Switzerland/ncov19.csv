@@ -1,6 +1,6 @@
 Names,Cases
 Zürich,773,2020-03-20T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Fallzahlen_Kanton_ZH_total.csv
-Bern/Berne,418,2020-03-21T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Fallzahlen_Kanton_BE_total.csv
+Bern/Berne,377,2020-03-21T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Fallzahlen_Kanton_BE_total.csv
 Luzern,131,2020-03-22T11:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Fallzahlen_Kanton_LU_total.csv
 Uri,12,2020-03-21T08:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Fallzahlen_Kanton_UR_total.csv
 Schwyz,13,2020-03-15T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Fallzahlen_Kanton_SZ_total.csv
@@ -24,4 +24,4 @@ Vaud,1676,2020-03-21T00:00:00+01:00,https://github.com/openZH/covid_19/blob/mast
 Valais/Wallis,432,2020-03-22T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Fallzahlen_Kanton_VS_total.csv
 Neuchâtel,188,2020-03-22T15:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Fallzahlen_Kanton_NE_total.csv
 Genève,1144,2020-03-22T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Fallzahlen_Kanton_GE_total.csv
-Jura,51,2020-03-22T17:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Fallzahlen_Kanton_JU_total.csv
+Jura,49,2020-03-21T18:00:00+01:00,https://github.com/openZH/covid_19/blob/master/COVID19_Fallzahlen_Kanton_JU_total.csv
