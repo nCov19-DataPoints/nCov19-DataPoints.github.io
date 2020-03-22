@@ -151,7 +151,7 @@ var GEOJSON_lastbuildrunutc = new Date(2020, 0, 1);
 			d.setUTCHours(hoursForUpdate[i]);					
 		  }
 		  else {
-			d = new Date(d.valueOf() + 1000*3600*(24-d.getUTCHours()+hoursForUpdate[i]));
+			d = new Date(d.valueOf() + 1000*3600*(24-d.getUTCHours()+hoursForUpdate[i-1]));
 		  }
 		  this._div.innerHTML = 'Cases total: ' + GEOJSON_totalCases + 
 			"<br/>Last data point update: " + timestampFormatter.format(GEOJSON_lastoverallupdate) + 
