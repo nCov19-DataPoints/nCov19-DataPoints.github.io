@@ -104,7 +104,7 @@ def readNewCSV(filename, cantonidcolumn, casecolumn):
                 numcaseslookup[name] = datapoint(
                     numcases=int(ncovdatapoint[casecolumn]) if ncovdatapoint[casecolumn] != "" else 0,
                     timestamp=d,
-                    sourceurl="https://github.com/openZH/covid_19/blob/master/"+filename
+                    sourceurl="https://github.com/openZH/covid_19/blob/master/fallzahlen_kanton_total_csv/"+filename
                     )
 
     return numcaseslookup
