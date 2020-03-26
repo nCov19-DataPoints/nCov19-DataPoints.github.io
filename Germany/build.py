@@ -16,45 +16,6 @@ from bs4 import BeautifulSoup
 CET = pytz.timezone('CET')
 
 landkreissubst = {
-    "StadtRegion Aachen": "Städteregion Aachen",
-    "SK Mülheim a.d.Ruhr": "Mülheim an der Ruhr",
-    "SK Offenbach": "SK Offenbach am Main",
-    "LK Altenkirchen": "LK Altenkirchen (Westerwald)",
-    "LK Bitburg-Prüm": "LK Eifelkreis Bitburg-Prüm",
-    "SK Landau i.d.Pfalz": "SK Landau in der Pfalz",
-    "SK Ludwigshafen": "SK Ludwigshafen am Rhein",
-    "SK Neustadt a.d.Weinstraße": "SK Neustadt an der Weinstraße",
-    "SK Freiburg i.Breisgau": "SK Freiburg im Breisgau",
-    "LK Landsberg a.Lech": "LK Landsberg am Lech",
-    "LK Mühldorf a.Inn": "LK Mühldorf a. Inn",
-    "LK Pfaffenhofen a.d.Ilm": "LK Pfaffenhofen a.d. Ilm",
-    "SK Weiden i.d.OPf.": "SK Weiden i.d. OPf.",
-    "LK Neumarkt i.d.OPf.": "LK Neumarkt i.d. OPf.",
-    "LK Neustadt a.d.Waldnaab": "LK Neustadt a.d. Waldnaab",
-    "LK Wunsiedel i.Fichtelgebirge": "LK Wunsiedel i. Fichtelgebirge",
-    "SK Frankenthal": "SK Frankenthal (Pfalz)",
-    "LK Neustadt a.d.Aisch-Bad Windsheim": "LK Neustadt a.d. Aisch-Bad Windsheim",
-    "LK Dillingen a.d.Donau": "LK Dillingen a.d. Donau",
-    "LK Lindau": "LK Lindau (Bodensee)",
-    "LK Stadtverband Saarbrücken": "LK Regionalverband Saarbrücken",
-    "LK Saar-Pfalz-Kreis": "LK Saarpfalz-Kreis",
-    "LK Sankt Wendel": "LK St. Wendel",
-    "SK Brandenburg a.d.Havel": "SK Brandenburg an der Havel",
-    "SK Halle": "SK Halle (Saale)",
-    "SK Berlin Reinickendorf": "SK Berlin",
-    "SK Berlin Charlottenburg-Wilmersdorf": "SK Berlin",
-    "SK Berlin Treptow-Köpenick": "SK Berlin",
-    "SK Berlin Pankow": "SK Berlin",
-    "SK Berlin Neukölln": "SK Berlin",
-    "SK Berlin Lichtenberg": "SK Berlin",
-    "SK Berlin Marzahn-Hellersdorf": "SK Berlin",
-    "SK Berlin Spandau": "SK Berlin",
-    "SK Berlin Steglitz-Zehlendorf": "SK Berlin",
-    "SK Berlin Mitte": "SK Berlin",
-    "SK Berlin Friedrichshain-Kreuzberg": "SK Berlin",
-    "SK Berlin Tempelhof-Schöneberg": "SK Berlin",
-    "LK Kassel": "Region Kassel",
-    "SK Kassel": "Region Kassel"
     }
 
 def readNewCSV():
@@ -80,36 +41,18 @@ def readNewCSV():
             try:
                 d = CET.localize(datetime.datetime.strptime(ncovdatapoint[36].strip(),"%d.%m.%Y %H:%M"))
             except:
-                print("Failed to parse time for Germany: '" + ncovdatapoint[36].strip() +"'")
+                print("Failed to parse time for Germany: '" + ncovdatapoint[36].strip() +"' for '" + landkreis + "'")
                 d = datetime.datetime.now(tz = CET)
 
             d = datetime.datetime.now(tz=CET)
-            if landkreis=="LK Oberallgäu":
-                # Oberallgäu und Stadt Kempten sind nicht getrennt in der Statistik
-                # Einwohner Oberallgäu: 155362, Kempten: 68907
-                # Die Fälle für Oberallgäu entsprechend aufteilen
-                numCases = int(ncovdatapoint[29]) if (ncovdatapoint[29] != "" and ncovdatapoint[29] != "-") else 0
-                numCasesOberallgaeu = int(numCases * 155362.0 / (68907.0 + 155362.0))
-                numCasesKempten = numCases - numCasesOberallgaeu
-                numcaseslookup["SK Kempten (Allgäu)"] = datapoint(
-                    numcases=numCasesKempten,
-                    timestamp=d,
-                    sourceurl=sourceurl
-                    )
-                numcaseslookup["LK Oberallgäu"] = datapoint(
-                    numcases=numCasesOberallgaeu,
-                    timestamp=d,
-                    sourceurl=sourceurl
+            cases = int(ncovdatapoint[29]) if (ncovdatapoint[29] != "" and ncovdatapoint[29] != "-") else 0
+            if landkreis in numcaseslookup:
+                cases = cases + numcaseslookup[landkreis].numcases
+            numcaseslookup[landkreis] = datapoint(
+                numcases=cases,
+                timestamp=d,
+                sourceurl=sourceurl
                 )
-            else:
-                cases = int(ncovdatapoint[29]) if (ncovdatapoint[29] != "" and ncovdatapoint[29] != "-") else 0
-                if landkreis in numcaseslookup:
-                    cases = cases + numcaseslookup[landkreis].numcases
-                numcaseslookup[landkreis] = datapoint(
-                    numcases=cases,
-                    timestamp=d,
-                    sourceurl=sourceurl
-                    )
                
     return numcaseslookup
 
@@ -150,9 +93,8 @@ def geojsonprop_caseskey(f, numcaseslookup):
 
 numcaseslookup = readNewCSV()
 #numcaseslookup = scrapeOfficialNumbers()
-processGEOJSON("GERMANY", "landkreise_simplify200_simplified.geojson",
-               geojsonprop_caseskey,
+processGEOJSON("GERMANY", "RKI_Corona_Landkreise.geojson",
+               "county",
                "RS", numcaseslookup,
-               lambda f: f["properties"]["destatis"]["population"],
-               eliminateAmbiguousNames)
+               lambda f: f["properties"]["EWZ"])
 
