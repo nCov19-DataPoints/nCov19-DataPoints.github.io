@@ -44,7 +44,6 @@ def readNewCSV():
                 print("Failed to parse time for Germany: '" + ncovdatapoint[36].strip() +"' for '" + landkreis + "'")
                 d = datetime.datetime.now(tz = CET)
 
-            d = datetime.datetime.now(tz=CET)
             cases = int(ncovdatapoint[29]) if (ncovdatapoint[29] != "" and ncovdatapoint[29] != "-") else 0
             if landkreis in numcaseslookup:
                 cases = cases + numcaseslookup[landkreis].numcases
