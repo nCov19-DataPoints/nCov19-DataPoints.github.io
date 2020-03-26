@@ -144,7 +144,10 @@ def readNewCSV():
                 name = namesubst[name]
             except:
                 pass
-            d = CET.localize(datetime.datetime.strptime(ncovdatapoint[0].strip(),"%Y-%m-%d %H:%M:%S"))
+            try:
+                d = CET.localize(datetime.datetime.strptime(ncovdatapoint[0].strip(),"%Y-%m-%d %H:%M:%S"))
+            except:
+                d = CET.localize(datetime.datetime.strptime(ncovdatapoint[0].strip(),"%Y-%m-%dT%H:%M:%S"))
             numcaseslookup[name] = buildhelpers.datapoint(
                 numcases= int(ncovdatapoint[9]) if ncovdatapoint[9] != "" else 0,
                 timestamp= d,
