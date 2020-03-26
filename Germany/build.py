@@ -66,7 +66,6 @@ def readNewCSV():
     data = response.read()
     text = data.decode('utf-8')
 
-    d = datetime.datetime.now(tz=CET)
     with StringIO(text) as f:
         csvreader = csv.reader(f, delimiter=',')
         for ncovdatapoint in csvreader:
@@ -77,7 +76,14 @@ def readNewCSV():
             try:
                 landkreis = landkreissubst[landkreis]
             except:
-                pass            
+                pass
+            try:
+                d = CET.localize(datetime.datetime.strptime(ncovdatapoint[36].strip(),"%d.%m.%Y %H:%M"))
+            except:
+                print("Failed to parse time for Germany: '" + ncovdatapoint[36].strip() +"'")
+                d = datetime.datetime.now(tz = CET)
+
+            d = datetime.datetime.now(tz=CET)
             if landkreis=="LK Oberallgäu":
                 # Oberallgäu und Stadt Kempten sind nicht getrennt in der Statistik
                 # Einwohner Oberallgäu: 155362, Kempten: 68907

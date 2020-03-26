@@ -147,7 +147,11 @@ def readNewCSV():
             try:
                 d = CET.localize(datetime.datetime.strptime(ncovdatapoint[0].strip(),"%Y-%m-%d %H:%M:%S"))
             except:
-                d = CET.localize(datetime.datetime.strptime(ncovdatapoint[0].strip(),"%Y-%m-%dT%H:%M:%S"))
+                try:
+                    d = CET.localize(datetime.datetime.strptime(ncovdatapoint[0].strip(),"%Y-%m-%dT%H:%M:%S"))
+                except:
+                    print("Failed to parse time for Italy: '" + ncovdatapoint[0].strip() +"'")
+                    d = datetime.datetime.now(tz = CET)
             numcaseslookup[name] = buildhelpers.datapoint(
                 numcases= int(ncovdatapoint[9]) if ncovdatapoint[9] != "" else 0,
                 timestamp= d,
