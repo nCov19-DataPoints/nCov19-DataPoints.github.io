@@ -19,7 +19,9 @@ colortable = [
      {"t":5.0, "c":{"r":255,"g":0,"b":0,"a":0.3} },
      {"t":10.0, "c":{"r":255,"g":0,"b":0,"a":0.4} },
      {"t":25.0, "c":{"r":255,"g":0,"b":0,"a":0.5} },
-     {"t":100.0, "c":{"r":255,"g":0,"b":128,"a":0.5} }
+     {"t":50.0, "c":{"r":255,"g":0,"b":64,"a":0.5} },
+     {"t":75.0, "c":{"r":255,"g":0,"b":128,"a":0.5} },
+     {"t":100.0, "c":{"r":255,"g":0,"b":191,"a":0.5} }
     ]
 colortableoutdated = [
     {"t": 0, "c": {"r": 102, "g": 153, "b": 102, "a": 0.1}},
@@ -31,7 +33,9 @@ colortableoutdated = [
     {"t": 5.0, "c": {"r": 153, "g": 102, "b": 102, "a": 0.3}},
     {"t": 10.0, "c": {"r": 153, "g": 102, "b": 102, "a": 0.4}},
     {"t": 25.0, "c": {"r": 153, "g": 102, "b": 102, "a": 0.5}},
-    {"t": 100.0, "c": {"r": 153, "g": 102, "b": 128, "a": 0.5}}
+    {"t": 50.0, "c": {"r": 153, "g": 102, "b": 128, "a": 0.5}},
+    {"t": 75.0, "c": {"r": 153, "g": 102, "b": 141, "a": 0.5}},
+    {"t": 100.0, "c": {"r": 153, "g": 102, "b": 153, "a": 0.5}}
 ]
 
 
@@ -60,7 +64,7 @@ class datapoint:
         self.numcases = numcases
         self.timestamp = timestamp
         self.sourceurl = sourceurl
-       
+
     def __str__(self):
         return "datapoint(numcases="+str(self.numcases)+",timestamp="+self.timestamp.isoformat()+",sourceurl='"+self.sourceurl+"'"
         
@@ -88,7 +92,10 @@ def processGEOJSON(country, geojsonfilename, geojsonprop_caseskey, geojsonprop_i
                 except:
                     v = None
             else:
-                name, v = geojsonprop_caseskey(f, numcaseslookup)
+                try:
+                    name, v = geojsonprop_caseskey(f, numcaseslookup)
+                except:
+                    name, v = "???", None
             if v==None:
                 v = datapoint(numcases = 0, timestamp = mostrecentupdate, sourceurl = "")
                 unmatchedgeojsonnames.append(name)
@@ -99,7 +106,7 @@ def processGEOJSON(country, geojsonfilename, geojsonprop_caseskey, geojsonprop_i
             p["POPULATION"] = populationlookup[name] if isinstance(populationlookup, dict) else populationlookup(f)
             p["CASESPER10000"] = p["CASES"] / p["POPULATION"] * 10000
             p["SOURCEURL"] = v.sourceurl
-            colors = colortable if v.timestamp + datetime.timedelta(hours=48) > datetime.datetime.now(datetime.timezone.utc) else colortableoutdated
+            colors = colortable if v.timestamp + datetime.timedelta(hours=96) > datetime.datetime.now(datetime.timezone.utc) else colortableoutdated
             fillColor = calculateColor(colors,p["CASESPER10000"])
             p["fill"] = True
             p["fillColor"] = "#{0:02x}{1:02x}{2:02x}".format(fillColor.r,fillColor.g,fillColor.b)
