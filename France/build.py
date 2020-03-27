@@ -189,10 +189,10 @@ def readNewCSV():
                 sourceurl = "https://github.com/opencovid19-fr/data"
                 )
             if ncovdatapoint[1] == "departement":           
-                if not (name in numcasesdepartement) or d>numcasesdepartement[name].timestamp or v.numcases > numcasesdepartement[name].numcases:
+                if v.numcases>0 and (not (name in numcasesdepartement) or d>numcasesdepartement[name].timestamp or v.numcases > numcasesdepartement[name].numcases):
                     numcasesdepartement[name] = v
             else:
-                if not (name in numcasesregion) or d>numcasesregion[name].timestamp or v.numcases > numcasesregion[name].numcases:
+                if v.numcases>0 and (not (name in numcasesregion) or d>numcasesregion[name].timestamp or v.numcases > numcasesregion[name].numcases):
                     numcasesregion[name] = v
     if False: #len(numcasesdepartement)>0: need to do this hierarchical - use the departement data to augment the regional data
         numcaseslookup = numcasesdepartement
