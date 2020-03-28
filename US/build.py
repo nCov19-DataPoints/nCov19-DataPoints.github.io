@@ -3261,20 +3261,54 @@ def readNewCSV():
             countyid = ncovdatapoint[3].strip();
             name = ncovdatapoint[1].strip();
             state = ncovdatapoint[2].strip();
-            if name == "county" or countyid == "fips":
-                continue
-            try:
-                name = namesubst[name]
-            except:
-                pass
-            d = datetime.datetime.strptime(ncovdatapoint[0],"%Y-%m-%d")
-            d = pytz.UTC.localize(d)
-            if (not countyid in numcaseslookup) or d>numcaseslookup[countyid].timestamp:
-                numcaseslookup[countyid] = datapoint(
-                    numcases=int(ncovdatapoint[4]) if ncovdatapoint[4] != "" else 0,
-                    timestamp=d,
-                    sourceurl="https://github.com/nytimes/covid-19-data"
+            if name == "New York City":
+                # Distribute evenly over five boroughs
+                d = datetime.datetime.strptime(ncovdatapoint[0],"%Y-%m-%d")
+                d = pytz.UTC.localize(d)
+                if (not "36081" in numcaseslookup) or d>numcaseslookup["36081"].timestamp:
+                    nypop = uspop["36081"]+uspop["36047"]+uspop["36061"]+uspop["36085"]+uspop["36005"]
+                    nycases = int(ncovdatapoint[4]) if ncovdatapoint[4] != "" else 0
+                    numcaseslookup["36081"] = datapoint(
+                        numcases=int(uspop["36081"]/nypop*nycases),
+                        timestamp=d,
+                        sourceurl="https://github.com/nytimes/covid-19-data"
+                        )
+                    numcaseslookup["36047"] = datapoint(
+                        numcases=int(uspop["36047"]/nypop*nycases),
+                        timestamp=d,
+                        sourceurl="https://github.com/nytimes/covid-19-data"
                     )
+                    numcaseslookup["36061"] = datapoint(
+                        numcases=int(uspop["36061"]/nypop*nycases),
+                        timestamp=d,
+                        sourceurl="https://github.com/nytimes/covid-19-data"
+                        )
+                    numcaseslookup["36085"] = datapoint(
+                        numcases=int(uspop["36085"]/nypop*nycases),
+                        timestamp=d,
+                        sourceurl="https://github.com/nytimes/covid-19-data"
+                    )
+                    numcaseslookup["36005"] = datapoint(
+                        numcases=int(uspop["36005"]/nypop*nycases),
+                        timestamp=d,
+                        sourceurl="https://github.com/nytimes/covid-19-data"
+                    )
+            else:
+                if name == "county" or countyid == "fips" or countyid.endswith("999") or countyid=="" or countyid=="29998":
+                    continue
+                try:
+                    name = namesubst[name]
+                except:
+                    pass
+
+                d = datetime.datetime.strptime(ncovdatapoint[0],"%Y-%m-%d")
+                d = pytz.UTC.localize(d)
+                if (not countyid in numcaseslookup) or d>numcaseslookup[countyid].timestamp:
+                    numcaseslookup[countyid] = datapoint(
+                        numcases=int(ncovdatapoint[4]) if ncovdatapoint[4] != "" else 0,
+                        timestamp=d,
+                        sourceurl="https://github.com/nytimes/covid-19-data"
+                        )
     return numcaseslookup
 
 numcaseslookup = readNewCSV()
@@ -3283,11 +3317,13 @@ def lookup(f,l):
     try:
         id = f["id"]
         try:
-            r = l[id]
+            r = l.pop(id)
             return f["properties"]["name"],r
         except:
+            print("lookup: cannot find '"+id+"'")
             return f["properties"]["name"],datapoint(numcases=0,timestamp=datetime.datetime.fromtimestamp(0,tz=pytz.UTC), sourceurl="")
     except:
+        print("lookup: no id??")
         return "???",None
 
 processGEOJSON("US", "counties.geojson", lookup, lambda f: f["id"], numcaseslookup, lambda f: uspop[f["id"]])
