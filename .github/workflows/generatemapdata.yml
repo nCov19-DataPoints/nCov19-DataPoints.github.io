@@ -61,6 +61,11 @@ jobs:
         cd Switzerland
         python build.py
         cd ..
+    - name: Run build script for US
+      run: |
+        cd US
+        python build.py
+        cd ..        
         
     - name: Git Auto Commit
       uses: stefanzweifel/git-auto-commit-action@v4.1.1
