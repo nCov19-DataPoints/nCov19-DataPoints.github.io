@@ -76,6 +76,7 @@ var GEOJSON_lastbuildrunutc = new Date(2020, 0, 1);
 <script type="text/javascript"  src="./France/ncov19map.js" ></script>
 <script type="text/javascript"  src="./Switzerland/ncov19map.js" ></script>
 <script type="text/javascript"  src="./US/ncov19map.js" ></script>
+<script type="text/javascript"  src="./Spain/ncov19map.js" ></script>
 
 <script>
 	var layers = [
@@ -84,7 +85,8 @@ var GEOJSON_lastbuildrunutc = new Date(2020, 0, 1);
 		[ 'ncov19_uk', GEOJSON_UK ],
 		[ 'ncov19_france', GEOJSON_FRANCE ],
 		[ 'ncov19_switzerland', GEOJSON_SWITZERLAND ],
-		[ 'ncov19_us', GEOJSON_US ]
+		[ 'ncov19_us', GEOJSON_US ],
+		[ 'ncov19_us', GEOJSON_SPAIN ]
 	];
 	var map = L.map('map').setView([51, 10], 6);
       // I'd prefer the look of 'https://maps.wikimedia.org/osm-intl/${z}/${x}/${y}.png'
@@ -228,7 +230,7 @@ var GEOJSON_lastbuildrunutc = new Date(2020, 0, 1);
 		});
 	}
 
-	geojsonlayer = L.geoJSON([ GEOJSON_GERMANY, GEOJSON_ITALY, GEOJSON_UK, GEOJSON_FRANCE, GEOJSON_SWITZERLAND, GEOJSON_US ], {
+	geojsonlayer = L.geoJSON([ GEOJSON_GERMANY, GEOJSON_ITALY, GEOJSON_UK, GEOJSON_FRANCE, GEOJSON_SWITZERLAND, GEOJSON_US, GEOJSON_SPAIN ], {
 
 		style: function (feature) {
 			return feature.properties;
