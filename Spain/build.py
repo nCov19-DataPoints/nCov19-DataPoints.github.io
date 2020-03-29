@@ -37,7 +37,7 @@ def readNewCSV():
     url="https://covid19.isciii.es/resources/serie_historica_acumulados.csv"
     response = urllib.request.urlopen(url)
     data = response.read()
-    text = data.decode('ANSI')
+    text = data.decode('UTF-8','replace')
 
     numcaseslookup = dict()
     with StringIO(text) as f:
