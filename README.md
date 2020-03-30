@@ -38,14 +38,8 @@ Many thanks must go to the people gathering all the information which makes proj
   * If you need the data, feel free to use [the csv-file](./Germany/ncov19.csv). I aim to update it once a day, usually in the evening, to the best of my abilites. Once the RKI publishes the information, I will use that as a source, and the CSV file will then just contain the RKI data.
 * For the US, the NY Times has graciously decided to make their data available to the public:
   * US: https://github.com/nytimes/covid-19-data
-* Many thanks to all the people who refined the geojson data and made it ready-to-use:
-  * Germany: http://opendatalab.de/projects/geojson-utilities/
-  * Italy: http://github.com/openpolis/geojson-italy
-  * France: http://github.com/gregoiredavid/france-geojson
-  * UK: http://github.com/martinjc/UK-GeoJSON
-  * Spain: https://covid19.isciii.es/
-  * US: https://github.com/nytimes/covid-19-data
-  * And http://github.com/mbloch/mapshaper is a very cool tool, if the too detailed geojson brings the browser to a crawl.
+* Many thanks to all the people who refined the geojson data and made it ready-to-use!
+* And http://github.com/mbloch/mapshaper is a very cool tool, if the too detailed geojson brings the browser to a crawl.
 * Many thanks to http://openstreetmap.org - without them, no map!
 * And also to the [Leaflet](http://leafletjs.com/) project, making it really easy to display geojson files!
 * Also of course many thanks to github - this is an awesome platform with lots of free stuff!
