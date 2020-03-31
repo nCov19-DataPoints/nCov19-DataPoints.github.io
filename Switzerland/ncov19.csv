@@ -1,11 +1,11 @@
 Names,Cases
-Zürich,1758,2020-03-29T14:00:00+02:00,https://github.com/openZH/covid_19/blob/master/fallzahlen_kanton_total_csv/COVID19_Fallzahlen_Kanton_ZH_total.csv
-Bern/Berne,798,2020-03-29T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/fallzahlen_kanton_total_csv/COVID19_Fallzahlen_Kanton_BE_total.csv
+Zürich,1874,2020-03-30T17:00:00+02:00,https://github.com/openZH/covid_19/blob/master/fallzahlen_kanton_total_csv/COVID19_Fallzahlen_Kanton_ZH_total.csv
+Bern/Berne,826,2020-03-30T00:00:00+02:00,https://github.com/openZH/covid_19/blob/master/fallzahlen_kanton_total_csv/COVID19_Fallzahlen_Kanton_BE_total.csv
 Luzern,351,2020-03-30T11:00:00+02:00,https://github.com/openZH/covid_19/blob/master/fallzahlen_kanton_total_csv/COVID19_Fallzahlen_Kanton_LU_total.csv
-Uri,50,2020-03-29T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/fallzahlen_kanton_total_csv/COVID19_Fallzahlen_Kanton_UR_total.csv
+Uri,53,2020-03-30T00:00:00+02:00,https://github.com/openZH/covid_19/blob/master/fallzahlen_kanton_total_csv/COVID19_Fallzahlen_Kanton_UR_total.csv
 Schwyz,135,2020-03-30T00:00:00+02:00,https://github.com/openZH/covid_19/blob/master/fallzahlen_kanton_total_csv/COVID19_Fallzahlen_Kanton_SZ_total.csv
 Obwalden,46,2020-03-30T00:00:00+02:00,https://github.com/openZH/covid_19/blob/master/fallzahlen_kanton_total_csv/COVID19_Fallzahlen_Kanton_OW_total.csv
-Nidwalden,59,2020-03-29T16:15:00+02:00,https://github.com/openZH/covid_19/blob/master/fallzahlen_kanton_total_csv/COVID19_Fallzahlen_Kanton_NW_total.csv
+Nidwalden,63,2020-03-30T17:15:00+02:00,https://github.com/openZH/covid_19/blob/master/fallzahlen_kanton_total_csv/COVID19_Fallzahlen_Kanton_NW_total.csv
 Glarus,50,2020-03-30T13:30:00+02:00,https://github.com/openZH/covid_19/blob/master/fallzahlen_kanton_total_csv/COVID19_Fallzahlen_Kanton_GL_total.csv
 Zug,112,2020-03-30T08:00:00+02:00,https://github.com/openZH/covid_19/blob/master/fallzahlen_kanton_total_csv/COVID19_Fallzahlen_Kanton_ZG_total.csv
 Fribourg,477,2020-03-30T00:00:00+02:00,https://github.com/openZH/covid_19/blob/master/fallzahlen_kanton_total_csv/COVID19_Fallzahlen_Kanton_FR_total.csv
@@ -13,15 +13,15 @@ Solothurn,190,2020-03-29T00:00:00+01:00,https://github.com/openZH/covid_19/blob/
 Basel-Stadt,621,2020-03-30T10:00:00+02:00,https://github.com/openZH/covid_19/blob/master/fallzahlen_kanton_total_csv/COVID19_Fallzahlen_Kanton_BS_total.csv
 Basel-Landschaft,539,2020-03-30T00:00:00+02:00,https://github.com/openZH/covid_19/blob/master/fallzahlen_kanton_total_csv/COVID19_Fallzahlen_Kanton_BL_total.csv
 Schaffhausen,41,2020-03-30T07:00:00+02:00,https://github.com/openZH/covid_19/blob/master/fallzahlen_kanton_total_csv/COVID19_Fallzahlen_Kanton_SH_total.csv
-Appenzell Ausserrhoden,49,2020-03-30T08:00:00+02:00,https://github.com/openZH/covid_19/blob/master/fallzahlen_kanton_total_csv/COVID19_Fallzahlen_Kanton_AR_total.csv
-Appenzell Innerrhoden,13,2020-03-28T18:00:00+01:00,https://github.com/openZH/covid_19/blob/master/fallzahlen_kanton_total_csv/COVID19_Fallzahlen_Kanton_AI_total.csv
+Appenzell Ausserrhoden,50,2020-03-30T18:00:00+02:00,https://github.com/openZH/covid_19/blob/master/fallzahlen_kanton_total_csv/COVID19_Fallzahlen_Kanton_AR_total.csv
+Appenzell Innerrhoden,14,2020-03-30T12:00:00+02:00,https://github.com/openZH/covid_19/blob/master/fallzahlen_kanton_total_csv/COVID19_Fallzahlen_Kanton_AI_total.csv
 St. Gallen,389,2020-03-30T00:00:00+02:00,https://github.com/openZH/covid_19/blob/master/fallzahlen_kanton_total_csv/COVID19_Fallzahlen_Kanton_SG_total.csv
 Graubünden/Grigioni,497,2020-03-30T00:00:00+02:00,https://github.com/openZH/covid_19/blob/master/fallzahlen_kanton_total_csv/COVID19_Fallzahlen_Kanton_GR_total.csv
-Aargau,364,2020-03-27T15:00:00+01:00,https://github.com/openZH/covid_19/blob/master/fallzahlen_kanton_total_csv/COVID19_Fallzahlen_Kanton_AG_total.csv
+Aargau,481,2020-03-30T15:00:00+02:00,https://github.com/openZH/covid_19/blob/master/fallzahlen_kanton_total_csv/COVID19_Fallzahlen_Kanton_AG_total.csv
 Thurgau,148,2020-03-30T00:00:00+02:00,https://github.com/openZH/covid_19/blob/master/fallzahlen_kanton_total_csv/COVID19_Fallzahlen_Kanton_TG_total.csv
 Ticino,1962,2020-03-30T08:00:00+02:00,https://github.com/openZH/covid_19/blob/master/fallzahlen_kanton_total_csv/COVID19_Fallzahlen_Kanton_TI_total.csv
 Vaud,3168,2020-03-29T00:00:00+01:00,https://github.com/openZH/covid_19/blob/master/fallzahlen_kanton_total_csv/COVID19_Fallzahlen_Kanton_VD_total.csv
-Valais/Wallis,964,2020-03-29T15:00:00+02:00,https://github.com/openZH/covid_19/blob/master/fallzahlen_kanton_total_csv/COVID19_Fallzahlen_Kanton_VS_total.csv
-Neuchâtel,313,2020-03-29T14:00:00+02:00,https://github.com/openZH/covid_19/blob/master/fallzahlen_kanton_total_csv/COVID19_Fallzahlen_Kanton_NE_total.csv
-Genève,2283,2020-03-29T12:00:00+02:00,https://github.com/openZH/covid_19/blob/master/fallzahlen_kanton_total_csv/COVID19_Fallzahlen_Kanton_GE_total.csv
-Jura,118,2020-03-29T16:00:00+02:00,https://github.com/openZH/covid_19/blob/master/fallzahlen_kanton_total_csv/COVID19_Fallzahlen_Kanton_JU_total.csv
+Valais/Wallis,1000,2020-03-30T15:00:00+02:00,https://github.com/openZH/covid_19/blob/master/fallzahlen_kanton_total_csv/COVID19_Fallzahlen_Kanton_VS_total.csv
+Neuchâtel,338,2020-03-30T14:00:00+02:00,https://github.com/openZH/covid_19/blob/master/fallzahlen_kanton_total_csv/COVID19_Fallzahlen_Kanton_NE_total.csv
+Genève,2375,2020-03-30T12:00:00+02:00,https://github.com/openZH/covid_19/blob/master/fallzahlen_kanton_total_csv/COVID19_Fallzahlen_Kanton_GE_total.csv
+Jura,122,2020-03-30T16:00:00+02:00,https://github.com/openZH/covid_19/blob/master/fallzahlen_kanton_total_csv/COVID19_Fallzahlen_Kanton_JU_total.csv
