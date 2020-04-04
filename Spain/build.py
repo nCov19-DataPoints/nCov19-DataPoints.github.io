@@ -43,6 +43,9 @@ def readNewCSV():
     with StringIO(text) as f:
         csvreader = csv.reader(f, delimiter=',')
         for ncovdatapoint in csvreader:
+            if len(ncovdatapoint)<3:
+                print("Skipping row  with less than 3 columns: ",ncovdatapoint)
+                continue
             ccaa = ncovdatapoint[0].strip();
             if ccaa.startswith("CCAA") or ccaa.startswith("NOTA"):
                 continue
