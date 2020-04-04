@@ -22,6 +22,7 @@ jobs:
     steps:
     - name: Setup Python
       uses: actions/setup-python@v1.2.0
+      continue-on-error: true
       with:
         # Version range or exact version of a Python version to use, using SemVer's version range syntax.
         python-version: 3.8 # optional, default is 3.x
