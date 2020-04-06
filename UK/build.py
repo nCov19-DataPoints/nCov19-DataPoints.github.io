@@ -416,7 +416,7 @@ def readNewCSV():
             except:
                 pass
             numcaseslookup[name] = datapoint(
-                numcases=int(ncovdatapoint[2]) if ncovdatapoint[2] != "" else 0,
+                numcases=int(ncovdatapoint[2].replace(",","")) if ncovdatapoint[2] != "" else 0,
                 timestamp=d,
                 sourceurl="https://www.arcgis.com/home/item.html?id=b684319181f94875a6879bbc833ca3a6"
                 )

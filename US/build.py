@@ -3320,8 +3320,10 @@ def lookup(f,l):
             r = l.pop(id)
             return f["properties"]["name"],r
         except:
-            print("lookup: cannot find '"+id+"'")
-            return f["properties"]["name"],datapoint(numcases=0,timestamp=datetime.datetime.fromtimestamp(0,tz=pytz.UTC), sourceurl="")
+            print("lookup: no entry for '" + id + "'")
+            return f["properties"]["name"],datapoint(numcases=0,
+                                                     timestamp=datetime.datetime.fromtimestamp(0,tz=pytz.UTC),
+                                                     sourceurl="")
     except:
         print("lookup: no id??")
         return "???",None
