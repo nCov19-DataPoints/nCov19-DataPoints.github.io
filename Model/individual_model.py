@@ -349,16 +349,16 @@ def calculateAll(startValues):
         with multiprocessing.Pool(16) as p:
             w = p.map(solveForLeastSq, allv)
 
-def plot(v):
+def plot(v, numdays):
     # Plot
-    statsperday = calcStatsPerDay(daysToModel, v)
+    statsperday = calcStatsPerDay(numdays, v)
     fig = plt.figure(dpi=75, figsize=(20,16))
     ax = fig.add_subplot(111)
     if logPlot:
         ax.set_yscale("log", nonposy='clip')
 
 
-    X = np.arange(0, daysToModel)
+    X = np.arange(0, numdays)
     I = statsperday['I']
     D = statsperday['D']
     H = statsperday['H']
@@ -412,4 +412,4 @@ if __name__ == '__main__':
     v['paramBlockArray'][3]['i_to_d_sigma'] = 0.4
     v['paramBlockArray'][3]['numPeopleInfectiousContactPerDay'] = 1.0
 
-    plot(v)
+    plot(v, daysToModel)
