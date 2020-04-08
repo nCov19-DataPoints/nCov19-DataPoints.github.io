@@ -108,9 +108,9 @@ D0 = dataset["D0"]
 H0 = dataset["H0"]
 R0 = dataset["R0"]
 T0 = dataset["T0"]
-RealDpD = np.asarray(dataset["confirmed_cases_per_day"])
-RealTpD = np.asarray(dataset["deaths_per_day"])
-daysOfData = len(RealDpD)
+RealND = np.asarray(dataset["confirmed_cases_per_day"])
+RealNT = np.asarray(dataset["deaths_per_day"])
+daysOfData = len(RealND)
 RealX = np.arange(daysOfData)
 #D_to_T = RealT[-1] / np.sum(np.asarray(RealD[0:int(-timeDiagnosedToDeath / 2)]))
 #D_to_R = 1.0 / 15.0
@@ -147,16 +147,18 @@ type_statsperday = np.dtype([
     ('H', np.int),
     ('R', np.int),
     ('T', np.int),
-    ('dI', np.int),
-    ('dD', np.int),
-    ('dT', np.int)
+    ('nE', np.int),
+    ('nI', np.int),
+    ('nD', np.int),
+    ('nH', np.int),
+    ('nT', np.int)
 ])
 
 type_fittedparamblock = np.dtype([
     ('daySocialBehaviourChange', np.int),
-    ('i_to_d_mean', np.float),
-    ('i_to_d_sigma', np.float),
-    ('numPeopleInfectiousContactPerDay', np.int),
+    ('infectiousToDiagnosedMean', np.float),
+    ('infectiousToDiagnosedSigma', np.float),
+    ('numPeopleInfectiousContactPerDay', np.float),
     ('infectiousPeriodValues', np.float, (20,)),
     ('infectiousPeriodProbabilities', np.float, (20,))
 ])
@@ -185,43 +187,43 @@ infectiousNoSymptomsPeriodProbabilities = np.array([0.3,0.3,0.15,0.10,0.06,0.04,
 daysInfectiousBeforeSymptoms = 3
 
 probabilityHospital = 0.2
-diagToHospitalPeriodValues = np.array([          2,  3,  4,  5,   6,   7,   8,   9,  10,   11,   12,   13,   14])
-diagToHospitalPeriodProbabilities = np.array([0.05,0.1,0.2,0.4,0.12,0.06,0.03,0.02,0.01,0.004,0.003,0.002,0.001])
+symptomsToHospitalPeriodValues = np.array([          2,  3,  4,  5,   6,   7,   8,   9,  10,   11,   12,   13,   14])
+symptomsToHospitalPeriodProbabilities = np.array([0.05,0.1,0.2,0.4,0.12,0.06,0.03,0.02,0.01,0.004,0.003,0.002,0.001])
 probabilityDeadAfterHospital = 0.1
-infectionsToDeadPeriodValues = np.array([         10, 11, 12, 13,  14,  15,  16,  17,  18,   19,   20,   21,   22])
-infectionsToDeadPeriodProbabilities = np.array([0.05,0.1,0.2,0.4,0.12,0.06,0.03,0.02,0.01,0.004,0.003,0.002,0.001])
-infectionsToRecoveredPeriodValues = np.array([         20, 21, 22, 23,   24,  25,  26,  27,  28,   29,   30,   31,   32])
-infectionsToRecoveredPeriodProbabilities = np.array([0.05,0.1,0.2,0.4,0.12,0.06,0.03,0.02,0.01,0.004,0.003,0.002,0.001])
+symptomsToDeadPeriodValues = np.array([          8,  9, 10, 11, 12, 13,  14,  15,  16,  17,  18,   19,   20])
+symptomsToDeadPeriodProbabilities = np.array([0.05,0.1,0.2,0.4,0.12,0.06,0.03,0.02,0.01,0.004,0.003,0.002,0.001])
+symptomsToRecoveredPeriodValues = np.array([         20, 21, 22, 23,   24,  25,  26,  27,  28,   29,   30,   31,   32])
+symptomsToRecoveredPeriodProbabilities = np.array([0.05,0.1,0.2,0.4,0.12,0.06,0.03,0.02,0.01,0.004,0.003,0.002,0.001])
 
-diagToRecoveredPeriodValues = np.array([         7,  8,   9,  10,  11,  12,  13,  14])
-diagToRecoveredPeriodProbabilities = np.array([0.4,0.35,0.12,0.06,0.03,0.02,0.01,0.01])
+symptomsToRecoveredPeriodValues = np.array([         7,  8,   9,  10,  11,  12,  13,  14])
+symptomsToRecoveredPeriodProbabilities = np.array([0.4,0.35,0.12,0.06,0.03,0.02,0.01,0.01])
 
 def createExposed(day_exposed, paramBlock):
     day_with_symptoms = day_exposed+RG.choice(incubationPeriodValues, p=incubationPeriodProbabilities)
     day_infectious = day_with_symptoms-daysInfectiousBeforeSymptoms
     if RG.random()>=probabilityNoSymptoms:
-        mean = paramBlock['i_to_d_mean']
-        sigma = paramBlock['i_to_d_sigma']
+        mean = paramBlock['infectiousToDiagnosedMean']
+        sigma = paramBlock['infectiousToDiagnosedSigma']
         i_to_d = RG.lognormal(mean, sigma)
         day_diagnosed = day_with_symptoms+i_to_d
         if RG.random()< probabilityHospital:
-            day_hospitalized = day_diagnosed+RG.choice(diagToHospitalPeriodValues, p=diagToHospitalPeriodProbabilities)
+            day_hospitalized = day_with_symptoms+RG.choice(symptomsToHospitalPeriodValues, p=symptomsToHospitalPeriodProbabilities)
             if RG.random()< probabilityDeadAfterHospital:
-                day_died = day_infectious+RG.choice(infectionsToDeadPeriodValues, p=infectionsToDeadPeriodProbabilities)
-                day_recovered = daysToModel * 1000
+                day_died = day_with_symptoms+RG.choice(symptomsToDeadPeriodValues, p=symptomsToDeadPeriodProbabilities)
+                day_recovered = np.iinfo(np.int).max
             else:
-                day_recovered = day_infectious+RG.choice(infectionsToRecoveredPeriodValues, p=infectionsToRecoveredPeriodProbabilities)
-                day_died = daysToModel * 1000
-            if day_hospitalized<day_recovered or day_hospitalized<day_died:
-                day_hospitalized = daysToModel * 1000
+                day_recovered = day_with_symptoms+RG.choice(symptomsToRecoveredPeriodValues, p=symptomsToRecoveredPeriodProbabilities)
+                day_died = np.iinfo(np.int).max
+            if day_hospitalized>=min(day_recovered,day_died):
+                day_hospitalized = np.iinfo(np.int).max
         else:
-            day_hospitalized = daysToModel * 1000
-            day_recovered = day_diagnosed+RG.choice(diagToRecoveredPeriodValues, p=diagToRecoveredPeriodProbabilities)
-            day_died = daysToModel * 1000
+            day_hospitalized = np.iinfo(np.int).max
+            day_recovered = day_with_symptoms+RG.choice(symptomsToRecoveredPeriodValues, p=symptomsToRecoveredPeriodProbabilities)
+            day_died = np.iinfo(np.int).max
     else:
-        day_diagnosed = daysToModel * 1000
-        day_hospitalized = daysToModel * 1000
-        day_died = daysToModel * 1000
+        day_diagnosed = np.iinfo(np.int).max
+        day_hospitalized = np.iinfo(np.int).max
+        day_died = np.iinfo(np.int).max
         day_recovered = day_infectious + RG.choice(infectiousNoSymptomsPeriodValues, p=infectiousNoSymptomsPeriodProbabilities)
     a = np.array([(day_exposed, day_infectious, day_diagnosed, day_hospitalized, day_recovered, day_died)], type_individual)
     return a[0]
@@ -246,28 +248,31 @@ def advanceDay(day, statsperday, pop, paramBlock):
     pR = statsperday[day-1]['R']
     pT = statsperday[day-1]['T']
 
-    popR = np.logical_and(pop['day_recovered']<=day,pop['day_recovered']>=0)
-    popT = np.logical_and(pop['day_died']<=day,pop['day_died']>=0)
+    popR = pop['day_recovered']<=day
+    popT = pop['day_died']<=day
     npop = pop[np.logical_not(np.logical_or(popR, popT))]
     dR = np.count_nonzero(popR)
     dT = np.count_nonzero(popT)
     R = pR + dR
     T = pT + dT
 
-    I = np.count_nonzero(npop['day_infectious']<=day)
-    D = np.count_nonzero(npop['day_diagnosed']<=day)
-    H = np.count_nonzero(npop['day_hospitalized']<=day)
-    I = I - D
-    D = D - H
-
     prob = pS / population
-    numnewexposed = RG.binomial(I * numPeopleInfectiousContactPerDay, prob)
+    numnewexposed = RG.binomial(pI * numPeopleInfectiousContactPerDay, prob)
 
     #createExposedUFunc = np.frompyfunc(lambda n: createExposed(day), 1, 1)
     #newexposed = np.fromfunction(createExposedUFunc, (numnewexposed,))
     newexposed = createNewlyExposed(day, numnewexposed, paramBlock)
-
     npop = np.append(npop, newexposed)
+
+    nE = np.count_nonzero(npop['day_exposed']==day)
+    I = np.count_nonzero(npop['day_infectious']<=day)
+    nI = np.count_nonzero(npop['day_infectious']==day)
+    D = np.count_nonzero(npop['day_diagnosed']<=day)
+    nD = np.count_nonzero(npop['day_diagnosed']==day)
+    H = np.count_nonzero(npop['day_hospitalized']<=day)
+    nH = np.count_nonzero(npop['day_hospitalized']==day)
+    I = I - D
+    D = D - H
 
     statsperday[day]['S'] = pS - numnewexposed
     statsperday[day]['E'] = pE + numnewexposed - (I+D+H+dR+dT - pI-pD-pH)
@@ -276,9 +281,11 @@ def advanceDay(day, statsperday, pop, paramBlock):
     statsperday[day]['H'] = H
     statsperday[day]['R'] = R
     statsperday[day]['T'] = T
-    statsperday[day]['dI'] = I - pI
-    statsperday[day]['dD'] = D - pD
-    statsperday[day]['dT'] = dT
+    statsperday[day]['nE'] = nE
+    statsperday[day]['nI'] = nI
+    statsperday[day]['nD'] = nD  # we need all *new* diagnosed, without subtracting the ones going elsewhere - that is what is generally counted
+    statsperday[day]['nH'] = nH
+    statsperday[day]['nT'] = dT
 
     return npop
 
@@ -304,27 +311,28 @@ def calcStatsPerDay(days, xdata):
     statsperday[0]['H'] = H0
     statsperday[0]['R'] = R0
     statsperday[0]['T'] = T0
-    statsperday[0]['dI'] = 0
-    statsperday[0]['dD'] = 0
-    statsperday[0]['dT'] = 0
+    statsperday[0]['nI'] = 0
+    statsperday[0]['nD'] = 0
+    statsperday[0]['nH'] = 0
+    statsperday[0]['nT'] = 0
 
     for day in range(1, days):
         while paramBlockIndex<maxNumSocialBehaviourChanges-1 and paramBlockArray[paramBlockIndex+1]['daySocialBehaviourChange']<day:
             paramBlockIndex += 1
         paramBlock = paramBlockArray[paramBlockIndex]
         pop = advanceDay(day, statsperday, pop, paramBlock)
-        print(paramBlockIndex, statsperday[day])
+        print(day, paramBlockIndex, statsperday[day])
 
     return statsperday
 
 def solveForLeastSq(xdata):
     statsperday = calcStatsPerDay(daysOfData, xdata)
 
-    dD = statsperday['dD']
-    dT = statsperday['dT']
+    dD = statsperday['nD']
+    dT = statsperday['nT']
 
-    o = 0.5*np.nansum(np.square((np.log(dD+1) - np.log(RealDpD[0:]+1)))) + \
-        0.5*np.nansum(np.square(np.log(dT+1) - np.log(RealTpD[0:]+1)))
+    o = 0.5*np.nansum(np.square((np.log(dD+1) - np.log(RealND[0:]+1)))) + \
+        0.5*np.nansum(np.square(np.log(dT+1) - np.log(RealNT[0:]+1)))
     print(o,"  for: ",xdata)
     return o
 
@@ -359,22 +367,26 @@ def plot(v, numdays):
 
 
     X = np.arange(0, numdays)
+    E = statsperday['E']
     I = statsperday['I']
     D = statsperday['D']
     H = statsperday['H']
     R = statsperday['R']
     T = statsperday['T']
-    dI = statsperday['dI']
-    dD = statsperday['dD']
-    dT = statsperday['dT']
+    nE = statsperday['nE']
+    nI = statsperday['nI']
+    nD = statsperday['nD']
+    nH = statsperday['nH']
+    nT = statsperday['nT']
 
-    ax.plot(X, dI, 'b', alpha=0.5, lw=1, label='Infectious')
-    ax.plot(X, dD, 'g', alpha=0.5, lw=1, label='Diagnosed and isolated')
-    #ax.plot(X, np.cumsum(D), 'm', alpha=0.5, lw=1, label='Cumulative diagnosed and isolated')
-    ax.plot(RealX[0:], RealDpD[0:], 'r', alpha=0.5, lw=1, label='Confirmed cases')
+    ax.plot(X, nE, 'y', alpha=0.5, lw=1, label='New exposed')
+    ax.plot(X, nI, 'b', alpha=0.5, lw=1, label='New infectious')
+    ax.plot(X, nD, 'g', alpha=0.5, lw=1, label='New diagnosed and isolated')
+    ax.plot(X, nH, 'm', alpha=0.5, lw=1, label='New hospitalized')
+    ax.plot(RealX[0:], RealND[0:], 'r', alpha=0.5, lw=1, label='Confirmed cases per day')
     #ax.plot(X, R, 'y', alpha=0.5, lw=1, label='Recovered with immunity')
-    ax.plot(X, dT, 'k', alpha=0.5, lw=1, label='Deaths')
-    ax.plot(RealX[0:], RealTpD[0:], 'c', alpha=0.5, lw=1, label='Confirmed deaths')
+    ax.plot(X, nT, 'k', alpha=0.5, lw=1, label='New deaths')
+    ax.plot(RealX[0:], RealNT[0:], 'c', alpha=0.5, lw=1, label='Confirmed deaths per day')
 
     ax.set_xlabel('Time /days')
     ax.set_ylabel('Number (1000s)')
@@ -393,23 +405,23 @@ if __name__ == '__main__':
     #v = [E0, I0, numPeopleInfectiousContactPerDay_0, numPeopleInfectiousContactPerDay_1]
     #calculateAll(v)
     v =  np.empty((1,), type_fittedparameters)[0]
-    v['E0'] = 10
-    v['I0'] = 0
+    v['E0'] = 100
+    v['I0'] = 50
     v['paramBlockArray'][0]['daySocialBehaviourChange'] = 0
-    v['paramBlockArray'][0]['i_to_d_mean'] = 1.6
-    v['paramBlockArray'][0]['i_to_d_sigma'] = 0.4
-    v['paramBlockArray'][0]['numPeopleInfectiousContactPerDay'] = 1.0
-    v['paramBlockArray'][1]['daySocialBehaviourChange'] = 30
-    v['paramBlockArray'][1]['i_to_d_mean'] = 1.6
-    v['paramBlockArray'][1]['i_to_d_sigma'] = 0.4
-    v['paramBlockArray'][1]['numPeopleInfectiousContactPerDay'] = 0.6
+    v['paramBlockArray'][0]['infectiousToDiagnosedMean'] = np.log(8)
+    v['paramBlockArray'][0]['infectiousToDiagnosedSigma'] = np.log(1.5)
+    v['paramBlockArray'][0]['numPeopleInfectiousContactPerDay'] = 0.95
+    v['paramBlockArray'][1]['daySocialBehaviourChange'] = 25
+    v['paramBlockArray'][1]['infectiousToDiagnosedMean'] = np.log(8)
+    v['paramBlockArray'][1]['infectiousToDiagnosedSigma'] = np.log(1.5)
+    v['paramBlockArray'][1]['numPeopleInfectiousContactPerDay'] = 0.3
     v['paramBlockArray'][2]['daySocialBehaviourChange'] = 37
-    v['paramBlockArray'][2]['i_to_d_mean'] = 1.6
-    v['paramBlockArray'][2]['i_to_d_sigma'] = 0.4
-    v['paramBlockArray'][2]['numPeopleInfectiousContactPerDay'] = 0.3
+    v['paramBlockArray'][2]['infectiousToDiagnosedMean'] = np.log(8)
+    v['paramBlockArray'][2]['infectiousToDiagnosedSigma'] = np.log(1.5)
+    v['paramBlockArray'][2]['numPeopleInfectiousContactPerDay'] = 0.02
     v['paramBlockArray'][3]['daySocialBehaviourChange'] = 1000
-    v['paramBlockArray'][3]['i_to_d_mean'] = 1.6
-    v['paramBlockArray'][3]['i_to_d_sigma'] = 0.4
-    v['paramBlockArray'][3]['numPeopleInfectiousContactPerDay'] = 1.0
+    v['paramBlockArray'][3]['infectiousToDiagnosedMean'] = np.log(8)
+    v['paramBlockArray'][3]['infectiousToDiagnosedSigma'] = np.log(1.5)
+    v['paramBlockArray'][3]['numPeopleInfectiousContactPerDay'] = 0.4
 
-    plot(v, daysToModel)
+    plot(v, 70)
