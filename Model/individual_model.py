@@ -4,8 +4,17 @@ import scipy.integrate
 import scipy.optimize
 import matplotlib.pyplot as plt
 import matplotlib.widgets  # Cursor
+import matplotlib.ticker # Locator
+import matplotlib.dates  # Ticks
 import datetime
 import multiprocessing
+
+# NEXT:
+# Get the numbers for Austria and run it with that. Similar to Germany, should allow to figure out the coefficient for the lock-down period.
+# Then run Italy again, followed by UK
+# Try to compare hospital numbers with real stats.
+# Compare with healthdata.org
+
 
 incubationPeriod = 5.2
 e_to_i = 1.0 / incubationPeriod  # The rate at which an exposed person becomes infective (incubation period). Note that people are and can only be tested if they have symptoms, so they are not discovered by tests before that.
@@ -21,12 +30,12 @@ germany = {
     # Date when Health Minister said "Infection chains are no longer traceable"
     # 14th-16th of March (Day 26-28): Closing of schools
     # 22nd of March (Day 34): General restrictions to meet in public (the week before various restrictions depending on the individual Länder)
-    "start_date": datetime.datetime.strptime("13.02.2020", "%d.%m.%Y"),
+    "start_date": datetime.datetime.strptime("12.02.2020", "%d.%m.%Y"),
     "confirmed_cases_per_day": [
-        0,0,0,0,0,0,0,0,0,0,1,12,3,2,9,23,43,20,36,43,75,148,183,176,134,92,341,579,734,971,1405,1284,939,2006,3011,3496,3961,4013,3247,2286,3638,4762,5568,5789,6022,4725,3074,4118,5940,6046,6228
+        0,0,0,0,0,0,0,0,0,0,1,12,3,2,9,23,43,20,36,43,75,148,183,176,134,92,341,579,734,971,1405,1284,939,2006,3010,3505,3963,4017,3250,2285,3644,4771,5577,5790,6032,4733,3078,4129,5969,6164,6397,5943,4028
     ],
     "deaths_per_day": [
-        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,2,4,0,5,3,5,9,12,14,10,25,28,39,32,80,51,48,67,75,90,112,122,96,47,88,99,83,52
+        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,2,4,0,5,3,6,9,12,15,10,26,31,41,34,80,57,53,71,81,97,123,143,113,57,109,122,121,74,41,26
     ],
     "dayToStartLeastSquares": 0,
     "noSymptoms": 0.7,
@@ -101,6 +110,7 @@ logPlot = True
 
 population = int(dataset["population"])
 
+startDate = dataset["start_date"]
 daysToModel = dataset["daysToModel"]  # total days to model
 E0 = dataset["E0"]  # exposed at initial time step
 I0 = dataset["I0"]
@@ -367,6 +377,9 @@ def plot(v, numdays):
 
 
     X = np.arange(0, numdays)
+
+    days = matplotlib.dates.drange(startDate, startDate + datetime.timedelta(days=numdays), datetime.timedelta(days=1))
+
     E = statsperday['E']
     I = statsperday['I']
     D = statsperday['D']
@@ -379,20 +392,26 @@ def plot(v, numdays):
     nH = statsperday['nH']
     nT = statsperday['nT']
 
-    ax.plot(X, nE, 'y', alpha=0.5, lw=1, label='New exposed')
-    ax.plot(X, nI, 'b', alpha=0.5, lw=1, label='New infectious')
-    ax.plot(X, nD, 'g', alpha=0.5, lw=1, label='New diagnosed and isolated')
-    ax.plot(X, nH, 'm', alpha=0.5, lw=1, label='New hospitalized')
-    ax.plot(RealX[0:], RealND[0:], 'r', alpha=0.5, lw=1, label='Confirmed cases per day')
+    ax.plot(days, nE, 'y', alpha=0.5, lw=1, label='New exposed', ls='--')
+    ax.plot(days, nI, 'b', alpha=0.5, lw=1, label='New infectious')
+    ax.plot(days, nD, 'g', alpha=0.5, lw=1, label='New diagnosed and isolated')
+    ax.plot(days, nH, 'm', alpha=0.5, lw=1, label='New hospitalized')
+    ax.plot(days[:min(daysOfData, numdays)], RealND[:min(daysOfData, numdays)], 'r', alpha=0.5, lw=1, label='Confirmed cases per day')
     #ax.plot(X, R, 'y', alpha=0.5, lw=1, label='Recovered with immunity')
-    ax.plot(X, nT, 'k', alpha=0.5, lw=1, label='New deaths')
-    ax.plot(RealX[0:], RealNT[0:], 'c', alpha=0.5, lw=1, label='Confirmed deaths per day')
+    ax.plot(days, nT, 'k', alpha=0.5, lw=1, label='New deaths')
+    ax.plot(days[:min(daysOfData, numdays)], RealNT[0:min(daysOfData, numdays)], 'c', alpha=0.5, lw=1, label='Confirmed deaths per day')
 
     ax.set_xlabel('Time /days')
     ax.set_ylabel('Number (1000s)')
     ax.set_ylim(bottom=1.0)
+    ax.set_xlim(left=days[0])
+    formatter = matplotlib.dates.DateFormatter("%m-%d")
+    ax.xaxis.set_major_formatter(formatter)
+    ax.xaxis.set_minor_locator(matplotlib.dates.DayLocator(interval=1))
+    ax.xaxis.set_major_locator(matplotlib.dates.WeekdayLocator(byweekday=1,interval=1))
 
-    ax.grid(linestyle=':')  #b=True, which='major', c='w', lw=2, ls='-')
+    ax.grid(linestyle=':', which='minor', axis='both')  #b=True, which='major', c='w', lw=2, ls='-')
+    ax.grid(linestyle='--', which='major', axis='both')  #b=True, which='major', c='w', lw=2, ls='-')
     legend = ax.legend(title='COVID-19 SEIR model'+
                        ' %dk' % (population / 1000) + ' (beta)')
     legend.get_frame().set_alpha(0.5)
@@ -415,10 +434,10 @@ if __name__ == '__main__':
     v['paramBlockArray'][1]['infectiousToDiagnosedMean'] = np.log(8)
     v['paramBlockArray'][1]['infectiousToDiagnosedSigma'] = np.log(1.5)
     v['paramBlockArray'][1]['numPeopleInfectiousContactPerDay'] = 0.3
-    v['paramBlockArray'][2]['daySocialBehaviourChange'] = 37
+    v['paramBlockArray'][2]['daySocialBehaviourChange'] = 40
     v['paramBlockArray'][2]['infectiousToDiagnosedMean'] = np.log(8)
     v['paramBlockArray'][2]['infectiousToDiagnosedSigma'] = np.log(1.5)
-    v['paramBlockArray'][2]['numPeopleInfectiousContactPerDay'] = 0.02
+    v['paramBlockArray'][2]['numPeopleInfectiousContactPerDay'] = 0.01
     v['paramBlockArray'][3]['daySocialBehaviourChange'] = 1000
     v['paramBlockArray'][3]['infectiousToDiagnosedMean'] = np.log(8)
     v['paramBlockArray'][3]['infectiousToDiagnosedSigma'] = np.log(1.5)
