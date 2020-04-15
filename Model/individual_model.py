@@ -90,7 +90,7 @@ fitted_germany = {
     "FractionInfDiagnosed": [ 0.2, 0.2, 0.2 ],
     "DaysSymptomsToIsolation_Mean": [ 8, 8, 8 ],
     "DaysSymptomsToIsolation_Sigma": [ 1.5, 1.5, 1.5 ],
-    "InfectiousContactsPerDay": [ 0.87, 0.22, 0.05 ]
+    "InfectiousContactsPerDay": [ 0.87, 0.22, 0.08 ]
 }
 
 fixed_austria = {
@@ -382,7 +382,14 @@ def plot(d, numdays):
     RealND = np.asarray(d["confirmed_cases_per_day"])
     RealNT = np.asarray(d["deaths_per_day"])
 
-    statsperday = calcStatsPerDay(numdays, d)
+    manystats = []
+    for i in range(0,20):
+        manystats.append(calcStatsPerDay(numdays, d))
+
+#    for i in range(0,20):
+#        statsperday = calcStatsPerDay(numdays, d)
+#        manystats.append(statsperday)
+
     fig = plt.figure(dpi=75, figsize=(20,16))
     ax = fig.add_subplot(111)
     if logPlot:
@@ -393,25 +400,27 @@ def plot(d, numdays):
 
     days = matplotlib.dates.drange(startDate, startDate + datetime.timedelta(days=numdays), datetime.timedelta(days=1))
 
-    E = statsperday['E']
-    I = statsperday['I']
-    D = statsperday['D']
-    H = statsperday['H']
-    R = statsperday['R']
-    T = statsperday['T']
-    nE = statsperday['nE']
-    nI = statsperday['nI']
-    nD = statsperday['nD']
-    nH = statsperday['nH']
-    nT = statsperday['nT']
+    for statsperday in manystats:
+        E = statsperday['E']
+        I = statsperday['I']
+        D = statsperday['D']
+        H = statsperday['H']
+        R = statsperday['R']
+        T = statsperday['T']
+        nE = statsperday['nE']
+        nI = statsperday['nI']
+        nD = statsperday['nD']
+        nH = statsperday['nH']
+        nT = statsperday['nT']
 
-    ax.plot(days, nE, 'y', alpha=0.5, lw=1, label='New exposed', ls='--')
-    ax.plot(days, nI, 'b', alpha=0.5, lw=1, label='New infectious')
-    ax.plot(days, nD, 'g', alpha=0.5, lw=1, label='New diagnosed and isolated')
-    ax.plot(days, nH, 'm', alpha=0.5, lw=1, label='New hospitalized')
+        ax.plot(days, nE, 'y', alpha=2.0/len(manystats), lw=1, label='New exposed', ls='--')
+        ax.plot(days, nI, 'b', alpha=2.0/len(manystats), lw=1, label='New infectious')
+        ax.plot(days, nD, 'g', alpha=2.0/len(manystats), lw=1, label='New diagnosed and isolated')
+        ax.plot(days, nH, 'm', alpha=2.0/len(manystats), lw=1, label='New hospitalized')
+        ax.plot(days, nT, 'k', alpha=2.0/len(manystats), lw=1, label='New deaths')
+
     ax.plot(days[:min(daysOfData, numdays)], RealND[:min(daysOfData, numdays)], 'r', alpha=0.5, lw=1, label='Confirmed cases per day')
     #ax.plot(X, R, 'y', alpha=0.5, lw=1, label='Recovered with immunity')
-    ax.plot(days, nT, 'k', alpha=0.5, lw=1, label='New deaths')
     ax.plot(days[:min(daysOfData, numdays)], RealNT[0:min(daysOfData, numdays)], 'c', alpha=0.5, lw=1, label='Confirmed deaths per day')
 
     ax.set_xlabel('Time /days')
@@ -425,20 +434,20 @@ def plot(d, numdays):
 
     ax.grid(linestyle=':', which='minor', axis='both')  #b=True, which='major', c='w', lw=2, ls='-')
     ax.grid(linestyle='--', which='major', axis='both')  #b=True, which='major', c='w', lw=2, ls='-')
-    legend = ax.legend(title='COVID-19 SEIR model'+
-                       ' %dk' % (N / 1000) + ' (beta)')
-    legend.get_frame().set_alpha(0.5)
+    #legend = ax.legend(title='COVID-19 SEIR model'+
+    #                   ' %dk' % (N / 1000) + ' (beta)')
+    #legend.get_frame().set_alpha(0.5)
     for spine in ('top', 'right', 'bottom', 'left'):
         ax.spines[spine].set_visible(False)
     cursor = matplotlib.widgets.Cursor(ax, color='black', linewidth=1 )
     plt.show()
 
 if __name__ == '__main__':
-    #d = Dataset.datasetForPeriod(fixed_common, fixed_germany, fitted_germany)
-    d = Dataset.datasetForPeriod(fixed_common, fixed_austria, fitted_austria)
+    d = Dataset.datasetForPeriod(fixed_common, fixed_germany, fitted_germany)
+    #d = Dataset.datasetForPeriod(fixed_common, fixed_austria, fitted_austria)
     #d = Dataset.datasetForPeriod(fixed_common, fixed_uk, fitted_uk)
 
-    plot(d, 70)
+    plot(d, 120)
 
 
 
