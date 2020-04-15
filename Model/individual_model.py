@@ -12,14 +12,10 @@ import multiprocessing
 RG = np.random.default_rng()
 
 # NEXT:
-# Heinsberg study gives letality rate of 0.4% (dead/infected). This suggests people without symptoms are relatively numerous. Check if their progression needs better modelling - pay more attention to the time infectious people need to notice they are infectious, cause that is what a contact tracing app can fix.
-# Why is there a change on the 9th of march in the current model? Try to model date changes more in line with actual events, maybe allow for an adjustment period, phasing in infection rate changes.
-# How to get the rate infectious/hospitalized in a sensible fashion? That presumably will not be fixed but different from country to country, but still probably about the same for western countries?
-# Try to accelerate the generation of exposed (but first check if that is relevant).
-# Get the numbers for Austria and run it with that. Similar to Germany, should allow to figure out the coefficient for the lock-down period.
-# Then run Italy again, followed by UK
-# Try to compare hospital numbers with real stats.
-# Compare with healthdata.org
+# Check if initialization is actually working. Does it use only E0?
+# Negative number for diagnosed?????????
+# Properly match Austria and Germany - see how large the parameter space for each is.
+# Then match all western european countries.
 
 type_statsperday = np.dtype([
     ('S', np.int),
@@ -97,6 +93,83 @@ fitted_germany = {
     "InfectiousContactsPerDay": [ 0.87, 0.22, 0.05 ]
 }
 
+fixed_austria = {
+                    "N": 89E5,
+                    "D0": 0,
+                    "H0": 0,
+                    "R0": 0,
+                    "T0": 0,
+                    "FractionContractTracing": 0.0,
+                    "DayIsoDirect": lambda num: RG.lognormal(np.log(2), np.log(1.5), (num,)),
+                    "DaysSymptomsToD": lambda num: RG.lognormal(np.log(25), np.log(1.5), (num,)),
+                    "DaysTestingChanged": [],
+                    "FractionDeceased": 0.11,
+
+                    # Date when Health Minister said "Infection chains are no longer traceable"
+                    # 10th of March: Large events cancelled
+                    # 16th of March: General restrictions to meet in public
+                    # 14th of April: small shops open
+                    # 1st of May: large shops open
+                    "DaysSocialBehaviourChanged": [23, 29, 58, 75],
+                    "start_date": datetime.datetime.strptime("16.02.2020", "%d.%m.%Y"),
+                    "confirmed_cases_per_day": [
+                        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 3, 2, 3, 4, 4, 6, 5, 12, 33, 25, 3, 29, 51, 64,
+                        115, 143, 151, 205, 156, 316, 314, 550, 453, 375, 607, 855, 796, 606, 1141, 668, 594, 522, 805,
+                        564, 529, 418, 396, 241, 217, 314, 343, 329, 279, 312, 247, 130, 106
+                    ],
+                    "deaths_per_day": [
+                        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0,
+                        0, 0, 2, 0, 1, 2, 0, 2, 8, 9, 5, 4, 18, 16, 0, 18, 22, 20, 18, 12, 10, 18, 18, 16, 23, 30, 22,
+                        24, 18, 13, 18,
+                    ],
+}
+
+fitted_austria = {
+    "E0": 40,
+    "I0": 30,
+    "FractionInfDiagnosed": [ 0.2, 0.2, 0.2, 0.2, 0.2 ],
+    "DaysSymptomsToIsolation_Mean": [ 8, 8, 8, 8, 8 ],
+    "DaysSymptomsToIsolation_Sigma": [ 1.5, 1.5, 1.5, 1.5, 1.5 ],
+    "InfectiousContactsPerDay": [ 0.87, 0.22, 0.065, 0.1, 0.15 ]
+}
+
+fixed_uk = {
+                    "N": 68E6,
+                    "D0": 0,
+                    "H0": 0,
+                    "R0": 0,
+                    "T0": 0,
+                    "FractionContractTracing": 0.0,
+                    "DayIsoDirect": lambda num: RG.lognormal(np.log(2), np.log(1.5), (num,)),
+                    "DaysSymptomsToD": lambda num: RG.lognormal(np.log(25), np.log(1.5), (num,)),
+                    "DaysTestingChanged": [],
+                    "FractionDeceased": 0.11,
+
+                    # Date when Health Minister said "Infection chains are no longer traceable"
+                    # 23th of March: General restrictions to meet in public
+                    "DaysSocialBehaviourChanged": [40],
+                    "start_date": datetime.datetime.strptime("12.02.2020", "%d.%m.%Y"),
+                    "confirmed_cases_per_day": [
+                        0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 3, 2, 5, 13, 4, 11, 34, 30, 48, 43, 67, 48, 52,
+                        83, 134, 117, 433, 251, 152, 407, 680, 647, 706, 1035, 665, 967, 1427, 1452, 2129, 2885, 2546,
+                        2433, 2619, 3009, 4324, 4244, 4450, 3735, 5903, 3802, 3634, 5491, 4344, 5195, 8719, 5288, 4342
+                    ],
+                    "deaths_per_day": [
+                        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 0, 4, 0,
+                        11, 14, 20, 5, 43, 41, 33, 56, 48, 54, 87, 41, 115, 181, 260, 209, 180, 381, 743, 389, 684, 708,
+                        621, 439, 786, 938, 881, 980, 917, 737, 717
+                    ],
+}
+
+fitted_uk = {
+    "E0": 40,
+    "I0": 30,
+    "FractionInfDiagnosed": [ 0.2, 0.2 ],
+    "DaysSymptomsToIsolation_Mean": [ 8, 8 ],
+    "DaysSymptomsToIsolation_Sigma": [ 1.5, 1.5 ],
+    "InfectiousContactsPerDay": [ 0.87, 0.065 ]
+}
+
 class Dataset:
     def __init__(self, common, fixed, fitted):
         self.common = common
@@ -147,64 +220,6 @@ class Dataset:
 
     def daysOfData(self):
         return len(self.fixed["deaths_per_day"])
-
-# population = int(dataset["population"])
-#
-# startDate = dataset["start_date"]
-# daysToModel = dataset["daysToModel"]  # total days to model
-# E0 = dataset["E0"]  # exposed at initial time step
-# I0 = dataset["I0"]
-# D0 = dataset["D0"]
-# H0 = dataset["H0"]
-# R0 = dataset["R0"]
-# T0 = dataset["T0"]
-# RealND = np.asarray(dataset["confirmed_cases_per_day"])
-# RealNT = np.asarray(dataset["deaths_per_day"])
-# daysOfData = len(RealND)
-# RealX = np.arange(daysOfData)
-#D_to_T = RealT[-1] / np.sum(np.asarray(RealD[0:int(-timeDiagnosedToDeath / 2)]))
-#D_to_R = 1.0 / 15.0
-#I_to_R = 0.0
-
-# Parameters set by external data
-#noSymptoms = dataset["noSymptoms"]  # https://www.reddit.com/r/COVID19/comments/ffzqzl/estimating_the_asymptomatic_proportion_of_2019/
-#intensiveUnits = dataset["intensiveUnits"]  # ICU units available
-#daysBeginLockdown = dataset["lockdown"]  # days before lockdown measures (there probably should be several of those)
-#daysEndLockdown = daysBeginLockdown + dataset["length_of_lockdown"]  # days before lockdown measures are relaxed (there probably should be several of those)
-#beta0 = dataset["beta0"]  # The parameter controlling how often a susceptible-infected contact results in a new infection.
-#beta1 = dataset["beta1"]  # beta0 is used during days0 phase, beta1 after days0
-#Beta2 = dataset["beta2"]
-#numPeopleInfectiousContactPerDay_0 = dataset["numPeopleInfectiousContactPerDay_0"]
-#numPeopleInfectiousContactPerDay_1 = dataset["numPeopleInfectiousContactPerDay_1"]
-#numPeopleInfectiousContactPerDay_2 = dataset["numPeopleInfectiousContactPerDay_2"]
-
-# https://github.com/HopkinsIDD/ncov_incubation (2020-04-01)
-# Calculated in IncubationDiagnosedPeriods.ods
-#incubationPeriodValues = np.array([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20])
-#incubationPeriodProbabilities = np.array([0.0001,0.0136,0.0936,0.1818,0.2011,0.1688,0.1225,0.0819,0.0524,0.0326,0.0201,0.0123,0.0075,0.0046,0.0028,0.0018,0.0011,0.0007,0.0004,0.0003])
-
-# https://github.com/HopkinsIDD/ncov_incubation (2020-04-01)
-# Calculated in IncubationDiagnosedPeriods.ods
-#infectiousPeriodValues = np.array([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20])
-#infectiousPeriodProbabilities = np.array([0.5759,0.1430,0.0835,0.0547,0.0378,0.0270,0.0197,0.0145,0.0109,0.0082,0.0062,0.0047,0.0036,0.0028,0.0021,0.0017,0.0013,0.0010,0.0008,0.0006])
-
-#infectiousNoSymptomsPeriodValues = np.array([0,1,2,3,4,5,6,7])
-#infectiousNoSymptomsPeriodProbabilities = np.array([0.3,0.3,0.15,0.10,0.06,0.04,0.03,0.02])
-
-# The model is very, very sensitive to this number....
-#daysInfectiousBeforeSymptoms = 2
-
-#probabilityHospital = 0.2
-#symptomsToHospitalPeriodValues = np.array([          2,  3,  4,  5,   6,   7,   8,   9,  10,   11,   12,   13,   14])
-#symptomsToHospitalPeriodProbabilities = np.array([0.05,0.1,0.2,0.4,0.12,0.06,0.03,0.02,0.01,0.004,0.003,0.002,0.001])
-#probabilityDeadAfterHospital = 0.1
-#symptomsToDeadPeriodValues = np.array([          8,  9, 10, 11, 12, 13,  14,  15,  16,  17,  18,   19,   20])
-#symptomsToDeadPeriodProbabilities = np.array([0.05,0.1,0.2,0.4,0.12,0.06,0.03,0.02,0.01,0.004,0.003,0.002,0.001])
-#symptomsToRecoveredPeriodValues = np.array([         20, 21, 22, 23,   24,  25,  26,  27,  28,   29,   30,   31,   32])
-#symptomsToRecoveredPeriodProbabilities = np.array([0.05,0.1,0.2,0.4,0.12,0.06,0.03,0.02,0.01,0.004,0.003,0.002,0.001])
-
-#symptomsToRecoveredPeriodValues = np.array([         7,  8,   9,  10,  11,  12,  13,  14])
-#symptomsToRecoveredPeriodProbabilities = np.array([0.4,0.35,0.12,0.06,0.03,0.02,0.01,0.01])
 
 def createNewlyExposed(day_exposed, N, p):
     maxday = np.iinfo(np.int).max
@@ -292,11 +307,6 @@ def advanceDay(day, statsperday, pop, paramsForDay):
     statsperday[day]['nT'] = dT
 
     return npop
-
-#exposed = createExposed(0)
-#pop = np.full(10, exposed, type_individual)
-#createExposed0UFunc = np.frompyfunc(lambda n: createExposed(0), 1, 1)
-#pop = np.fromfunction(createExposed0UFunc, [E0])
 
 def calcStatsPerDay(days, d):
     E0 = int(d['E0'])
@@ -424,7 +434,9 @@ def plot(d, numdays):
     plt.show()
 
 if __name__ == '__main__':
-    d = Dataset.datasetForPeriod(fixed_common, fixed_germany, fitted_germany)
+    #d = Dataset.datasetForPeriod(fixed_common, fixed_germany, fitted_germany)
+    d = Dataset.datasetForPeriod(fixed_common, fixed_austria, fitted_austria)
+    #d = Dataset.datasetForPeriod(fixed_common, fixed_uk, fitted_uk)
 
     plot(d, 70)
 
