@@ -49,7 +49,7 @@ fixed_common = {
     "DaySymptoms": lambda num: RG.lognormal(np.log(5), np.log(1.5), (num,)),
     "DayInfBefSymptoms": lambda num: np.full(num, 2.5),
     "DaysSymptomsToIsolation": lambda num, mean, sigma: RG.lognormal(np.log(mean),np.log(sigma),(num,)),
-    "DaysSymptomsToR": lambda num: RG.lognormal(np.log(3), np.log(1.5)),
+    "DaysSymptomsToR": lambda num: RG.lognormal(np.log(5), np.log(1.5)),
     "FractionDiagHosp": 0.2,
     "DaysSymptomsToH": lambda num: RG.gamma(5.5, 1.0, (num,)),
     "DaysHToR": lambda num: RG.lognormal(18, 2, (num,)),
@@ -67,10 +67,10 @@ fixed_germany = {
     "T0": 0,
     "FractionContractTracing": 0.0,
     "DayIsoDirect": lambda num: RG.lognormal(np.log(2), np.log(1.5), (num,)),
-    "DaysSymptomsToD": lambda num: RG.lognormal(np.log(18), np.log(2), (num,)),
+    "DaysSymptomsToD": lambda num: RG.lognormal(np.log(25), np.log(1.5), (num,)),
     "DaysTestingChanged": [],
     "DaysSocialBehaviourChanged": [25, 40],
-    "FractionDeceased": 0.1,
+    "FractionDeceased": 0.11,
 
     # Date when Health Minister said "Infection chains are no longer traceable"
     # 12th of March: Merkel recommends social distancing
@@ -78,13 +78,13 @@ fixed_germany = {
     # 22nd of March (Day 34): General restrictions to meet in public (the week before various restrictions depending ons the individual Länder)
     "start_date": datetime.datetime.strptime("12.02.2020", "%d.%m.%Y"),
     "confirmed_cases_per_day": [
-        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 12, 3, 2, 9, 23, 43, 20, 36, 43, 75, 148, 183, 176, 134, 92, 341, 579, 734,
-        971, 1405, 1284, 939, 2006, 3010, 3505, 3963, 4017, 3250, 2285, 3644, 4771, 5577, 5790, 6032, 4733, 3078, 4129,
-        5969, 6164, 6397, 5943, 4028
+        2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 4, 26, 10, 54, 18, 28, 39, 66, 138, 284, 163, 55, 237, 157, 271,
+        802, 693, 733, 1043, 1174, 1144, 1042, 5940, 4049, 3276, 3311, 4438, 2342, 4954, 5780, 6294, 3965, 4751, 4615,
+        5453, 6156, 6174, 6082, 5936, 3677, 3834, 4003, 4974, 5323, 4133
     ],
     "deaths_per_day": [
-        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 2, 4, 0, 5, 3, 6, 9, 12, 15, 10, 26, 31,
-        41, 34, 80, 57, 53, 71, 81, 97, 123, 143, 113, 57, 109, 122, 121, 74, 41, 26
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 1, 2, 0, 3, 4, 1, 0, 0,
+        30, 2, 22, 27, 32, 23, 49, 55, 72, 64, 66, 128, 149, 140, 145, 141, 184, 92, 173, 254, 246, 266, 171
     ],
 }
 
@@ -94,7 +94,7 @@ fitted_germany = {
     "FractionInfDiagnosed": [ 0.2, 0.2, 0.2 ],
     "DaysSymptomsToIsolation_Mean": [ 8, 8, 8 ],
     "DaysSymptomsToIsolation_Sigma": [ 1.5, 1.5, 1.5 ],
-    "InfectiousContactsPerDay": [ 0.95, 0.25, 0.01 ]
+    "InfectiousContactsPerDay": [ 0.87, 0.22, 0.05 ]
 }
 
 class Dataset:
@@ -219,13 +219,14 @@ def createNewlyExposed(day_exposed, N, p):
     is_deceased = p['IsDeceased'](N, p['FractionDeceased'])
     day_deceased = np.ma.masked_array(data=day_with_symptoms+p['DaysSymptomsToD'](N),
                                 mask=~np.logical_and(is_hospitalized, is_deceased))
+    pick_way_of_recovery = is_diagnosed.astype(int) + is_hospitalized.astype(int)
+    duration_of_recovery = [
+                            day_with_symptoms+p['DaysSymptomsToR'](N),
+                            day_with_symptoms+p['DaysSymptomsToRViaIso'](N),
+                            day_with_symptoms+p['DaysHToR'](N)
+                        ]
     day_recovered = np.ma.masked_array(
-                                data=np.choose(is_diagnosed + is_hospitalized,
-                                    [
-                                        day_with_symptoms+p['DaysSymptomsToR'](N),
-                                        day_with_symptoms+p['DaysSymptomsToRViaIso'](N),
-                                        day_with_symptoms+p['DaysHToR'](N)
-                                    ]),
+                                data=np.choose(pick_way_of_recovery, duration_of_recovery),
                                 mask=np.logical_and(is_hospitalized, is_deceased))
     r = np.rec.fromarrays([
         np.full((N,), day_exposed),
