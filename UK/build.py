@@ -395,31 +395,46 @@ BST = pytz.timezone('GB')
 def readNewCSV():
     namesubst = {
         "Hackney and City of London": "Hackney",
-        "Cornwall and Isles of Scilly": "Cornwall"
+        "Cornwall and Isles of Scilly": "Cornwall",
+        "Bournemouth": "Bournemouth, Christchurch and Poole",
+        "Poole":  "Bournemouth, Christchurch and Poole"
         }
-    url="https://www.arcgis.com/sharing/rest/content/items/b684319181f94875a6879bbc833ca3a6/data"
+    url="https://github.com/tomwhite/covid-19-uk-data/raw/master/data/covid-19-cases-uk.csv"
     response = urllib.request.urlopen(url)
     data = response.read()
     text = data.decode('utf-8')
 
     numcaseslookup = dict()
-    d = datetime.datetime.now(datetime.timezone.utc)
-    d = d.replace(second = 0,microsecond = 0)
     with StringIO(text) as f:
         csvreader = csv.reader(f, delimiter=',')
         for ncovdatapoint in csvreader:
-            name = ncovdatapoint[1].strip();            
-            if name == "GSS_NM" or name == "":
+            name = ncovdatapoint[3].strip();
+            if name == "Area" or name == "" or ncovdatapoint[1].strip()!="England" or name.lower()=="awaiting clarification" or name.lower()=="awaiting confirmation":
                 continue
             try:
                 name = namesubst[name]
             except:
                 pass
-            numcaseslookup[name] = datapoint(
-                numcases=int(ncovdatapoint[2].replace(",","")) if ncovdatapoint[2] != "" else 0,
-                timestamp=d,
-                sourceurl="https://www.arcgis.com/home/item.html?id=b684319181f94875a6879bbc833ca3a6"
-                )
+            numstr = ncovdatapoint[4]
+            try:
+                num = int(ncovdatapoint[4].replace(",","")) if ncovdatapoint[4] != "" else 0
+            except:
+                if numstr=="1 to 4":
+                    num = 2
+                else:
+                    raise
+            try:
+                d = BST.localize(datetime.datetime.strptime(ncovdatapoint[0].strip(), "%Y-%m-%d"))
+            except:
+                print("Failed to parse timestamp '" + ncovdatapoint[0].strip() + "'")
+            if not name in numcaseslookup or numcaseslookup[name].timestamp<d:
+                numcaseslookup[name] = datapoint(
+                    numcases=num,
+                    timestamp=d,
+                    sourceurl="https://github.com/tomwhite/covid-19-uk-data"
+                    )
+            else:
+                numcaseslookup[name].numcases += num
     return numcaseslookup
 
 numcaseslookup = readNewCSV()
