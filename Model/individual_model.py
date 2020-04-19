@@ -102,7 +102,7 @@ fitted_germany = {
     "FractionInfDiagnosed": [ 0.2, 0.2, 0.2, 0.2, 0.2 ],
     "DaysSymptomsToIsolation_Mean": [ 8, 8, 8, 8, 8 ],
     "DaysSymptomsToIsolation_Sigma": [ 1.5, 1.5, 1.5, 1.5, 1.5 ],
-    "InfectiousContactsPerDay": [ 0.87, 0.22, 0.08, 0.1, 0.12 ]
+    "InfectiousContactsPerDay": [ 0.87, 0.22, 0.08, 0.15, 0.25 ]
 }
 
 fixed_austria = {
@@ -408,7 +408,7 @@ def plot(d):
     RealNT = np.asarray(d["deaths_per_day"])
 
     if True:
-        manystats = range(0,5)
+        manystats = range(0,25)
         pool = pathos.multiprocessing.ProcessingPool(nodes=16)
         results = pool.amap(d.calcStatsPerDay, manystats)
         pool.close()
@@ -494,11 +494,9 @@ def plot(d):
 
     #R0 = calcR0(statsPerDay, 0, days[d["DaysSocialBehaviourChanged"][0]])
     textypos = ax.get_ylim()[1]
-    for day, desc in zip(d["DaysSocialBehaviourChanged"], d["DaysSocialBehaviourChangedDesc"]):
-        #newR0 = calcR0(d, 0, days[d["DaysSocialBehaviourChanged"][0]])
+    for day, desc, ICprev, ICnext in zip(d["DaysSocialBehaviourChanged"], d["DaysSocialBehaviourChangedDesc"], d["InfectiousContactsPerDay"][:-1], d["InfectiousContactsPerDay"][1:]):
         ax.axvline(days[day], ls='--', color='g', lw=1)
-        ax.text(days[day], textypos, desc, rotation='vertical', horizontalalignment='right', verticalalignment='top') # desc + " R0 from " + str(R0) + " to " + str(newR0), rotation='vertical', horizontalalignment='right', verticalalignment='top')
-        #R0 = newR0
+        ax.text(days[day], textypos, desc + " IC from " + str(ICprev) + " to " + str(ICnext), rotation='vertical', horizontalalignment='right', verticalalignment='top')
 
     ax.grid(linestyle=':', which='minor', axis='both')  #b=True, which='major', c='w', lw=2, ls='-')
     ax.grid(linestyle='--', which='major', axis='both')  #b=True, which='major', c='w', lw=2, ls='-')
