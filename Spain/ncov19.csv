@@ -1,20 +1,23 @@
 Names,Cases
-ES.AN,0,2020-04-24T00:00:00+02:00,https://covid19.isciii.es/
-ES.AR,0,2020-04-24T00:00:00+02:00,https://covid19.isciii.es/
-ES.AS,0,2020-04-24T00:00:00+02:00,https://covid19.isciii.es/
-ES.IB,0,2020-04-24T00:00:00+02:00,https://covid19.isciii.es/
-ES.CN,0,2020-04-24T00:00:00+02:00,https://covid19.isciii.es/
-ES.CB,0,2020-04-24T00:00:00+02:00,https://covid19.isciii.es/
-ES.CM,0,2020-04-24T00:00:00+02:00,https://covid19.isciii.es/
-ES.CL,0,2020-04-24T00:00:00+02:00,https://covid19.isciii.es/
-ES.CT,0,2020-04-24T00:00:00+02:00,https://covid19.isciii.es/
-ES.CE,0,2020-04-24T00:00:00+02:00,https://covid19.isciii.es/
-ES.VC,0,2020-04-24T00:00:00+02:00,https://covid19.isciii.es/
-ES.EX,0,2020-04-24T00:00:00+02:00,https://covid19.isciii.es/
-ES.GA,9196,2020-04-24T00:00:00+02:00,https://covid19.isciii.es/
-ES.MD,0,2020-04-24T00:00:00+02:00,https://covid19.isciii.es/
-ES.ML,0,2020-04-24T00:00:00+02:00,https://covid19.isciii.es/
-ES.MC,0,2020-04-24T00:00:00+02:00,https://covid19.isciii.es/
-ES.NC,0,2020-04-24T00:00:00+02:00,https://covid19.isciii.es/
-ES.PV,0,2020-04-24T00:00:00+02:00,https://covid19.isciii.es/
-ES.RI,0,2020-04-24T00:00:00+02:00,https://covid19.isciii.es/
+ES.AN,0,2020-04-25T00:00:00+02:00,https://covid19.isciii.es/
+ES.AR,0,2020-04-25T00:00:00+02:00,https://covid19.isciii.es/
+ES.AS,0,2020-04-25T00:00:00+02:00,https://covid19.isciii.es/
+ES.IB,0,2020-04-25T00:00:00+02:00,https://covid19.isciii.es/
+ES.CN,0,2020-04-25T00:00:00+02:00,https://covid19.isciii.es/
+ES.CB,0,2020-04-25T00:00:00+02:00,https://covid19.isciii.es/
+ES.CM,0,2020-04-25T00:00:00+02:00,https://covid19.isciii.es/
+ES.CL,0,2020-04-25T00:00:00+02:00,https://covid19.isciii.es/
+ES.CT,0,2020-04-25T00:00:00+02:00,https://covid19.isciii.es/
+ES.CE,0,2020-04-25T00:00:00+02:00,https://covid19.isciii.es/
+ES.VC,0,2020-04-25T00:00:00+02:00,https://covid19.isciii.es/
+ES.EX,0,2020-04-25T00:00:00+02:00,https://covid19.isciii.es/
+ES.GA,9176,2020-04-25T00:00:00+02:00,https://covid19.isciii.es/
+ES.MD,0,2020-04-25T00:00:00+02:00,https://covid19.isciii.es/
+ES.ML,0,2020-04-25T00:00:00+02:00,https://covid19.isciii.es/
+ES.MC,0,2020-04-25T00:00:00+02:00,https://covid19.isciii.es/
+ES.NC,0,2020-04-25T00:00:00+02:00,https://covid19.isciii.es/
+ES.PV,0,2020-04-25T00:00:00+02:00,https://covid19.isciii.es/
+ES.RI,0,2020-04-25T00:00:00+02:00,https://covid19.isciii.es/
+ES.Los datos de estas comunidades son datos de prevalencia (personas ingresadas a fecha de hoy). No reflejan el total de personas que han sido hospitalizadas o ingresadas en UCI� a lo largo del periodo de notificaci�n(CL(UCIs)-GA(UCIS)-CM*-MD),0,2020-04-27T04:01:28.069064+02:00,https://covid19.isciii.es/
+ES.* Desde el d�a 11/04/2020 las cifras de hospitalizados de CM son casos acumulados. Previamente se refieren a personas ingresadas ese d�a.,0,2020-04-27T04:01:28.069087+02:00,https://covid19.isciii.es/
+ES.* Desde el d�a 12/04/2020 las cifras de UCIs de CM son casos acumulados. Previamente se refieren a personas ingresadas ese d�a.,0,2020-04-27T04:01:28.069103+02:00,https://covid19.isciii.es/
