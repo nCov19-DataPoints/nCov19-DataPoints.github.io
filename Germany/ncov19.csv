@@ -1,413 +1,413 @@
 Names,Cases
-SK Flensburg,33,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Kiel,252,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Lübeck,156,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Neumünster,62,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Dithmarschen,54,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Herzogtum Lauenburg,255,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Nordfriesland,77,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Ostholstein,64,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Pinneberg,530,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Plön,115,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Rendsburg-Eckernförde,230,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Schleswig-Flensburg,124,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Segeberg,214,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Steinburg,82,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Stormarn,390,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Hamburg,4475,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Braunschweig,298,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Salzgitter,125,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Wolfsburg,282,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Gifhorn,122,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Goslar,181,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Helmstedt,142,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Northeim,107,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Peine,136,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Wolfenbüttel,164,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Göttingen,710,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-Region Hannover,1828,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Diepholz,314,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Hameln-Pyrmont,115,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Hildesheim,279,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Holzminden,103,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Nienburg (Weser),63,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Schaumburg,141,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Celle,156,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Cuxhaven,95,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Harburg,482,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Lüchow-Dannenberg,17,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Lüneburg,164,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Osterholz,79,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Rotenburg (Wümme),94,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Heidekreis,66,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Stade,185,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Uelzen,41,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Verden,115,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Delmenhorst,41,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Emden,16,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Oldenburg,156,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Osnabrück,436,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Wilhelmshaven,18,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Ammerland,160,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Aurich,83,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Cloppenburg,99,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Emsland,382,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Friesland,30,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Grafschaft Bentheim,216,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Leer,92,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Oldenburg,205,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Osnabrück,928,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Vechta,306,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Wesermarsch,51,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Wittmund,24,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Bremen,715,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Bremerhaven,39,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Düsseldorf,980,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Duisburg,801,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Essen,713,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Krefeld,467,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Mönchengladbach,467,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Mülheim a.d.Ruhr,163,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Oberhausen,176,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Remscheid,210,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Solingen,223,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Wuppertal,784,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Kleve,557,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Mettmann,813,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Rhein-Kreis Neuss,573,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Viersen,600,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Wesel,490,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Bonn,631,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Köln,2250,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Leverkusen,191,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-StadtRegion Aachen,1831,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Düren,540,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Rhein-Erft-Kreis,943,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Euskirchen,338,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Heinsberg,1733,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Oberbergischer Kreis,444,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Rheinisch-Bergischer Kreis,405,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Rhein-Sieg-Kreis,1140,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Bottrop,141,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Gelsenkirchen,281,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Münster,629,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Borken,877,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Coesfeld,490,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Recklinghausen,1002,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Steinfurt,1221,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Warendorf,450,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Bielefeld,375,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Gütersloh,587,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Herford,317,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Höxter,278,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Lippe,687,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Minden-Lübbecke,414,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Paderborn,567,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Bochum,421,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Dortmund,663,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Hagen,233,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Hamm,426,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Herne,155,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Ennepe-Ruhr-Kreis,376,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Hochsauerlandkreis,565,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Märkischer Kreis,530,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Olpe,541,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Siegen-Wittgenstein,262,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Soest,339,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Unna,589,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Darmstadt,186,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Frankfurt am Main,1213,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Offenbach,81,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Wiesbaden,300,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Bergstraße,298,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Darmstadt-Dieburg,350,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Groß-Gerau,399,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Hochtaunuskreis,232,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Main-Kinzig-Kreis,587,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Main-Taunus-Kreis,250,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Odenwaldkreis,323,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Offenbach,433,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Rheingau-Taunus-Kreis,191,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Wetteraukreis,262,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Gießen,213,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Lahn-Dill-Kreis,331,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Limburg-Weilburg,254,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Marburg-Biedenkopf,179,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Vogelsbergkreis,120,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Kassel,226,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Fulda,298,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Hersfeld-Rotenburg,193,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Kassel,310,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Schwalm-Eder-Kreis,449,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Waldeck-Frankenberg,142,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Werra-Meißner-Kreis,159,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Koblenz,249,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Ahrweiler,115,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Altenkirchen,131,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Bad Kreuznach,186,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Birkenfeld,80,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Cochem-Zell,126,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Mayen-Koblenz,339,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Neuwied,215,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Rhein-Hunsrück-Kreis,161,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Rhein-Lahn-Kreis,151,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Westerwaldkreis,325,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Trier,95,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Bernkastel-Wittlich,128,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Bitburg-Prüm,167,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Vulkaneifel,109,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Trier-Saarburg,174,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Frankenthal,39,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Kaiserslautern,111,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Landau i.d.Pfalz,54,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Ludwigshafen,264,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Mainz,495,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Neustadt a.d.Weinstraße,92,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Pirmasens,30,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Speyer,66,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Worms,173,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Zweibrücken,35,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Alzey-Worms,192,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Bad Dürkheim,315,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Donnersbergkreis,114,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Germersheim,137,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Kaiserslautern,97,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Kusel,87,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Südliche Weinstraße,143,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Rhein-Pfalz-Kreis,202,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Mainz-Bingen,377,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Südwestpfalz,105,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Stuttgart,1307,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Böblingen,1288,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Esslingen,1643,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Göppingen,740,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Ludwigsburg,1592,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Rems-Murr-Kreis,1218,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Heilbronn,403,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Heilbronn,851,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Hohenlohekreis,732,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Schwäbisch Hall,787,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Main-Tauber-Kreis,349,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Heidenheim,419,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Ostalbkreis,1119,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Baden-Baden,172,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Karlsruhe,348,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Karlsruhe,887,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Rastatt,484,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Heidelberg,272,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Mannheim,437,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Neckar-Odenwald-Kreis,343,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Rhein-Neckar-Kreis,858,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Pforzheim,250,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Calw,655,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Enzkreis,531,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Freudenstadt,539,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Freiburg i.Breisgau,931,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Breisgau-Hochschwarzwald,1059,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Emmendingen,512,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Ortenaukreis,998,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Rottweil,582,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Schwarzwald-Baar-Kreis,478,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Tuttlingen,465,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Konstanz,426,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Lörrach,578,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Waldshut,299,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Reutlingen,1428,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Tübingen,1209,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Zollernalbkreis,1020,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Ulm,245,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Alb-Donau-Kreis,519,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Biberach,508,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Bodenseekreis,279,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Ravensburg,520,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Sigmaringen,763,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Ingolstadt,386,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK München,5477,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Rosenheim,421,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Altötting,572,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Berchtesgadener Land,265,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Bad Tölz-Wolfratshausen,398,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Dachau,812,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Ebersberg,436,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Eichstätt,258,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Erding,548,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Freising,921,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Fürstenfeldbruck,749,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Garmisch-Partenkirchen,257,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Landsberg a.Lech,323,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Miesbach,489,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Mühldorf a.Inn,460,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK München,1187,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Neuburg-Schrobenhausen,260,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Pfaffenhofen a.d.Ilm,322,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Rosenheim,1967,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Starnberg,499,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Traunstein,1065,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Weilheim-Schongau,341,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Landshut,262,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Passau,122,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Straubing,362,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Deggendorf,252,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Freyung-Grafenau,172,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Kelheim,424,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Landshut,630,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Passau,486,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Regen,148,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Rottal-Inn,689,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Straubing-Bogen,438,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Dingolfing-Landau,189,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Amberg,66,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Regensburg,401,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Weiden i.d.OPf.,281,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Amberg-Sulzbach,438,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Cham,382,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Neumarkt i.d.OPf.,330,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Neustadt a.d.Waldnaab,747,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Regensburg,386,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Schwandorf,430,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Tirschenreuth,1097,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Bamberg,179,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Bayreuth,183,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Coburg,52,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Hof,99,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Bamberg,382,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Bayreuth,376,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Coburg,184,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Forchheim,196,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Hof,376,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Kronach,121,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Kulmbach,189,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Lichtenfels,193,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Wunsiedel i.Fichtelgebirge,604,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Ansbach,102,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Erlangen,226,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Fürth,314,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Nürnberg,885,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Schwabach,74,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Ansbach,493,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Erlangen-Höchstadt,199,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Fürth,450,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Nürnberger Land,585,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Neustadt a.d.Aisch-Bad Windsheim,213,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Roth,279,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Weißenburg-Gunzenhausen,283,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Aschaffenburg,106,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Schweinfurt,156,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Würzburg,457,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Aschaffenburg,475,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Bad Kissingen,223,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Rhön-Grabfeld,178,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Haßberge,145,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Kitzingen,143,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Miltenberg,256,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Main-Spessart,142,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Schweinfurt,443,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Würzburg,398,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Augsburg,357,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Kaufbeuren,96,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Kempten,101,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Memmingen,49,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Aichach-Friedberg,272,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Augsburg,361,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Dillingen a.d.Donau,228,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Günzburg,215,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Neu-Ulm,418,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Lindau,238,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Ostallgäu,477,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Unterallgäu,261,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Donau-Ries,326,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Oberallgäu,167,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Stadtverband Saarbrücken,1173,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Merzig-Wadern,188,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Neunkirchen,226,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Saarlouis,505,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Saar-Pfalz-Kreis,276,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Sankt Wendel,135,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Brandenburg a.d.Havel,54,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Cottbus,39,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Frankfurt (Oder),25,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Potsdam,569,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Barnim,354,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Dahme-Spreewald,169,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Elbe-Elster,73,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Havelland,150,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Märkisch-Oderland,192,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Oberhavel,257,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Oberspreewald-Lausitz,41,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Oder-Spree,116,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Ostprignitz-Ruppin,54,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Potsdam-Mittelmark,390,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Prignitz,22,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Spree-Neiße,59,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Teltow-Fläming,123,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Uckermark,34,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Rostock,75,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Schwerin,90,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Mecklenburgische Seenplatte,109,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Rostock,55,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Vorpommern-Rügen,77,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Nordwestmecklenburg,73,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Vorpommern-Greifswald,128,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Ludwigslust-Parchim,67,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Chemnitz,192,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Erzgebirgskreis,503,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Mittelsachsen,239,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Vogtlandkreis,305,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Zwickau,740,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Dresden,497,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Bautzen,332,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Görlitz,250,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Meißen,210,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Sächsische Schweiz-Osterzgebirge,331,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Leipzig,548,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Leipzig,185,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Nordsachsen,126,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Dessau-Roßlau,64,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Halle,309,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Magdeburg,103,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Altmarkkreis Salzwedel,30,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Anhalt-Bitterfeld,68,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Börde,131,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Burgenlandkreis,88,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Harz,234,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Jerichower Land,33,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Mansfeld-Südharz,35,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Saalekreis,107,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Salzlandkreis,63,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Stendal,97,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Wittenberg,153,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Erfurt,132,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Gera,136,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Jena,156,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Suhl,13,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Weimar,61,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Eisenach,16,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Eichsfeld,116,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Nordhausen,57,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Wartburgkreis,38,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Unstrut-Hainich-Kreis,70,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Kyffhäuserkreis,37,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Schmalkalden-Meiningen,90,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Gotha,190,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Sömmerda,37,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Hildburghausen,20,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Ilm-Kreis,121,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Weimarer Land,67,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Sonneberg,88,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Saalfeld-Rudolstadt,57,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Saale-Holzland-Kreis,55,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Saale-Orla-Kreis,120,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Greiz,396,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-LK Altenburger Land,47,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Berlin Reinickendorf,443,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Berlin Charlottenburg-Wilmersdorf,656,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Berlin Treptow-Köpenick,295,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Berlin Pankow,595,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Berlin Neukölln,613,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Berlin Lichtenberg,219,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Berlin Marzahn-Hellersdorf,268,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Berlin Spandau,229,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Berlin Steglitz-Zehlendorf,459,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Berlin Mitte,834,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Berlin Friedrichshain-Kreuzberg,451,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
-SK Berlin Tempelhof-Schöneberg,576,2020-04-27T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Flensburg,33,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Kiel,255,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Lübeck,160,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Neumünster,63,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Dithmarschen,54,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Herzogtum Lauenburg,259,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Nordfriesland,78,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Ostholstein,64,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Pinneberg,530,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Plön,116,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Rendsburg-Eckernförde,230,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Schleswig-Flensburg,124,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Segeberg,214,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Steinburg,82,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Stormarn,391,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Hamburg,4505,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Braunschweig,299,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Salzgitter,125,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Wolfsburg,282,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Gifhorn,122,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Goslar,181,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Helmstedt,143,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Northeim,107,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Peine,136,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Wolfenbüttel,170,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Göttingen,725,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+Region Hannover,1853,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Diepholz,317,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Hameln-Pyrmont,115,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Hildesheim,279,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Holzminden,103,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Nienburg (Weser),63,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Schaumburg,144,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Celle,159,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Cuxhaven,97,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Harburg,482,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Lüchow-Dannenberg,17,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Lüneburg,164,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Osterholz,79,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Rotenburg (Wümme),94,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Heidekreis,66,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Stade,187,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Uelzen,41,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Verden,115,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Delmenhorst,45,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Emden,16,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Oldenburg,156,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Osnabrück,436,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Wilhelmshaven,18,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Ammerland,160,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Aurich,84,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Cloppenburg,99,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Emsland,383,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Friesland,30,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Grafschaft Bentheim,216,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Leer,92,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Oldenburg,206,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Osnabrück,938,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Vechta,307,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Wesermarsch,51,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Wittmund,24,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Bremen,720,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Bremerhaven,39,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Düsseldorf,1002,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Duisburg,801,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Essen,723,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Krefeld,476,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Mönchengladbach,468,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Mülheim a.d.Ruhr,168,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Oberhausen,176,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Remscheid,210,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Solingen,224,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Wuppertal,791,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Kleve,565,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Mettmann,819,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Rhein-Kreis Neuss,579,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Viersen,602,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Wesel,494,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Bonn,631,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Köln,2254,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Leverkusen,192,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+StadtRegion Aachen,1842,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Düren,544,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Rhein-Erft-Kreis,949,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Euskirchen,341,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Heinsberg,1743,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Oberbergischer Kreis,448,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Rheinisch-Bergischer Kreis,424,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Rhein-Sieg-Kreis,1151,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Bottrop,143,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Gelsenkirchen,322,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Münster,631,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Borken,878,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Coesfeld,498,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Recklinghausen,1012,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Steinfurt,1230,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Warendorf,451,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Bielefeld,378,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Gütersloh,587,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Herford,317,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Höxter,282,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Lippe,699,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Minden-Lübbecke,414,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Paderborn,571,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Bochum,424,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Dortmund,663,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Hagen,247,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Hamm,431,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Herne,159,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Ennepe-Ruhr-Kreis,376,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Hochsauerlandkreis,566,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Märkischer Kreis,537,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Olpe,549,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Siegen-Wittgenstein,272,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Soest,339,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Unna,591,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Darmstadt,190,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Frankfurt am Main,1217,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Offenbach,84,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Wiesbaden,301,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Bergstraße,301,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Darmstadt-Dieburg,361,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Groß-Gerau,401,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Hochtaunuskreis,233,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Main-Kinzig-Kreis,592,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Main-Taunus-Kreis,250,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Odenwaldkreis,324,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Offenbach,433,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Rheingau-Taunus-Kreis,191,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Wetteraukreis,262,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Gießen,213,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Lahn-Dill-Kreis,332,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Limburg-Weilburg,254,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Marburg-Biedenkopf,180,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Vogelsbergkreis,120,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Kassel,229,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Fulda,299,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Hersfeld-Rotenburg,193,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Kassel,311,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Schwalm-Eder-Kreis,452,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Waldeck-Frankenberg,143,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Werra-Meißner-Kreis,160,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Koblenz,253,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Ahrweiler,117,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Altenkirchen,133,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Bad Kreuznach,186,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Birkenfeld,80,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Cochem-Zell,126,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Mayen-Koblenz,341,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Neuwied,216,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Rhein-Hunsrück-Kreis,161,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Rhein-Lahn-Kreis,151,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Westerwaldkreis,325,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Trier,96,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Bernkastel-Wittlich,128,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Bitburg-Prüm,167,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Vulkaneifel,109,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Trier-Saarburg,175,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Frankenthal,41,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Kaiserslautern,116,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Landau i.d.Pfalz,56,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Ludwigshafen,266,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Mainz,495,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Neustadt a.d.Weinstraße,92,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Pirmasens,30,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Speyer,73,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Worms,179,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Zweibrücken,35,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Alzey-Worms,196,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Bad Dürkheim,315,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Donnersbergkreis,115,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Germersheim,138,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Kaiserslautern,97,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Kusel,87,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Südliche Weinstraße,145,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Rhein-Pfalz-Kreis,204,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Mainz-Bingen,379,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Südwestpfalz,105,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Stuttgart,1310,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Böblingen,1291,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Esslingen,1650,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Göppingen,744,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Ludwigsburg,1592,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Rems-Murr-Kreis,1274,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Heilbronn,407,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Heilbronn,851,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Hohenlohekreis,742,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Schwäbisch Hall,791,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Main-Tauber-Kreis,349,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Heidenheim,419,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Ostalbkreis,1119,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Baden-Baden,172,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Karlsruhe,348,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Karlsruhe,888,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Rastatt,484,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Heidelberg,275,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Mannheim,439,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Neckar-Odenwald-Kreis,348,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Rhein-Neckar-Kreis,862,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Pforzheim,257,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Calw,656,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Enzkreis,539,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Freudenstadt,540,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Freiburg i.Breisgau,931,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Breisgau-Hochschwarzwald,1060,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Emmendingen,512,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Ortenaukreis,1003,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Rottweil,582,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Schwarzwald-Baar-Kreis,478,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Tuttlingen,465,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Konstanz,426,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Lörrach,579,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Waldshut,300,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Reutlingen,1438,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Tübingen,1211,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Zollernalbkreis,1023,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Ulm,245,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Alb-Donau-Kreis,520,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Biberach,512,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Bodenseekreis,280,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Ravensburg,520,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Sigmaringen,764,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Ingolstadt,394,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK München,5509,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Rosenheim,421,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Altötting,575,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Berchtesgadener Land,265,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Bad Tölz-Wolfratshausen,400,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Dachau,832,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Ebersberg,439,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Eichstätt,262,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Erding,555,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Freising,932,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Fürstenfeldbruck,771,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Garmisch-Partenkirchen,258,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Landsberg a.Lech,323,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Miesbach,500,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Mühldorf a.Inn,466,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK München,1212,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Neuburg-Schrobenhausen,261,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Pfaffenhofen a.d.Ilm,322,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Rosenheim,1967,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Starnberg,499,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Traunstein,1095,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Weilheim-Schongau,343,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Landshut,262,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Passau,122,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Straubing,365,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Deggendorf,254,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Freyung-Grafenau,176,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Kelheim,425,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Landshut,634,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Passau,493,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Regen,148,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Rottal-Inn,692,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Straubing-Bogen,445,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Dingolfing-Landau,189,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Amberg,67,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Regensburg,405,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Weiden i.d.OPf.,281,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Amberg-Sulzbach,444,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Cham,387,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Neumarkt i.d.OPf.,330,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Neustadt a.d.Waldnaab,747,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Regensburg,389,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Schwandorf,431,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Tirschenreuth,1103,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Bamberg,179,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Bayreuth,183,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Coburg,52,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Hof,100,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Bamberg,380,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Bayreuth,376,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Coburg,184,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Forchheim,197,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Hof,378,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Kronach,122,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Kulmbach,194,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Lichtenfels,193,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Wunsiedel i.Fichtelgebirge,610,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Ansbach,111,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Erlangen,227,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Fürth,322,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Nürnberg,889,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Schwabach,74,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Ansbach,512,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Erlangen-Höchstadt,199,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Fürth,457,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Nürnberger Land,586,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Neustadt a.d.Aisch-Bad Windsheim,213,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Roth,282,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Weißenburg-Gunzenhausen,283,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Aschaffenburg,107,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Schweinfurt,157,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Würzburg,457,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Aschaffenburg,477,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Bad Kissingen,226,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Rhön-Grabfeld,180,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Haßberge,147,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Kitzingen,144,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Miltenberg,256,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Main-Spessart,143,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Schweinfurt,443,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Würzburg,398,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Augsburg,359,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Kaufbeuren,96,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Kempten,101,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Memmingen,49,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Aichach-Friedberg,273,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Augsburg,362,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Dillingen a.d.Donau,229,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Günzburg,219,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Neu-Ulm,419,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Lindau,238,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Ostallgäu,477,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Unterallgäu,261,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Donau-Ries,328,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Oberallgäu,167,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Stadtverband Saarbrücken,1173,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Merzig-Wadern,189,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Neunkirchen,229,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Saarlouis,505,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Saar-Pfalz-Kreis,276,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Sankt Wendel,137,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Brandenburg a.d.Havel,54,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Cottbus,39,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Frankfurt (Oder),25,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Potsdam,573,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Barnim,355,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Dahme-Spreewald,172,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Elbe-Elster,73,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Havelland,153,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Märkisch-Oderland,196,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Oberhavel,260,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Oberspreewald-Lausitz,41,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Oder-Spree,116,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Ostprignitz-Ruppin,55,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Potsdam-Mittelmark,390,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Prignitz,22,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Spree-Neiße,65,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Teltow-Fläming,124,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Uckermark,34,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Rostock,75,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Schwerin,90,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Mecklenburgische Seenplatte,109,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Rostock,55,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Vorpommern-Rügen,77,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Nordwestmecklenburg,73,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Vorpommern-Greifswald,129,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Ludwigslust-Parchim,67,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Chemnitz,192,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Erzgebirgskreis,511,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Mittelsachsen,241,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Vogtlandkreis,312,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Zwickau,741,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Dresden,500,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Bautzen,333,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Görlitz,253,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Meißen,214,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Sächsische Schweiz-Osterzgebirge,331,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Leipzig,551,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Leipzig,185,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Nordsachsen,126,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Dessau-Roßlau,64,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Halle,310,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Magdeburg,103,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Altmarkkreis Salzwedel,31,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Anhalt-Bitterfeld,68,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Börde,131,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Burgenlandkreis,88,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Harz,236,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Jerichower Land,33,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Mansfeld-Südharz,36,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Saalekreis,107,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Salzlandkreis,63,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Stendal,97,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Wittenberg,153,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Erfurt,133,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Gera,139,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Jena,157,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Suhl,13,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Weimar,61,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Eisenach,16,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Eichsfeld,116,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Nordhausen,58,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Wartburgkreis,40,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Unstrut-Hainich-Kreis,70,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Kyffhäuserkreis,37,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Schmalkalden-Meiningen,91,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Gotha,196,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Sömmerda,36,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Hildburghausen,20,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Ilm-Kreis,121,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Weimarer Land,67,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Sonneberg,88,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Saalfeld-Rudolstadt,58,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Saale-Holzland-Kreis,56,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Saale-Orla-Kreis,120,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Greiz,403,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+LK Altenburger Land,48,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Berlin Reinickendorf,444,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Berlin Charlottenburg-Wilmersdorf,658,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Berlin Treptow-Köpenick,298,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Berlin Pankow,595,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Berlin Neukölln,613,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Berlin Lichtenberg,219,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Berlin Marzahn-Hellersdorf,276,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Berlin Spandau,231,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Berlin Steglitz-Zehlendorf,459,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Berlin Mitte,846,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Berlin Friedrichshain-Kreuzberg,452,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
+SK Berlin Tempelhof-Schöneberg,578,2020-04-28T00:00:00+02:00,https://npgeo-corona-npgeo-de.hub.arcgis.com/datasets/917fc37a709542548cc3be077a786c17_0/data
