@@ -30,7 +30,8 @@ type_statsperday = np.dtype([
     ('nI', np.int),
     ('nD', np.int),
     ('nH', np.int),
-    ('nT', np.int)
+    ('nT', np.int),
+    ('R0', np.float)
 ])
 
 type_individual = np.dtype([
@@ -86,12 +87,13 @@ fixed_germany = {
     "confirmed_cases_per_day": [
         2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 4, 26, 10, 54, 18, 28, 39, 66, 138, 284, 163, 55, 237, 157, 271,
         802, 693, 733, 1043, 1174, 1144, 1042, 5940, 4049, 3276, 3311, 4438, 2342, 4954, 5780, 6294, 3965, 4751, 4615,
-        5453, 6156, 6174, 6082, 5936, 3677, 3834, 4003, 4974, 5323, 4133,2821,2537,2082,2486,2866,3380,3609
+        5453, 6156, 6174, 6082, 5936, 3677, 3834, 4003, 4974, 5323, 4133,2821,2537,2082,2486,2866,3380,3609,
+        2458,1775,1785,2237,2352,2337,2055,1737,1018,1144,1304
     ],
     "deaths_per_day": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 1, 2, 0, 3, 4, 1, 0, 0,
         30, 2, 22, 27, 32, 23, 49, 55, 72, 64, 66, 128, 149, 140, 145, 141, 184, 92, 173, 254, 246, 266, 171,129,126,
-        170,285,315,299,242
+        170,285,315,299,242,184,110,194,281,215,227,179,140,110,163,202
     ],
     "DaysToModel": 120
 }
@@ -102,7 +104,7 @@ fitted_germany = {
     "FractionInfDiagnosed": [ 0.2, 0.2, 0.2, 0.2, 0.2 ],
     "DaysSymptomsToIsolation_Mean": [ 8, 8, 8, 8, 8 ],
     "DaysSymptomsToIsolation_Sigma": [ 1.5, 1.5, 1.5, 1.5, 1.5 ],
-    "InfectiousContactsPerDay": [ 0.87, 0.22, 0.08, 0.15, 0.25 ]
+    "InfectiousContactsPerDay": [ 0.87, 0.22, 0.08, 0.10, 0.12 ]
 }
 
 fixed_austria = {
@@ -124,16 +126,24 @@ fixed_austria = {
                     # 14th of April: small shops open
                     # 1st of May: large shops open
                     "DaysSocialBehaviourChanged": [23, 29, 58, 75],
+                    "DaysSocialBehaviourChangedDesc": [
+                        "Large events cancelled",
+                        "General restrictions to meet in public",
+                        "Small shops reopen",
+                        "Large shops reopen"
+                    ],
                     "start_date": datetime.datetime.strptime("16.02.2020", "%d.%m.%Y"),
                     "confirmed_cases_per_day": [
                         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 3, 2, 3, 4, 4, 6, 5, 12, 33, 25, 3, 29, 51, 64,
                         115, 143, 151, 205, 156, 316, 314, 550, 453, 375, 607, 855, 796, 606, 1141, 668, 594, 522, 805,
-                        564, 529, 418, 396, 241, 217, 314, 343, 329, 279, 312, 247, 130, 106
+                        564, 529, 418, 396, 241, 217, 314, 343, 329, 279, 312, 247, 130, 106,
+                        191, 136, 78, 155, 59, 48, 73, 50, 91, 61, 83, 66, 55, 67, 58
+
                     ],
                     "deaths_per_day": [
                         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0,
                         0, 0, 2, 0, 1, 2, 0, 2, 8, 9, 5, 4, 18, 16, 0, 18, 22, 20, 18, 12, 10, 18, 18, 16, 23, 30, 22,
-                        24, 18, 13, 18,
+                        24, 18, 13, 18, 16, 9, 17, 21, 12, 9, 10, 1, 31, 14, 5, 23, 6, 7, 20
                     ],
                     "DaysToModel": 120
 }
@@ -162,28 +172,38 @@ fixed_uk = {
 
                     # Date when Health Minister said "Infection chains are no longer traceable"
                     # 23th of March: General restrictions to meet in public
-                    "DaysSocialBehaviourChanged": [40],
-                    "start_date": datetime.datetime.strptime("12.02.2020", "%d.%m.%Y"),
+                    "DaysSocialBehaviourChanged": [33, 47],
+                    "DaysSocialBehaviourChangedDesc": [
+                        "???",
+                        "General restrictions to meet in public"
+                    ],
+                    "start_date": datetime.datetime.strptime("05.02.2020", "%d.%m.%Y"),
                     "confirmed_cases_per_day": [
+                        0, 0, 1, 0, 1, 0, 4,
                         0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 3, 2, 5, 13, 4, 11, 34, 30, 48, 43, 67, 48, 52,
                         83, 134, 117, 433, 251, 152, 407, 680, 647, 706, 1035, 665, 967, 1427, 1452, 2129, 2885, 2546,
-                        2433, 2619, 3009, 4324, 4244, 4450, 3735, 5903, 3802, 3634, 5491, 4344, 5195, 8719, 5288, 4342
+                        2433, 2619, 3009, 4324, 4244, 4450, 3735, 5903, 3802, 3634, 5491, 4344, 5195, 8719, 5288, 4342,
+                        5252, 4603, 4617, 5599, 5525, 5850, 4676, 4301, 4451, 4583, 5386, 4913, 4463, 4309, 3996
                     ],
                     "deaths_per_day": [
+                        0, 0, 0, 0, 0, 0, 0,
                         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 0, 4, 0,
                         11, 14, 20, 5, 43, 41, 33, 56, 48, 54, 87, 41, 115, 181, 260, 209, 180, 381, 743, 389, 684, 708,
-                        621, 439, 786, 938, 881, 980, 917, 737, 717
+                        621, 439, 786, 938, 881, 980, 917, 737, 717, 778, 761, 861, 847, 888, 596, 449, 828, 763, 638,
+                        768, 813, 413, 360, 586
                     ],
-                    "DaysToModel": 60
+                    "DaysToModel": 120
 }
 
 fitted_uk = {
-    "E0": 40,
-    "I0": 30,
-    "FractionInfDiagnosed": [ 0.2, 0.2 ],
-    "DaysSymptomsToIsolation_Mean": [ 8, 8 ],
-    "DaysSymptomsToIsolation_Sigma": [ 1.5, 1.5 ],
-    "InfectiousContactsPerDay": [ 0.87, 0.065 ]
+    "E0": 50,
+    "I0": 20,
+    # SOMETHING IS BROKEN HERE: IF THIS IS LOWERED TO 0.01, the number of "New deaths" goes down, not up?
+    # And why is the R0 in the last section in the UK lower than in Austria or Germany???
+    "FractionInfDiagnosed": [ 0.1, 0.1, 0.1 ],
+    "DaysSymptomsToIsolation_Mean": [ 8, 8, 8 ],
+    "DaysSymptomsToIsolation_Sigma": [ 1.5, 1.5, 1.5 ],
+    "InfectiousContactsPerDay": [ 0.87, 0.3, 0.1 ]
 }
 
 class Dataset:
@@ -295,6 +315,8 @@ class Dataset:
         prob = pS / N
         numnewexposed = self.RG.binomial(pI * numPeopleInfectiousContactPerDay, prob)
 
+        R0 = numnewexposed / pI * np.average(np.subtract(np.minimum(np.minimum(npop['day_hospitalized'], npop['day_recovered']), npop['day_diagnosed']), npop['day_infectious']))
+
         #createExposedUFunc = np.frompyfunc(lambda n: createExposed(day), 1, 1)
         #newexposed = np.fromfunction(createExposedUFunc, (numnewexposed,))
         newexposed = self.createNewlyExposed(day, numnewexposed, paramsForDay)
@@ -322,6 +344,7 @@ class Dataset:
         statsperday[day]['nD'] = nD  # we need all *new* diagnosed, without subtracting the ones going elsewhere - that is what is generally counted
         statsperday[day]['nH'] = nH
         statsperday[day]['nT'] = dT
+        statsperday[day]['R0'] = R0
 
         return npop
 
@@ -353,6 +376,7 @@ class Dataset:
         statsperday[0]['nD'] = 0
         statsperday[0]['nH'] = 0
         statsperday[0]['nT'] = 0
+        statsperday[0]['R0'] = 0
 
         for day in range(1, days):
             paramsForDay = d.forDay(day)
@@ -408,7 +432,7 @@ def plot(d):
     RealNT = np.asarray(d["deaths_per_day"])
 
     if True:
-        manystats = range(0,25)
+        manystats = range(0,5)
         pool = pathos.multiprocessing.ProcessingPool(nodes=16)
         results = pool.amap(d.calcStatsPerDay, manystats)
         pool.close()
@@ -477,7 +501,6 @@ def plot(d):
         ax.fill_between(days, lower_bound[n], upper_bound[n], color=vdesc['color'], alpha=0.2)
 
     ax.plot(days[:min(daysOfData, numdays)], RealND[:min(daysOfData, numdays)], 'r', alpha=1.0, lw=1, label='Confirmed cases per day')
-    #ax.plot(X, R, 'y', alpha=0.5, lw=1, label='Recovered with immunity')
     ax.plot(days[:min(daysOfData, numdays)], RealNT[0:min(daysOfData, numdays)], 'k', alpha=1.0, lw=1, label='Confirmed deaths per day')
 
     ax.set_xlabel('Date')
@@ -491,6 +514,10 @@ def plot(d):
     ax.xaxis.set_major_formatter(formatter)
     ax.xaxis.set_minor_locator(matplotlib.dates.DayLocator(interval=1))
     ax.xaxis.set_major_locator(matplotlib.dates.WeekdayLocator(byweekday=1,interval=1))
+
+    axR0 = ax.twinx()
+    axR0.set_ylabel('R0')
+    axR0.plot(days, mean['R0'], 'c', alpha=1.0, lw=1, label='R0')
 
     #R0 = calcR0(statsPerDay, 0, days[d["DaysSocialBehaviourChanged"][0]])
     textypos = ax.get_ylim()[1]
@@ -509,9 +536,9 @@ def plot(d):
 
 if __name__ == '__main__':
     dill.settings['recurse'] = True
-    d = Dataset.datasetForPeriod(fixed_common, fixed_germany, fitted_germany)
+    #d = Dataset.datasetForPeriod(fixed_common, fixed_germany, fitted_germany)
     #d = Dataset.datasetForPeriod(fixed_common, fixed_austria, fitted_austria)
-    #d = Dataset.datasetForPeriod(fixed_common, fixed_uk, fitted_uk)
+    d = Dataset.datasetForPeriod(fixed_common, fixed_uk, fitted_uk)
 
     plot(d)
 
